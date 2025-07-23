@@ -22,6 +22,16 @@
             </li>
           {%- endfor -%}
         </ul>
+        <div class="lang-switcher" style="margin-left: auto; padding: 0 1rem;">
+          {% for lang in site.languages %}
+            <a href="{% if lang == site.default_lang %}/{% else %}/{{ lang }}/{% endif %}"
+               class="{% if lang == site.active_lang %}active{% endif %}"
+               aria-label="{{ lang | upcase }}">
+              {{ lang | upcase }}
+            </a>
+            {% unless forloop.last %}<span style="margin: 0 0.3em;">|</span>{% endunless %}
+          {% endfor %}
+        </div>
         {% if site.search == true %}
         <button class="search__toggle" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].search_label | default: "Toggle search" }}</span>
@@ -35,5 +45,6 @@
         <ul class="hidden-links hidden"></ul>
       </nav>
     </div>
+
   </div>
 </div>

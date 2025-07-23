@@ -1,12 +1,67 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title:
+      en: "Black holes & gravitational waves"
+      fr: "Trous noirs & ondes gravitationnelles"
+    url: /research-projects/
+  - title:
+      en: "Beyond the Lab"
+      fr: "Hors du Laboratoire"
+    url: /personal-projects/
+  - title:
+      en: "About me"
+      fr: "À propos"
+    url: /about/
+
+research:
+  - title:
+      en: "The origin and significance of black holes"
+      fr: "Origine et importance des trous noirs"
+    url: /research/origin/
+  - title:
+      en: "Detecting gravitational waves"
+      fr: "Détection des ondes gravitationnelles"
+    url: /research/detection/
+  - title:
+      en: "Current observations"
+      fr: "Observations actuelles"
+    url: /research/results/
+  - title:
+      en: "Observation prospectives"
+      fr: "Observations futures"
+    url: /research/results/
+
+personal_projects:
+  - title:
+      en: "Science & climate change"
+      fr: "Science et changement climatique"
+    url: /personal-projects/climate/
+  - title:
+      en: "Game development"
+      fr: "Développement de jeux vidéo"
+    url: /personal-projects/gaming/
+  - title:
+      en: "Science outreach"
+      fr: "Médiation scientifique"
+    url: /personal-projects/outreach/
+
+
+about:
+  - title:
+      en: "CV"
+      fr: "CV"
+    url: /about/cv/
+  - title:
+      en: "Talks & publications"
+      fr: "Conférences et publications"
+    url: /about/talks/
+  - title:
+      en: "Art & Culture"
+      fr: "Art & Culture"
+    url: /about/culture/
+  - title:
+      en: "Community engagement"
+      fr: "Engagement associatif"
+    url: /about/community/
+
+

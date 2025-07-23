@@ -1,0 +1,585 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.1 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="fr-FR" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Recherche d’anomalie dans une série temporelle - Data science</title>
+<meta name="description" content="Portfolio de projets.">
+
+
+  <meta name="author" content="Carole Périgois">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Data science">
+<meta property="og:title" content="Recherche d’anomalie dans une série temporelle">
+<meta property="og:url" content="http://localhost:4000/Cperigois.github.io/IAlab/">
+
+
+  <meta property="og:description" content="Portfolio de projets.">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/Cperigois.github.io/IAlab/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/Cperigois.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Data science Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/Cperigois.github.io/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/Cperigois.github.io/">
+           
+          <span class="site-subtitle"></span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/Cperigois.github.io/research-projects/"
+                
+                
+              >{"en"=>"Black holes & gravitational waves", "fr"=>"Trous noirs & ondes gravitationnelles"}</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/Cperigois.github.io/personal-projects/"
+                
+                
+              >{"en"=>"Beyond the Lab", "fr"=>"Hors du Laboratoire"}</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/Cperigois.github.io/about/"
+                
+                
+              >{"en"=>"About me", "fr"=>"À propos"}</a>
+            </li></ul>
+        <div class="lang-switcher" style="margin-left: auto; padding: 0 1rem;">
+          
+            <a href="/"
+               class=""
+               aria-label="FR">
+              FR
+            </a>
+            <span style="margin: 0 0.3em;">|</span>
+          
+            <a href="/en/"
+               class=""
+               aria-label="EN">
+              EN
+            </a>
+            
+          
+        </div>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/Cperigois.github.io/" itemprop="item"><span itemprop="name">Accueil</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Recherche d'anomalie dans une série temporelle</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Recherche d’anomalie dans une série temporelle">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">
+            <a href="http://localhost:4000/Cperigois.github.io/IAlab/" itemprop="url">Recherche d’anomalie dans une série temporelle
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Cette étude s’inscrit dans une curiosité personnelle concernant l’implémentation d’<strong>autoencodeurs</strong> pour la détection d’anomalies électroniques en analyse du signal. Ce type d’approche est déjà largement documenté sur <em>Papers With Code</em> ; voici quelques références pertinentes. Pour moi, c’est également l’occasion de me former à un nouveau domaine du deep learning : <strong>les autoencodeurs appliqués aux séries temporelles</strong>, un sujet que je maîtrise déjà bien du point de vue signal.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>L’objectif de cette étude est de tester les limites de l’utilisation d’autoencodeurs dans la recherche d’anomalies dans les signaux temporels. Le sujet étant très vaste, je me suis limité ici à l’étude de <strong>signaux sinusoïdaux affectés par un bruit gaussien et un bruit de dérive</strong>, ce dernier étant typique de l’usure de composants électroniques.</p>
+
+<p>Ce billet se compose de trois parties :</p>
+<ol>
+  <li>Un résumé du fonctionnement des autoencodeurs, avec les paramètres choisis pour cette étude.</li>
+  <li>La stratégie d’entraînement « étape par étape » pour contourner les difficultés liées à la périodicité des signaux.</li>
+  <li>Une évaluation du modèle sur des données bruitées contenant un ratio de dérive contrôlé.</li>
+</ol>
+
+<hr />
+
+<h2 id="modèle-ia">Modèle IA</h2>
+
+<h3 id="la-base-des-autoencodeurs">La base des autoencodeurs</h3>
+
+<p>Un autoencodeur est un type de réseau de neurones dont l’objectif est de <strong>reconstruire l’entrée</strong> après l’avoir compressée dans un espace latent de plus faible dimension. Il se compose de deux parties :</p>
+
+<ul>
+  <li><strong>L’encodeur</strong> : réduit la dimensionnalité de l’entrée pour extraire ses caractéristiques essentielles.</li>
+  <li><strong>Le décodeur</strong> : reconstruit l’entrée à partir de la représentation compressée.</li>
+</ul>
+
+<p>En apprentissage non supervisé, un autoencodeur peut ainsi apprendre les motifs dominants des données. Toute <strong>erreur de reconstruction importante</strong> indique alors une <strong>anomalie</strong> (c’est-à-dire une donnée ne correspondant pas au motif appris).</p>
+
+<p>La fonction de perte classique est l’erreur quadratique moyenne :</p>
+
+\[\text{MSE} = \frac{1}{n} \sum_{i=1}^n (x_i - \hat{x}_i)^2\]
+
+<p>où ( x_i ) est la donnée originale et ( \hat{x}_i ) sa reconstruction.</p>
+
+<hr />
+
+<p>Mon modèle</p>
+
+<p>Le modèle utilisé dans cette étude est un autoencodeur convolutionnel 1D conçu pour traiter des signaux temporels de longueur fixe (500 échantillons). Il se compose de deux blocs principaux : un encodeur et un décodeur, construits à partir de couches convolutives, adaptées aux données structurées dans le temps.</p>
+
+<h4 id="encodeur">Encodeur</h4>
+
+<p>L’encodeur transforme le signal d’entrée en une représentation latente de dimension réduite (embedding). Il est constitué de :</p>
+
+<p>Trois couches de convolution 1D successives avec :</p>
+
+<ul>
+  <li>
+    <p>Un nombre croissant de canaux (16, puis 32, puis 64),</p>
+  </li>
+  <li>
+    <p>Un noyau de convolution de taille 5,</p>
+  </li>
+  <li>
+    <p>Un stride de 2 pour réduire progressivement la résolution temporelle,</p>
+  </li>
+  <li>
+    <p>Une activation ReLU après chaque convolution.</p>
+  </li>
+</ul>
+
+<p>À la fin de ces couches, la sortie est applatie (flatten) pour former un vecteur linéaire, qui est ensuite projeté via une couche linéaire (fully connected) vers l’espace latent de taille définie (encoded_size).</p>
+
+<h4 id="décodeur">Décodeur</h4>
+
+<p>Le décodeur reconstruit le signal original à partir de la représentation latente. Il réalise l’opération inverse de l’encodeur, avec :</p>
+
+<p>Une première couche linéaire pour transformer le vecteur latent en un tenseur compatible avec la structure attendue par les couches de déconvolution.</p>
+
+<p>Trois couches de convolution transposée (aussi appelées “déconvolutions”) :</p>
+
+<p>Elles augmentent progressivement la taille du signal dans le temps,</p>
+
+<p>Réduisent le nombre de canaux de 64 à 32, puis 16, puis 1 (la forme du signal d’origine),</p>
+
+<p>Chaque étape est suivie d’une activation ReLU, sauf la dernière.</p>
+
+<p>Ce design permet au modèle d’apprendre à extraire les motifs caractéristiques du signal d’entrée, puis à les reconstruire aussi fidèlement que possible. La compression dans l’espace latent force l’autoencodeur à filtrer le bruit et à ne conserver que les informations essentielles.</p>
+
+<p>Ce modèle encode des signaux d’entrée de taille 500 vers un espace latent de dimension fixée à 30% de la taille d’entrée dans notre cas, avant de les reconstituer via des couches convolutionnelles transposées. L’architecture est volontairement compacte pour faciliter l’apprentissage progressif de motifs simples.</p>
+
+<hr />
+
+<h2 id="entraînement-du-modèle">Entraînement du modèle</h2>
+
+<h3 id="les-données-dentraînement">Les données d’entraînement</h3>
+
+<p>L’entraînement est réalisé sur des lots de 12000 signaux de 500 secondes, envoyés par batchs de 32 au GPU. Chaque signal est une sinusoïde bruitée, générée aléatoirement selon les paramètres de l’étape d’apprentissage.</p>
+
+<hr />
+
+<h3 id="stratégie-dapprentissage-par-étapes">Stratégie d’apprentissage par étapes</h3>
+
+<p>L’entraînement suit une progression par <strong>complexification croissante des signaux</strong>. Voici un résumé en tableau :</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Étape</th>
+      <th style="text-align: right">Époques</th>
+      <th style="text-align: left">Amplitude</th>
+      <th style="text-align: left">Phase</th>
+      <th style="text-align: left">Fréquence</th>
+      <th style="text-align: left">Bruit</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0.05 Hz</td>
+      <td style="text-align: left">Aucun</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">30</td>
+      <td style="text-align: left">Uniform(3.5, 4.5)</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0.05 Hz</td>
+      <td style="text-align: left">Aucun</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">30</td>
+      <td style="text-align: left">Uniform(3.5, 4.5)</td>
+      <td style="text-align: left">Uniform(0, 0.5)</td>
+      <td style="text-align: left">0.05 Hz</td>
+      <td style="text-align: left">Aucun</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: left">Uniform(3.5, 4.5)</td>
+      <td style="text-align: left">Uniform(0, 0.5)</td>
+      <td style="text-align: left">Uniform(0.025, 0.075) Hz</td>
+      <td style="text-align: left">Aucun</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: left">Uniform(3.5, 4.5)</td>
+      <td style="text-align: left">Uniform(0, 0.5)</td>
+      <td style="text-align: left">Uniform(0.025, 0.075) Hz</td>
+      <td style="text-align: left">Bruit gaussien ( \mathcal{N}(0, 0.05) )</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">250</td>
+      <td style="text-align: left">Uniform(2, 6)</td>
+      <td style="text-align: left">Uniform(0, 2π)</td>
+      <td style="text-align: left">Uniform(0.025, 0.225) Hz</td>
+      <td style="text-align: left">Bruit gaussien ( \mathcal{N}(0, 0.05) )</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">400</td>
+      <td style="text-align: left">Uniform(2, 6)</td>
+      <td style="text-align: left">Uniform(0, 2π)</td>
+      <td style="text-align: left">Uniform(0.025, 0.225) Hz</td>
+      <td style="text-align: left">Bruit gaussien ( \mathcal{N}(0, 0.25) )</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Un scheduler de type <code class="language-plaintext highlighter-rouge">ReduceLROnPlateau</code> est utilisé pour ajuster dynamiquement le <strong>learning rate</strong> à partir d’une valeur initiale de ( 10^{-4} ), en cas de stagnation des performances.</p>
+
+<hr />
+
+<h3 id="le-bruit-résiduel">Le bruit résiduel</h3>
+
+<p>Le modèle ne peut reconstruire parfaitement le signal d’entrée, à cause de la composante aléatoire du bruit. La perte finale atteint donc une valeur <strong>non nulle</strong>, appelée <strong>bruit résiduel</strong>.</p>
+
+<p>Considérons :</p>
+
+\[\text{signal}_{\text{target}} = \text{signal}_{\text{informatif}} + \text{bruit}_{\text{aléatoire}}\]
+
+<p>et supposons une reconstruction parfaite du signal informatif. Alors, l’erreur moyenne devient :</p>
+
+\[\text{MSE} = \frac{1}{n} \sum_{i=1}^n [(\text{output} - \text{signal}_{\text{target}})^2] = \frac{1}{n} \sum_{i=1}^n [\text{bruit}_{\text{aléatoire}}^2]\]
+
+<p>Dans notre étude :</p>
+<ul>
+  <li>Étapes 4–6 : bruit résiduel ≈ <strong>0.0025</strong></li>
+  <li>Étape 7 : bruit résiduel ≈ <strong>0.0625</strong></li>
+</ul>
+
+<h3><img src="sinusoïd_recognition.png" alt="assets/images/sinusoïd_recognition.png" /></h3>
+
+<p><em>Évolution de la perte de validation durant l’entraînement (légende à adapter).</em></p>
+
+<hr />
+
+<h2 id="évaluation-et-tests-sur-signaux-bruités">Évaluation et tests sur signaux bruités</h2>
+
+<h3 id="évaluation-du-modèle">Évaluation du modèle</h3>
+
+<p>Le modèle est évalué sur 10 000 nouveaux signaux générés avec les paramètres de l’étape 7.<br />
+La perte médiane observée est :</p>
+
+\[\text{MSE}_{\text{test}} = 0.078^{+0.053}_{-0.012}\]
+
+<p>Ce qui reste compatible avec le bruit résiduel, indiquant un bon <strong>pouvoir de généralisation</strong>.</p>
+
+<hr />
+
+<h3 id="les-données-bruitées">Les données bruitées</h3>
+
+<p>Un <strong>bruit de dérive</strong> a été ajouté aux signaux :</p>
+
+<blockquote>
+  <p>Une dérive est une <strong>modification lente et continue</strong> du signal dans le temps. Elle peut être modélisée par une fonction affine :</p>
+</blockquote>
+
+\[\text{drift}(t) = \alpha \cdot t\]
+
+<p>où ( \alpha ) est le coefficient de dérive.</p>
+
+<p><img src="combined_drift_comparison.png" alt="assets/images/combined_drift_comparison.png" /></p>
+
+<p><em>Exemples de signaux avec dérive pour quatre valeurs de ( \alpha ), comparés à leur reconstruction.</em></p>
+
+<hr />
+
+<h3 id="détection-danomalie">Détection d’anomalie</h3>
+
+<p>Le modèle échoue à reconstruire correctement les signaux contenant une dérive non apprise, comme attendu. Pour chaque ratio de dérive, la perte est comparée aux percentiles de l’évaluation :</p>
+
+<ul>
+  <li><strong>OK</strong> : MSE &lt; 95ᵉ percentile</li>
+  <li><strong>WARNING</strong> : 95ᵉ percentile &lt; MSE &lt; max</li>
+  <li><strong>ANOMALY</strong> : MSE &gt; max (évaluation)</li>
+</ul>
+
+<p>Pour quantifier le seuil de détection, on définit le <strong>noise ratio</strong> :</p>
+
+\[\text{Noise ratio} = \frac{\text{total\_drift}}{\text{erreur résiduelle}}\]
+
+<p>Le modèle détecte des anomalies dès que le noise ratio atteint <strong>1.6</strong>, ce qui indique une <strong>très bonne sensibilité</strong>. Cette performance pourrait être améliorée en augmentant la durée des signaux.</p>
+
+<p><img src="drift_impact_analysis.png" alt="assets/images/drift_impact_analysis.png" /></p>
+
+<p><em>Exemples de signaux avec dérive pour quatre valeurs de ( \alpha ), comparés à leur reconstruction.</em></p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Les autoencodeurs se montrent efficaces pour détecter des anomalies dans des signaux sinusoïdaux contaminés par du bruit gaussien et de la dérive. La méthode est particulièrement sensible aux <strong>déviations progressives</strong>, tant que leur amplitude dépasse le bruit résiduel.</p>
+
+<p><strong>Perspectives :</strong></p>
+<ul>
+  <li>Travailler sur des signaux plus longs pour détecter des dérives plus faibles.</li>
+  <li>Explorer des alternatives aux sinusoïdes : signaux triangulaires, fonctions de Heaviside, etc.</li>
+  <li>Vérifier l’hypothèse selon laquelle les difficultés d’entraînement proviennent de la <strong>moyenne nulle</strong> des sinusoïdes — en ajoutant par exemple un offset.</li>
+</ul>
+
+<p>Ce travail constitue un prototype sur données simulées. Il serait pertinent de valider cette approche sur des <strong>données réelles</strong> pour en mesurer le potentiel industriel.</p>
+
+<hr />
+<p>```</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Entrez votre recherche..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Contact</strong></li>
+    
+
+    
+      
+        
+          <li><a href="mailto:caroleperigois@outlook.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://github.com/Cperigois?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://gitlab.com/Cperigois?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> GitLab</a></li>
+        
+      
+    
+
+    
+      <li><a href="/Cperigois.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Flux</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Data science</a>. Propulsé par <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/Cperigois.github.io/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/Cperigois.github.io/assets/js/lunr/lunr.min.js"></script>
+<script src="/Cperigois.github.io/assets/js/lunr/lunr-store.js"></script>
+<script src="/Cperigois.github.io/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

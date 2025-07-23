@@ -1,0 +1,15 @@
+/* Import original */
+@import "minimal-mistakes";
+
+/* Import i18n */
+@import "custom/i18n";
+
+[lang="fr"] {
+  @import "custom/variables_fr";
+  /* Styles spécifiques FR */
+}
+
+[lang="en"] {
+  @import "custom/variables_en";
+  /* Styles spécifiques EN */
+}

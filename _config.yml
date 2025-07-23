@@ -15,18 +15,21 @@ remote_theme: "mmistakes/minimal-mistakes@4.27.1"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+languages: ["fr", "en"]
+default_lang: "fr"
+exclude_from_localizations: ["assets", "images"]
+locale                   : "fr-FR"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Science des données pour l'astrophysique, le climat et le fun"
+title                    : "Data science"
 title_separator          : "-"
-#subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : ""
 name                     : "Carole Périgois"
 description              : "Portfolio de projets."
-url                      : "https://Cperigois.github.io"
-baseurl                  : "/"
-#repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp"
-logo                     : "/assets/images/photo.jpeg"
+url                      : "http://127.0.0.1:4000" #"https://Cperigois.github.io"
+baseurl                  : "/Cperigois.github.io"
+repository               : ""
+teaser                   : #"/assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp"
+logo                     : #"/assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp"#"/assets/images/photo.jpeg"
 masthead_title           :  " "
 breadcrumbs              : true
 words_per_minute         : 200
@@ -94,8 +97,8 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/users/Cperigois/projects"
-    - label: "GitLub"
-      icon: "fab fa-fw fa-github"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
       url: "https://gitlab.com/users/Cperigois/projects"
 
 # Site Footer
@@ -106,16 +109,17 @@ footer:
       url: "mailto:caroleperigois@outlook.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/users/Cperigois/projects"
-    - label: "GitLub"
-      icon: "fab fa-fw fa-github"
-      url: "https://gitlab.com/users/Cperigois/projects"
+      url: "https://github.com/Cperigois?tab=repositories"
+    - label: "GitLab"
+      icon: "fab fa-fw fa-gitlab"
+      url: "https://gitlab.com/Cperigois?tab=repositories"
 
 
 # Reading Files
 include:
   - .htaccess
   - _pages
+
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -175,10 +179,13 @@ kramdown:
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+  load_paths:
+    - _sass
+    - _sass/custom
 
 
 # Outputting
-permalink: /:categories/:title/
+permalink: /:active_lang/:title/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
@@ -215,6 +222,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-multiple-languages
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -223,6 +231,8 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-multiple-languages
+
 
 
 # Archives
@@ -276,3 +286,26 @@ defaults:
       comments: false
       share: true
       related: true
+  # _pages
+  - scope:
+      path: "_pages/fr"
+      type: pages
+    values:
+      lang: "fr"
+      permalink: /fr/:path/
+  - scope:
+      path: "_pages/en"
+      type: pages
+    values:
+      lang: "en"
+      permalink: /en/:path/
+  #_home
+  - scope:
+      path: "_pages/fr/accueil.md"
+    values:
+      permalink: /fr/
+
+i18n:
+  default_locale: "fr"
+  locales: ["fr", "en"]
+  fallback_locale: "fr"

@@ -129,7 +129,7 @@ To install:
     - package.json
     - README.md (this file)
     - docs/_data/theme.yml
-    - docs/_pages/home.md (in Front Matter "excerpt")
+    - docs/_pages/accueil.md (in Front Matter "excerpt")
 
   `package.json` holds the authoritative version number, and the others can be updated with `bundle exec rake version`.
 
