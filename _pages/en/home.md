@@ -1,5 +1,6 @@
 ---
 title: "Data science"
+lang: en
 layout: splash
 permalink: /
 header:

@@ -2,6 +2,7 @@
 title: "Science des données"
 layout: splash
 permalink: /fr/
+lang: fr
 header:
   overlay_color: "#1c1c30"
   overlay_image: /assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp
