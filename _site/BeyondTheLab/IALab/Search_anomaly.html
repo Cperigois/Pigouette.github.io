@@ -22,7 +22,7 @@
 <meta property="og:locale" content="fr_FR">
 <meta property="og:site_name" content="Data science">
 <meta property="og:title" content="Recherche d’anomalie dans une série temporelle">
-<meta property="og:url" content="http://localhost:4000/Cperigois.github.io/IAlab/">
+<meta property="og:url" content="http://localhost:4000/Cperigois.github.io/BeyondTheLab/IALab/Search_anomaly">
 
 
   <meta property="og:description" content="Portfolio de projets.">
@@ -42,7 +42,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/Cperigois.github.io/IAlab/">
+<link rel="canonical" href="http://localhost:4000/Cperigois.github.io/BeyondTheLab/IALab/Search_anomaly">
 
 
 
@@ -181,6 +181,26 @@
         <span class="sep">/</span>
       
       
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/Cperigois.github.io/beyondthelab" itemprop="item"><span itemprop="name">Beyondthelab</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/Cperigois.github.io/ialab" itemprop="item"><span itemprop="name">Ialab</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
         <li class="current">Recherche d'anomalie dans une série temporelle</li>
       
     
@@ -238,7 +258,7 @@
 
 <hr />
 
-<h2 id="modèle-ia">Modèle IA</h2>
+<h2 id="modèle-ai">Modèle AI</h2>
 
 <h3 id="la-base-des-autoencodeurs">La base des autoencodeurs</h3>
 
@@ -255,7 +275,7 @@
 
 \[\text{MSE} = \frac{1}{n} \sum_{i=1}^n (x_i - \hat{x}_i)^2\]
 
-<p>où ( x_i ) est la donnée originale et ( \hat{x}_i ) sa reconstruction.</p>
+<p>où \(x_i\) est la donnée originale et \(\hat{x}_i\) sa reconstruction.</p>
 
 <hr />
 
@@ -325,7 +345,7 @@
       <th style="text-align: right">Époques</th>
       <th style="text-align: left">Amplitude</th>
       <th style="text-align: left">Phase</th>
-      <th style="text-align: left">Fréquence</th>
+      <th style="text-align: left">Fréquence (Hz)</th>
       <th style="text-align: left">Bruit</th>
     </tr>
   </thead>
@@ -335,56 +355,56 @@
       <td style="text-align: right">10</td>
       <td style="text-align: left">4</td>
       <td style="text-align: left">0</td>
-      <td style="text-align: left">0.05 Hz</td>
+      <td style="text-align: left">0.05</td>
       <td style="text-align: left">Aucun</td>
     </tr>
     <tr>
       <td style="text-align: right">2</td>
       <td style="text-align: right">30</td>
-      <td style="text-align: left">Uniform(3.5, 4.5)</td>
+      <td style="text-align: left">\(\mathcal{U}(3.5, 4.5)\)</td>
       <td style="text-align: left">0</td>
-      <td style="text-align: left">0.05 Hz</td>
+      <td style="text-align: left">0.05</td>
       <td style="text-align: left">Aucun</td>
     </tr>
     <tr>
       <td style="text-align: right">3</td>
       <td style="text-align: right">30</td>
-      <td style="text-align: left">Uniform(3.5, 4.5)</td>
-      <td style="text-align: left">Uniform(0, 0.5)</td>
-      <td style="text-align: left">0.05 Hz</td>
+      <td style="text-align: left">\(\mathcal{U}(3.5, 4.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 0.5)\)</td>
+      <td style="text-align: left">0.05</td>
       <td style="text-align: left">Aucun</td>
     </tr>
     <tr>
       <td style="text-align: right">4</td>
       <td style="text-align: right">100</td>
-      <td style="text-align: left">Uniform(3.5, 4.5)</td>
-      <td style="text-align: left">Uniform(0, 0.5)</td>
-      <td style="text-align: left">Uniform(0.025, 0.075) Hz</td>
+      <td style="text-align: left">\(\mathcal{U}(3.5, 4.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 0.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0.025, 0.075)\)</td>
       <td style="text-align: left">Aucun</td>
     </tr>
     <tr>
       <td style="text-align: right">5</td>
       <td style="text-align: right">100</td>
-      <td style="text-align: left">Uniform(3.5, 4.5)</td>
-      <td style="text-align: left">Uniform(0, 0.5)</td>
-      <td style="text-align: left">Uniform(0.025, 0.075) Hz</td>
-      <td style="text-align: left">Bruit gaussien ( \mathcal{N}(0, 0.05) )</td>
+      <td style="text-align: left">\(\mathcal{U}(3.5, 4.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 0.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0.025, 0.075)\)</td>
+      <td style="text-align: left">\(\mathcal{N}(0, 0.05)\)</td>
     </tr>
     <tr>
       <td style="text-align: right">6</td>
       <td style="text-align: right">250</td>
-      <td style="text-align: left">Uniform(2, 6)</td>
-      <td style="text-align: left">Uniform(0, 2π)</td>
-      <td style="text-align: left">Uniform(0.025, 0.225) Hz</td>
-      <td style="text-align: left">Bruit gaussien ( \mathcal{N}(0, 0.05) )</td>
+      <td style="text-align: left">\(\mathcal{U}(2, 6)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 2π)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0.025, 0.225)\)</td>
+      <td style="text-align: left">\(\mathcal{N}(0, 0.05)\)</td>
     </tr>
     <tr>
       <td style="text-align: right">7</td>
       <td style="text-align: right">400</td>
-      <td style="text-align: left">Uniform(2, 6)</td>
-      <td style="text-align: left">Uniform(0, 2π)</td>
-      <td style="text-align: left">Uniform(0.025, 0.225) Hz</td>
-      <td style="text-align: left">Bruit gaussien ( \mathcal{N}(0, 0.25) )</td>
+      <td style="text-align: left">\(\mathcal{U}(2, 6)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 2π)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0.025, 0.225)\)</td>
+      <td style="text-align: left">\(\mathcal{N}(0, 0.25)\)</td>
     </tr>
   </tbody>
 </table>
@@ -411,7 +431,7 @@
   <li>Étape 7 : bruit résiduel ≈ <strong>0.0625</strong></li>
 </ul>
 
-<h3><img src="sinusoïd_recognition.png" alt="assets/images/sinusoïd_recognition.png" /></h3>
+<h3><img src="/Cperigois.github.io/assets/images/sinuso%C3%AFd_recognition.png" alt="../assets/images/sinusoïd_recognition.png" /></h3>
 
 <p><em>Évolution de la perte de validation durant l’entraînement (légende à adapter).</em></p>
 
@@ -442,7 +462,7 @@ La perte médiane observée est :</p>
 
 <p>où ( \alpha ) est le coefficient de dérive.</p>
 
-<p><img src="combined_drift_comparison.png" alt="assets/images/combined_drift_comparison.png" /></p>
+<p><img src="/Cperigois.github.io/assets/images/combined_drift_comparison.png" alt="../assets/images/combined_drift_comparison.png" /></p>
 
 <p><em>Exemples de signaux avec dérive pour quatre valeurs de ( \alpha ), comparés à leur reconstruction.</em></p>
 
@@ -464,7 +484,7 @@ La perte médiane observée est :</p>
 
 <p>Le modèle détecte des anomalies dès que le noise ratio atteint <strong>1.6</strong>, ce qui indique une <strong>très bonne sensibilité</strong>. Cette performance pourrait être améliorée en augmentant la durée des signaux.</p>
 
-<p><img src="drift_impact_analysis.png" alt="assets/images/drift_impact_analysis.png" /></p>
+<p><img src="/Cperigois.github.io/assets/images/drift_impact_analysis.png" alt="../../assets/images/drift_impact_analysis.png" /></p>
 
 <p><em>Exemples de signaux avec dérive pour quatre valeurs de ( \alpha ), comparés à leur reconstruction.</em></p>
 

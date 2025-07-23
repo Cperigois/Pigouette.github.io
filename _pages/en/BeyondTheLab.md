@@ -1,20 +1,21 @@
 ---
-title: "Data science"
+title: 
+  "Beyond the Lab"
 lang: en
 layout: splash
-permalink: /
+permalink: /BeyondTheLab/
 header:
   overlay_color: "#1c1c30"
   overlay_image: /assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp
 excerpt: >
-  For astrophysics, climate, and sharings.<br />
+  Personnal project motivated led by curiosity.<br />
   <small><a href="https://github.com/CPerigois/repositories">Last update Jul. 1</a></small>
 feature_row:
-  - image_path: /assets/images/Princess_logo.png
+  - image_path: /assets/images/sinusoïd_recognition.png
     alt: "customizable"
-    title: "Princess"
-    excerpt: "Open source tool to predict gravitational waves from astrophysical models."
-    url: "/_pages/princess"
+    title: "Search for anomalies in Time Series"
+    excerpt: "Developpement of an autoencoder to detect anomalies such as drift in sinusoïdal signals."
+    url: "/BeyondTheLab/AILab/Search_anomaly"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/Oil_palm_plantation_in_Cigudeg-03.jpg #

@@ -1,6 +1,9 @@
 ---
 permalink: /fr/gravitational-waves/
-title : "Les ondes gravitationnelles"
+title:
+  en: "Black holes & gravitational waves"
+  fr: "Trous noirs & ondes gravitationnelles"
+lang: fr
 layout: single
 ---
 Pour introduire mes travaux de recherche je propose de les integrer dans trois présentations vulgarisées plus larges qui
@@ -23,7 +26,7 @@ et ["The Field Equations of Gravitation"](https://einsteinpapers.press.princeton
 formalisant les ondes gravitationnelles [“Über Gravitationswellen”](https://articles.adsabs.harvard.edu/cgi-bin/get_file?pdfs/SPAW./1918/1918SPAW.......154E.pdf) 
 quant a elle arrive 3 ans plus tard. 
 
-|                                                               ![Abstract1918.png](file:../../assests/images/Abstract1918.jpg)                                                                | 
+|                                                       ![../assets/images/Abstract1918.png](file:../../assests/images/Abstract1918.jpg)                                                       | 
 |:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:| 
 | *Abstract de l’[article original](https://articles.adsabs.harvard.edu/cgi-bin/get_file?pdfs/SPAW./1918/1918SPAW.......154E.pdf) sur les ondes gravitationnelles en 1918 par Albert Einstein* |
 

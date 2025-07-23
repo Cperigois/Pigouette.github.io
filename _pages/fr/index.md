@@ -1,7 +1,9 @@
 ---
-title: "Science des données"
+title: 
+  en: "Data science"
+  fr: "Data science"
 layout: splash
-permalink: /fr/
+permalink: /
 lang: fr
 header:
   overlay_color: "#1c1c30"

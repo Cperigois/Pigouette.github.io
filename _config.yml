@@ -12,13 +12,14 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme: "mmistakes/minimal-mistakes@4.27.1"
-minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-languages: ["fr", "en"]
-default_lang: "fr"
+lang: en
+languages: ["en"]
+default_lang: "en"
 exclude_from_localizations: ["assets", "images"]
-locale                   : "fr-FR"
+locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
 title                    : "Data science"
 title_separator          : "-"
@@ -292,18 +293,19 @@ defaults:
       type: pages
     values:
       lang: "fr"
-      permalink: /fr/:path/
+      permalink: /:path/
   - scope:
       path: "_pages/en"
       type: pages
     values:
       lang: "en"
-      permalink: /en/:path/
+      permalink: /:path/
   #_home
   - scope:
-      path: "_pages/fr/accueil.md"
+      path: "_pages/fr/index.md"
     values:
-      permalink: /fr/
+      lang: "fr"
+      permalink: /
 
 i18n:
   default_locale: "fr"
