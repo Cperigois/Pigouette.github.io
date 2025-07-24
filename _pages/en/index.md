@@ -25,13 +25,13 @@ feature_row:
     url: "/_pages/Palm_oil_project"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.webp
-    alt: "100% free"
-    title: "Lectures for python beginners"
-    excerpt: "From python basics to a well built architecture"
-    url: "/docs/python_courses/"
+  - image_path: /assets/images/sinusoïd_recognition.png
+    alt: "customizable"
+    title: "Search for anomalies in Time Series"
+    excerpt: "Developpement of an autoencoder to detect anomalies such as drift in sinusoïdal signals."
+    url: "/BeyondTheLab/AILab/Search_anomaly"
     btn_class: "btn--primary"
-    btn_label: "Learn more"      
+    btn_label: "Learn more"  
 ---
 ## Current projects
 {% include feature_row %}

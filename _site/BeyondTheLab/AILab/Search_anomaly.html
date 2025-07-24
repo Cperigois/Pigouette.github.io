@@ -1,0 +1,263 @@
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left"> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">This study stems from a personal curiosity about the implementation of <strong>autoencoders</strong> for anomaly detection in signal processing. This type of approach is already widely documented on <em>Papers With Code</em>; here are a few relevant references. For me, it’s also an opportunity to get hands-on experience in a new area of deep learning: <strong>autoencoders applied to time series</strong>, a topic I already understand well from a signal analysis perspective.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The goal of this study is to test the limits of autoencoder-based anomaly detection in time-series signals. Given the breadth of the topic, I limited the study to <strong>sinusoidal signals affected by Gaussian noise and drift noise</strong>, the latter being typical of wear in electronic components.</p>
+
+<p>This post consists of three sections:</p>
+<ol>
+  <li>A summary of how autoencoders work, with the parameters used in this study.</li>
+  <li>The “step-by-step” training strategy to address the periodic nature of the signals.</li>
+  <li>A model evaluation on noisy signals with a controlled drift ratio.</li>
+</ol>
+
+<hr />
+
+<h2 id="ai-model">AI Model</h2>
+
+<h3 id="basics-of-autoencoders">Basics of Autoencoders</h3>
+
+<p>An autoencoder is a type of neural network designed to <strong>reconstruct its input</strong> after compressing it into a lower-dimensional latent space. It has two parts:</p>
+
+<ul>
+  <li><strong>The encoder</strong>: reduces the input dimensionality to extract its essential features.</li>
+  <li><strong>The decoder</strong>: reconstructs the input from the compressed representation.</li>
+</ul>
+
+<p>In unsupervised learning, an autoencoder can learn dominant patterns in the data. Any <strong>significant reconstruction error</strong> then indicates an <strong>anomaly</strong> (i.e., data that deviates from the learned patterns).</p>
+
+<p>The standard loss function is the Mean Squared Error:</p>
+
+\[\text{MSE} = \frac{1}{n} \sum_{i=1}^n (x_i - \hat{x}_i)^2\]
+
+<p>where \(x_i\) is the original data and \(\hat{x}_i\) is its reconstruction.</p>
+
+<hr />
+
+<h3 id="my-model">My Model</h3>
+
+<p>The model used in this study is a 1D convolutional autoencoder designed for fixed-length time signals (500 samples). It consists of two main blocks: an encoder and a decoder, built from convolutional layers suited to time-structured data.</p>
+
+<h4 id="encoder">Encoder</h4>
+
+<p>The encoder transforms the input signal into a low-dimensional latent representation. It includes:</p>
+
+<p>Three successive 1D convolutional layers with:</p>
+
+<ul>
+  <li>Increasing numbers of channels (16, 32, then 64),</li>
+  <li>A kernel size of 5,</li>
+  <li>A stride of 2 to progressively reduce temporal resolution,</li>
+  <li>A ReLU activation after each convolution.</li>
+</ul>
+
+<p>The output is then flattened into a linear vector and passed through a fully connected layer to produce a latent embedding of predefined size (<code class="language-plaintext highlighter-rouge">encoded_size</code>).</p>
+
+<h4 id="decoder">Decoder</h4>
+
+<p>The decoder reconstructs the original signal from the latent representation. It mirrors the encoder:</p>
+
+<ul>
+  <li>A first fully connected layer reshapes the latent vector into a tensor suitable for the transposed convolutional layers.</li>
+  <li>Three transposed convolution layers:
+    <ul>
+      <li>They progressively increase the temporal resolution,</li>
+      <li>Reduce the number of channels from 64 → 32 → 16 → 1 (the original shape),</li>
+      <li>Each step is followed by a ReLU activation, except the last.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>This architecture allows the model to learn to extract key features from the input signal and reconstruct them as faithfully as possible. Latent compression forces the autoencoder to filter noise and retain only essential information.</p>
+
+<p>This model encodes 500-sample input signals into a latent space sized at 30% of the input, and reconstructs them via transposed convolutions. The architecture is intentionally compact to facilitate progressive learning of simple patterns.</p>
+
+<hr />
+
+<h2 id="model-training">Model Training</h2>
+
+<h3 id="training-data">Training Data</h3>
+
+<p>Training is conducted on batches of 12,000 signals, each 500 samples long, fed in mini-batches of 32 to the GPU. Each signal is a noisy sinusoid, randomly generated according to the parameters defined for each training phase.</p>
+
+<hr />
+
+<h3 id="step-by-step-training-strategy">Step-by-Step Training Strategy</h3>
+
+<p>Training progresses through <strong>increasingly complex signal generations</strong>. The summary table is as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right">Step</th>
+      <th style="text-align: right">Epochs</th>
+      <th style="text-align: left">Amplitude</th>
+      <th style="text-align: left">Phase</th>
+      <th style="text-align: left">Frequency (Hz)</th>
+      <th style="text-align: left">Noise</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">1</td>
+      <td style="text-align: right">10</td>
+      <td style="text-align: left">4</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0.05</td>
+      <td style="text-align: left">None</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">2</td>
+      <td style="text-align: right">30</td>
+      <td style="text-align: left">\(\mathcal{U}(3.5, 4.5)\)</td>
+      <td style="text-align: left">0</td>
+      <td style="text-align: left">0.05</td>
+      <td style="text-align: left">None</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">3</td>
+      <td style="text-align: right">30</td>
+      <td style="text-align: left">\(\mathcal{U}(3.5, 4.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 0.5)\)</td>
+      <td style="text-align: left">0.05</td>
+      <td style="text-align: left">None</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">4</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: left">\(\mathcal{U}(3.5, 4.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 0.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0.025, 0.075)\)</td>
+      <td style="text-align: left">None</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">5</td>
+      <td style="text-align: right">100</td>
+      <td style="text-align: left">\(\mathcal{U}(3.5, 4.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 0.5)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0.025, 0.075)\)</td>
+      <td style="text-align: left">\(\mathcal{N}(0, 0.05)\)</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">6</td>
+      <td style="text-align: right">250</td>
+      <td style="text-align: left">\(\mathcal{U}(2, 6)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 2π)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0.025, 0.225)\)</td>
+      <td style="text-align: left">\(\mathcal{N}(0, 0.05)\)</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">7</td>
+      <td style="text-align: right">400</td>
+      <td style="text-align: left">\(\mathcal{U}(2, 6)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0, 2π)\)</td>
+      <td style="text-align: left">\(\mathcal{U}(0.025, 0.225)\)</td>
+      <td style="text-align: left">\(\mathcal{N}(0, 0.25)\)</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>A <code class="language-plaintext highlighter-rouge">ReduceLROnPlateau</code> scheduler dynamically adjusts the <strong>learning rate</strong> from an initial value of ( 10^{-4} ), if validation loss plateaus.</p>
+
+<hr />
+
+<h3 id="residual-noise">Residual Noise</h3>
+
+<p>Due to the random nature of the added noise, perfect signal reconstruction is impossible. The final loss therefore stabilizes to a <strong>non-zero residual noise</strong>.</p>
+
+<p>Assuming:</p>
+
+\[\text{signal}_{\text{target}} = \text{informative\_signal} + \text{random\_noise}\]
+
+<p>and perfect reconstruction of the informative part, the MSE becomes:</p>
+
+\[\text{MSE} = \frac{1}{n} \sum_{i=1}^n [(\text{output} - \text{target})^2] = \frac{1}{n} \sum_{i=1}^n [\text{random\_noise}^2]\]
+
+<p>In this study:</p>
+<ul>
+  <li>Steps 4–6: residual noise ≈ <strong>0.0025</strong></li>
+  <li>Step 7: residual noise ≈ <strong>0.0625</strong></li>
+</ul>
+
+<h3><img src="/Cperigois.github.io/assets/images/sinuso%C3%AFd_recognition.png" alt="../assets/images/sinusoïd_recognition.png" /></h3>
+
+<p><em>Validation loss evolution during training (legend to be adapted).</em></p>
+
+<hr />
+
+<h2 id="evaluation-and-testing-on-noisy-signals">Evaluation and Testing on Noisy Signals</h2>
+
+<h3 id="model-evaluation">Model Evaluation</h3>
+
+<p>The model is evaluated on 10,000 new signals generated with the parameters of Step 7.<br />
+Observed median loss:</p>
+
+\[\text{MSE}_{\text{test}} = 0.078^{+0.053}_{-0.012}\]
+
+<p>This is compatible with residual noise, indicating good <strong>generalization capacity</strong>.</p>
+
+<hr />
+
+<h3 id="drift-noise">Drift Noise</h3>
+
+<p>A <strong>drift</strong> component was added to the signals:</p>
+
+<blockquote>
+  <p>Drift is a <strong>slow and continuous signal shift</strong> over time. It can be modeled with an affine function:</p>
+</blockquote>
+
+\[\text{drift}(t) = \alpha \cdot t\]
+
+<p>where ( \alpha ) is the drift coefficient.</p>
+
+<p><img src="/Cperigois.github.io/assets/images/combined_drift_comparison.png" alt="../assets/images/combined_drift_comparison.png" /></p>
+
+<p><em>Examples of drifted signals for various values of ( \alpha ), compared to their reconstruction.</em></p>
+
+<hr />
+
+<h3 id="anomaly-detection">Anomaly Detection</h3>
+
+<p>The model fails to reconstruct signals containing <strong>unseen drift</strong>, as expected. For each drift ratio, the loss is compared to evaluation percentiles:</p>
+
+<ul>
+  <li><strong>OK</strong>: MSE &lt; 95ᵗʰ percentile</li>
+  <li><strong>WARNING</strong>: 95ᵗʰ percentile &lt; MSE &lt; max</li>
+  <li><strong>ANOMALY</strong>: MSE &gt; max (evaluation)</li>
+</ul>
+
+<p>To quantify detection threshold, we define the <strong>noise ratio</strong>:</p>
+
+\[\text{Noise ratio} = \frac{\text{total\_drift}}{\text{residual\_error}}\]
+
+<p>The model detects anomalies as soon as the noise ratio reaches <strong>1.6</strong>, which shows <strong>high sensitivity</strong>. This could be improved by increasing signal length.</p>
+
+<p><img src="/Cperigois.github.io/assets/images/drift_impact_analysis.png" alt="../../assets/images/drift_impact_analysis.png" /></p>
+
+<p><em>Examples of drifted signals for various values of ( \alpha ), compared to their reconstruction.</em></p>
+
+<hr />
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>Autoencoders prove effective for detecting anomalies in sinusoidal signals contaminated by Gaussian noise and drift. The method is particularly sensitive to <strong>gradual deviations</strong>, as long as their amplitude exceeds the residual noise.</p>
+
+<p><strong>Next steps:</strong></p>
+<ul>
+  <li>Use longer signals to detect subtler drift.</li>
+  <li>Explore other waveform types: triangular signals, Heaviside functions, etc.</li>
+  <li>Test the hypothesis that training difficulties stem from the <strong>zero-mean</strong> nature of sinusoids — e.g., by adding an offset.</li>
+</ul>
+
+<p>This project is a proof-of-concept on simulated data. It would be relevant to test this approach on <strong>real-world data</strong> to assess its industrial potential.</p>
+
+<hr />

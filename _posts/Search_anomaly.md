@@ -1,7 +1,7 @@
 ---
 permalink: /BeyondTheLab/AILab/Search_anomaly
 title: "Search for anomalies in sinusoidal signals"
-layout: post
+layout: posts
 ---
 
 | |
