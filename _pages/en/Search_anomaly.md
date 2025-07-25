@@ -115,10 +115,10 @@ In this study:
 - Steps 4–6: residual noise ≈ **0.0025**
 - Step 7: residual noise ≈ **0.0625**
 
-<p align="center"><img src="../../assets/images/sinusoïd_recognition.png" alt="sinusoïd_recognition.png" width="600"/>
+<p align="center"><img src="../../assets/images/sinusoïd_recognition.png" alt="sinusoïd_recognition.png" width="600"/></p>
 
 *Blue : Validation loss evolution across the different training steps described on the previous table.
-Red : Learning rate evolution across the training. The grey zone represents the theoretical limits the model cannot overtake.*</p>
+Red : Learning rate evolution across the training. The grey zone represents the theoretical limits the model cannot overtake.*
 
 ---
 
@@ -146,10 +146,8 @@ $$\text{drift}(t) = \alpha \cdot t$$
 where $$\alpha$$ is the drift coefficient.
 
 
-<p align="center"><img src="../../assets/images/combined_drift_comparison.png" alt="combined_drift_comparison.png" width="600"/>
-
-
-*Examples of drifted signals and their reconstruction for various values of $$ \alpha $$.*</p>
+<p align="center"><img src="../../assets/images/combined_drift_comparison.png" alt="combined_drift_comparison.png" width="600"/></p>
+*Examples of drifted signals and their reconstruction for various values of $$ \alpha $$.*
 
 ---
 

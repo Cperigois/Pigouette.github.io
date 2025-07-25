@@ -4,8 +4,9 @@ title:
   Black holes & gravitational waves
 lang: en
 layout: single
+classes: wide
+author_profile: true
 ---
-<p style="text-align:justify;">Texte justifié :  ...</p>
 To introduce my research work, I propose to integrate it into three broader popular presentations that will allow for an 
 evaluation of the general context of the projects I have had the pleasure of conducting throughout my career. You will find three research pages:
 
@@ -39,23 +40,15 @@ is freely accessible at this link:  : [Last publication from 2016](https://ui.ad
 |:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:| 
 |                  *Graph showing the decay of the binary pulsar's period. The red points represent data points, with their uncertainties (almost invisible due to being small). The curve represents the prediction of gravitational theory*                  |
 
-C’est l’année du centième anniversaire de la théorie de la relativité générale, en 2015, que la première mesure directe 
-d’onde gravitationnelles à eu lieu. Les détecteurs américains LIGO détecter alors la fusion de deux trous noirs de 
-respectivement 29 et 36 masses solaires ([Lien vers l'article](https://ui.adsabs.harvard.edu/abs/2016PhRvD..93l2003A/abstract))
+The first direct detection of gravitational waves occurred in 2015—the 100th anniversary of general relativity. Using the LIGO detectors, scientists observed the collision of two black holes, one with 29 times the mass of the Sun and the other with 36 times the Sun’s mass.([Lien vers l'article](https://ui.adsabs.harvard.edu/abs/2016PhRvD..93l2003A/abstract))
 
-A partir de 2017,lors de la seconde phase de prise de données (O2), le détecteur européen rejoint le reseau américain, et permet la 
-traiangulation du signal pour reconstruire la provenance des sources d'ondes gravitaionnelles. Le 17 aout 2017, le nouveau 
-réseau observe une fusion de deux étoiles à neutrons conjointement avec les ondes electromagnétiques 
-([Lien vers la publication](https://ui.adsabs.harvard.edu/abs/2017PhRvL.119p1101A/abstract), 
-[Lien vers l'article de la détection multimessagère](https://ui.adsabs.harvard.edu/abs/2017ApJ...848L..12A/abstract). C'est la naissance 
-le l'astronomie multimessagère c'est à dire la construction d'une communauté pluridisciplinaire, qui permet d'observer les 
-phénomènes astrophysiques avec différents messagers : les ondes electromagnétiques, les rayons cosmiques, les neutrinos et 
-les ondes gravitationnelles.
-C'est également en 2017 que les travaux de la premières détections, GW150914, sont récompensés d'un prix nobel.
+Starting in 2017, during the second data-taking phase (O2), the European detector joined the American network, enabling signal triangulation to locate the sources of gravitational waves. On August 17, 2017, the new network observed a merger of two neutron stars 
+simultaneously with electromagnetic waves.([Lien vers la publication](https://ui.adsabs.harvard.edu/abs/2017PhRvL.119p1101A/abstract), 
+[Lien vers l'article de la détection multimessagère](https://ui.adsabs.harvard.edu/abs/2017ApJ...848L..12A/abstract). This marked the birth of multimessenger astronomy—the creation of an interdisciplinary community enabling the observation of astrophysical phenomena through different cosmic messengers: electromagnetic waves, cosmic rays, neutrinos, and gravitational waves.
 
-Au jour de l'écriture de cette page (2025) le reseaux de détecteurs d'ondes gravitationnel compte 4 instruments, deux 
-sur le sol americain, un en italie, et un au Japon. La communauté dénombre desormais plus d'une centaine d'observation de 
-fusions de trous noirs, offrant à la communauté astrophysiques des données précieuses sur l'histoire et l'évolution de l'univers.
+Also in 2017, the groundbreaking work behind the first detection, GW150914, was honored with a Nobel Prize.
+
+As of this writing (2025), the gravitational-wave detector network comprises four instruments: two in the U.S., one in Italy, and one in Japan. The scientific community has now recorded over a hundred black hole mergers, providing astrophysicists with invaluable data on the history and evolution of the universe.
 
 ## Detecter les ondes gravitationnelles
 
