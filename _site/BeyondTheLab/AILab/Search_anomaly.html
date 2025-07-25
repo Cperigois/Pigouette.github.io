@@ -1,4 +1,350 @@
-<table>
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.1 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Search for anomalies in sinusoidal signals - Data science</title>
+<meta name="description" content="Portfolio de projets.">
+
+
+  <meta name="author" content="Carole Périgois">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Data science">
+<meta property="og:title" content="Search for anomalies in sinusoidal signals">
+<meta property="og:url" content="http://localhost:4000/Cperigois.github.io/BeyondTheLab/AILab/Search_anomaly">
+
+
+  <meta property="og:description" content="Portfolio de projets.">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/Cperigois.github.io/BeyondTheLab/AILab/Search_anomaly">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/Cperigois.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Data science Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/Cperigois.github.io/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/Cperigois.github.io/">
+           
+          <span class="site-subtitle"></span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/Cperigois.github.io/gravitational-waves/"
+                
+                
+              >Black holes and gravitational waves</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/Cperigois.github.io/BeyondTheLab/"
+                
+                
+              >Beyond the Lab</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/Cperigois.github.io/about/"
+                
+                
+              >About me</a>
+            </li></ul>
+        <div class="lang-switcher" style="margin-left: auto; padding: 0 1rem;">
+          
+            <a href="/"
+               class=""
+               aria-label="EN">
+              EN
+            </a>
+            
+          
+        </div>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/Cperigois.github.io/" itemprop="item"><span itemprop="name">Home</span></a>
+
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/Cperigois.github.io/beyondthelab" itemprop="item"><span itemprop="name">Beyondthelab</span></a>
+          <meta itemprop="position" content="2" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="/Cperigois.github.io/ailab" itemprop="item"><span itemprop="name">Ailab</span></a>
+          <meta itemprop="position" content="3" />
+        </li>
+        <span class="sep">/</span>
+      
+    
+      
+      
+        <li class="current">Search for anomalies in sinusoidal signals</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
+
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/Cperigois.github.io/">
+        <img src="/Cperigois.github.io/assets/images/avatar.jpeg" alt="Carole Périgois" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/Cperigois.github.io/" itemprop="url">Carole Périgois</a>
+    </h3>
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Scientifique.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">Toulouse.</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="mailto:caroleperigois@outlook.com" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://ui.adsabs.harvard.edu/public-libraries/bM-NAS_tQlOasK7BUXXBug" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fa-solid fa-newspaper" aria-hidden="true"></i><span class="label">Publications</span></a></li>
+          
+        
+          
+            <li><a href="https://github.com/users/Cperigois/projects" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://gitlab.com/users/Cperigois/projects" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <table>
   <thead>
     <tr>
       <th style="text-align: left"> </th>
@@ -188,9 +534,10 @@
   <li>Step 7: residual noise ≈ <strong>0.0625</strong></li>
 </ul>
 
-<h3><img src="/Cperigois.github.io/assets/images/sinuso%C3%AFd_recognition.png" alt="../assets/images/sinusoïd_recognition.png" /></h3>
+<p align="center"><img src="../../assets/images/sinusoïd_recognition.png" alt="sinusoïd_recognition.png" width="600" />
 
-<p><em>Validation loss evolution during training (legend to be adapted).</em></p>
+*Blue : Validation loss evolution across the different training steps described on the previous table.
+Red : Learning rate evolution across the training. The grey zone represents the theoretical limits the model cannot overtake.*</p>
 
 <hr />
 
@@ -217,11 +564,12 @@ Observed median loss:</p>
 
 \[\text{drift}(t) = \alpha \cdot t\]
 
-<p>where ( \alpha ) is the drift coefficient.</p>
+<p>where \(\alpha\) is the drift coefficient.</p>
 
-<p><img src="/Cperigois.github.io/assets/images/combined_drift_comparison.png" alt="../assets/images/combined_drift_comparison.png" /></p>
+<p align="center"><img src="../../assets/images/combined_drift_comparison.png" alt="combined_drift_comparison.png" width="600" />
 
-<p><em>Examples of drifted signals for various values of ( \alpha ), compared to their reconstruction.</em></p>
+
+*Examples of drifted signals and their reconstruction for various values of $$ \alpha $$.*</p>
 
 <hr />
 
@@ -241,9 +589,9 @@ Observed median loss:</p>
 
 <p>The model detects anomalies as soon as the noise ratio reaches <strong>1.6</strong>, which shows <strong>high sensitivity</strong>. This could be improved by increasing signal length.</p>
 
-<p><img src="/Cperigois.github.io/assets/images/drift_impact_analysis.png" alt="../../assets/images/drift_impact_analysis.png" /></p>
+<p align="center"><img src="../../assets/images/drift_impact_analysis.png" alt="drift_impact_analysis.png" width="600" /></p>
 
-<p><em>Examples of drifted signals for various values of ( \alpha ), compared to their reconstruction.</em></p>
+<p><em>Performance for drift signal reconstitution for various values of \(\alpha\).</em></p>
 
 <hr />
 
@@ -261,3 +609,100 @@ Observed median loss:</p>
 <p>This project is a proof-of-concept on simulated data. It would be relevant to test this approach on <strong>real-world data</strong> to assess its industrial potential.</p>
 
 <hr />
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="mailto:caroleperigois@outlook.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://github.com/Cperigois?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://gitlab.com/Cperigois?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> GitLab</a></li>
+        
+      
+    
+
+    
+      <li><a href="/Cperigois.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">Data science</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/Cperigois.github.io/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/Cperigois.github.io/assets/js/lunr/lunr.min.js"></script>
+<script src="/Cperigois.github.io/assets/js/lunr/lunr-store.js"></script>
+<script src="/Cperigois.github.io/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>

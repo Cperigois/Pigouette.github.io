@@ -1,7 +1,9 @@
 ---
 permalink: /BeyondTheLab/AILab/Search_anomaly
 title: "Search for anomalies in sinusoidal signals"
-layout: post
+layout: single
+classes: wide
+author_profile: true
 ---
 
 | |
@@ -113,9 +115,10 @@ In this study:
 - Steps 4–6: residual noise ≈ **0.0025**
 - Step 7: residual noise ≈ **0.0625**
 
-### ![../assets/images/sinusoïd_recognition.png](../../assets/images/sinusoïd_recognition.png)
+<p align="center"><img src="../../assets/images/sinusoïd_recognition.png" alt="sinusoïd_recognition.png" width="600"/>
 
-*Validation loss evolution during training (legend to be adapted).*
+*Blue : Validation loss evolution across the different training steps described on the previous table.
+Red : Learning rate evolution across the training. The grey zone represents the theoretical limits the model cannot overtake.*</p>
 
 ---
 
@@ -140,11 +143,13 @@ A **drift** component was added to the signals:
 
 $$\text{drift}(t) = \alpha \cdot t$$
 
-where \( \alpha \) is the drift coefficient.
+where $$\alpha$$ is the drift coefficient.
 
-![../assets/images/combined_drift_comparison.png](../../assets/images/combined_drift_comparison.png)
 
-*Examples of drifted signals for various values of \( \alpha \), compared to their reconstruction.*
+<p align="center"><img src="../../assets/images/combined_drift_comparison.png" alt="combined_drift_comparison.png" width="600"/>
+
+
+*Examples of drifted signals and their reconstruction for various values of $$ \alpha $$.*</p>
 
 ---
 
@@ -162,9 +167,9 @@ $$\text{Noise ratio} = \frac{\text{total\_drift}}{\text{residual\_error}}$$
 
 The model detects anomalies as soon as the noise ratio reaches **1.6**, which shows **high sensitivity**. This could be improved by increasing signal length.
 
-![../../assets/images/drift_impact_analysis.png](../../assets/images/drift_impact_analysis.png)
+<p align="center"><img src="../../assets/images/drift_impact_analysis.png" alt="drift_impact_analysis.png" width="600"/></p>
 
-*Examples of drifted signals for various values of \( \alpha \), compared to their reconstruction.*
+*Performance for drift signal reconstitution for various values of $$\alpha$$.*
 
 ---
 
