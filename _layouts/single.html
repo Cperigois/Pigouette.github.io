@@ -28,6 +28,37 @@ layout: default
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date_to_xmlschema }}">{% endif %}
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date_to_xmlschema }}">{% endif %}
 
+{% if page.tags contains "projets" %}
+    <div class="project-meta">
+  {% if page.method %}
+    <div class="meta-row">
+      <span class="meta-label">Method:</span>
+      {% for item in page.method %}
+        <span class="tag-badge tag-{{ item | slugify }}">{{ item }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.data %}
+    <div class="meta-row">
+      <span class="meta-label">Data:</span>
+      {% for item in page.data %}
+        <span class="tag-badge tag-{{ item | slugify }}">{{ item }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  {% if page.skills %}
+    <div class="meta-row">
+      <span class="meta-label">Skills:</span>
+      {% for item in page.skills %}
+        <span class="tag-badge tag-{{ item | slugify }}">{{ item }}</span>
+      {% endfor %}
+    </div>
+  {% endif %}
+</div>
+{% endif %}
+
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>

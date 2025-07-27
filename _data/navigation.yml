@@ -6,6 +6,9 @@ main:
       "Beyond the Lab"
     url: /BeyondTheLab/
   - title:
+      "All projects"
+    url: /all-projects/
+  - title:
       "About me"
     url: /about/
 

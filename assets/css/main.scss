@@ -7,3 +7,60 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4em;
+  margin-top: 0.5em;
+}
+
+.project-tags-inline {
+  font-size: 0.7rem;
+  line-height: 1.1;
+  margin-top: 0.2em;
+  margin-bottom: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3em;
+}
+
+.tag-badge {
+  padding: 0.2em 0.6em;
+  border-radius: 12px;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: white;
+}
+
+.tag-simulation        { background-color: #1f77b4; }
+.tag-autoencodeur        { background-color: #1f77b4; }
+.tag-cnn        { background-color: #1f77b4; }
+
+.tag-visualization     { background-color: #2ca02c; }
+.tag-modeling          { background-color: #9467bd; }
+
+.tag-python            { background-color: #ff7f0e; }
+.tag-pytorch            { background-color: #ff7f0e; }
+.tag-matlab            { background-color: #ff7f0e; }
+.tag-simulink            { background-color: #ff7f0e; }
+
+.tag-machine-learning  { background-color: #d62728; }
+.tag-deep-learning     { background-color: #d62728; }
+
+.tag-statistics         { background-color: #e377c2; }
+.tag-bayesian-analysis         { background-color: #e377c2; }
+.tag-regression         { background-color: #e377c2; }
+.tag-classification         { background-color: #e377c2; }
+
+
+.tag-time-series       { background-color: #17becf; }
+.tag-frequency-spectrum       { background-color: #17becf; }
+
+.tag-independent-study     { background-color: #d62728; }
+
+
+
+.tag-default {
+  background-color: #cccccc;
+}

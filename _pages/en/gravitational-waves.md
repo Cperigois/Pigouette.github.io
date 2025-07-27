@@ -1,54 +1,117 @@
 ---
 permalink: /gravitational-waves/
-title:
-  Black holes & gravitational waves
+title: Black Holes & Gravitational Waves
 lang: en
 layout: single
 classes: wide
 author_profile: true
 ---
-To introduce my research work, I propose to integrate it into three broader popular presentations that will allow for an 
-evaluation of the general context of the projects I have had the pleasure of conducting throughout my career. You will find three research pages:
 
-- Gravitational waves and their detection 
-- The origins of black holes
-- ??
+To introduce my research work, I present it through three broader, popular-science-oriented sections. These allow a general contextualization of the scientific projects I have had the pleasure of conducting throughout my career. You will find three main topics:
 
-On this first page, I introduce gravitational waves with the aim of presenting my research work and the projects I have 
-had the pleasure of participating in.
+- Gravitational waves and their detection  
+- The origin of black holes  
+- (Upcoming content)
+
+This first page is dedicated to gravitational waves, offering an overview of the field and introducing my related research projects.
+
+---
+
+## A Brief Historical Introduction
+
+Gravitational waves are ripples in spacetime that propagate at the speed of light. They are a direct consequence of Albert Einstein's theory of general relativity, formulated in 1915 in two foundational papers:  
+- [“On the General Theory of Relativity”](https://einsteinpapers.press.princeton.edu/vol6-trans/110)  
+- ["The Field Equations of Gravitation"](https://einsteinpapers.press.princeton.edu/vol6-trans/129)
+
+The first publication explicitly describing gravitational waves—[“Über Gravitationswellen” (1918)](https://articles.adsabs.harvard.edu/cgi-bin/get_file?pdfs/SPAW./1918/1918SPAW.......154E.pdf)—appeared three years later.
+
+<p align="center"><img src="../assets/images/Abstract1918.png" alt="Abstract1918.png" width="600"/></p>
+*Abstract of the [original 1918 article](https://articles.adsabs.harvard.edu/cgi-bin/get_file?pdfs/SPAW./1918/1918SPAW.......154E.pdf) by Albert Einstein*
+
+In 1974, Russell Hulse and Joseph Taylor discovered the binary pulsar PSR B1913+16—two orbiting stellar remnants, one of which is a pulsar emitting regular light pulses. In 1979, after four years of observation, they demonstrated that the orbital decay of the system matched the predictions of general relativity, thus confirming the existence of gravitational waves indirectly ([1979 publication](https://ui.adsabs.harvard.edu/abs/1979Natur.277..437T/abstract)). They were awarded the Nobel Prize in 1993.  
+A 2016 update to this work is available [here](https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract).
+
+<p align="center"><img src="../assets/images/PSR_B1913+16_period_shift_graph.svg.png" alt="PSR_B1913+16_period_shift_graph.svg.png" width="600"/></p>
+*Orbital decay of the binary pulsar system. Red points are measurements, closely matching the theoretical curve predicted by general relativity.*
+
+The **first direct detection** of gravitational waves occurred in **2015**—exactly 100 years after general relativity. Using the LIGO detectors, scientists observed the merger of two black holes (29 and 36 solar masses).  
+([Original paper](https://ui.adsabs.harvard.edu/abs/2016PhRvD..93l2003A/abstract))
+
+In **2017**, the **Virgo detector** in Europe joined the LIGO network, enabling **triangulation** of gravitational wave sources. On **August 17, 2017**, the network observed the merger of two **neutron stars**, simultaneously with **electromagnetic signals**, marking the beginning of **multi-messenger astronomy**.  
+- [Detection paper](https://ui.adsabs.harvard.edu/abs/2017PhRvL.119p1101A/abstract)  
+- [Multi-messenger analysis](https://ui.adsabs.harvard.edu/abs/2017ApJ...848L..12A/abstract)
+
+The foundational detection (GW150914) was recognized with the **2017 Nobel Prize in Physics**.
+
+As of 2025, the global network includes **four detectors**: two in the U.S. (LIGO), one in Italy (Virgo), and one in Japan (KAGRA). Together, they have recorded over **100 black hole mergers**, enriching our understanding of the universe's structure and evolution.
+
+---
+
+## Ground-Based Gravitational Wave Detectors
+
+At the time of writing, four operational ground-based interferometers exist:
+
+- **LIGO Livingston** and **LIGO Hanford** (USA) – each with 4 km-long arms  
+- **Virgo** (Italy) – 3 km-long arms  
+- **KAGRA** (Japan) – a 3 km-long **underground** interferometer  
+
+<p align="center"><img src="../assets/images/GW_Detector_Map_v5.jpg" alt="GW_Detector_Map_v5.jpg" width="600"/></p>
 
 
-## An historical introduction
+### How These Detectors Work
 
-Gravitational waves are disturbances in spacetime that propagate at the speed of light. They are a direct consequence of 
-Albert Einstein's general theory of relativity and his collaborators, submitted in 1915, in the form of two main papers:
-[“On the general theory of relativity”](https://einsteinpapers.press.princeton.edu/vol6-trans/110)  and ["The Field Equations of Gravitation"](https://einsteinpapers.press.princeton.edu/vol6-trans/129). The first publication 
-formalizing gravitational waves [“Über Gravitationswellen”](https://articles.adsabs.harvard.edu/cgi-bin/get_file?pdfs/SPAW./1918/1918SPAW.......154E.pdf) , came three years later.
+Gravitational waves slightly stretch and squeeze spacetime. On Earth, this is measured using **giant Michelson interferometers** with kilometer-scale arms. The principle involves detecting **phase shifts** in laser beams bouncing between mirrors at the ends of the arms. A passing wave causes a tiny differential change in path length, producing interference patterns that can be measured.
 
-|                                                        ![../assets/images/Abstract1918.png](../assets/images/Abstract1918.png)                                                        | 
-|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:| 
-| *Abstract of the [original article](https://articles.adsabs.harvard.edu/cgi-bin/get_file?pdfs/SPAW./1918/1918SPAW.......154E.pdf) on gravitational waves in 1918 by Albert Einstein * |
+<div style="text-align: center;">
+  <a href="https://www.youtube.com/watch?v=UA1qG7Fjc2A" target="_blank" rel="noopener">
+    <img src="https://img.youtube.com/vi/UA1qG7Fjc2A/hqdefault.jpg" alt="Watch the video on YouTube" style="max-width: 100%; height: auto; border: 1px solid #ccc;">
+  </a>
+  <p><em>Click the image to watch the explicative video on YouTube</em></p>
+</div>
 
-In 1974, Russell Hulse and Joseph Taylor discovered the binary pulsar PSR B1913+16, which is a system of two objects in orbit, 
-one of which is a pulsar that emits a pulse of light at regular intervals. In 1979, after four years of monitoring the 
-characteristics of the system, Hulse and Taylor demonstrated that the evolution of the system's orbit perfectly reproduces 
-the predictions of gravitational theory for a binary system ([Link to the publication](https://ui.adsabs.harvard.edu/abs/1979Natur.277..437T/abstract).
-This discovery earned them a Nobel Prize in 1993. The most recent publication to date (2016) that catalogs these measurements 
-is freely accessible at this link:  : [Last publication from 2016](https://ui.adsabs.harvard.edu/abs/2016ApJ...829...55W/abstract)
+### Operating Point of an Interferometer
 
-|                                                                    ![../assets/images/PSR_B1913+16_period_shift_graph.svg.png](../assets/images/PSR_B1913+16_period_shift_graph.svg.png)                                                                     | 
-|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:| 
-|                  *Graph showing the decay of the binary pulsar's period. The red points represent data points, with their uncertainties (almost invisible due to being small). The curve represents the prediction of gravitational theory*                  |
+Interferometers are tuned to operate on a **dark fringe**, meaning destructive interference cancels the signal at the output. This requires **real-time feedback control** of mirror positions to maintain stability.  
+In this section, I present my research on modeling and simulating these **feedback control loops** to keep the interferometer at its operating point.
 
-The first direct detection of gravitational waves occurred in 2015—the 100th anniversary of general relativity. Using the LIGO detectors, scientists observed the collision of two black holes, one with 29 times the mass of the Sun and the other with 36 times the Sun’s mass.([Lien vers l'article](https://ui.adsabs.harvard.edu/abs/2016PhRvD..93l2003A/abstract))
+---
 
-Starting in 2017, during the second data-taking phase (O2), the European detector joined the American network, enabling signal triangulation to locate the sources of gravitational waves. On August 17, 2017, the new network observed a merger of two neutron stars 
-simultaneously with electromagnetic waves.([Lien vers la publication](https://ui.adsabs.harvard.edu/abs/2017PhRvL.119p1101A/abstract), 
-[Lien vers l'article de la détection multimessagère](https://ui.adsabs.harvard.edu/abs/2017ApJ...848L..12A/abstract). This marked the birth of multimessenger astronomy—the creation of an interdisciplinary community enabling the observation of astrophysical phenomena through different cosmic messengers: electromagnetic waves, cosmic rays, neutrinos, and gravitational waves.
+## The Future of Ground-Based Detectors
 
-Also in 2017, the groundbreaking work behind the first detection, GW150914, was honored with a Nobel Prize.
+Two major next-generation projects are currently underway:
 
-As of this writing (2025), the gravitational-wave detector network comprises four instruments: two in the U.S., one in Italy, and one in Japan. The scientific community has now recorded over a hundred black hole mergers, providing astrophysicists with invaluable data on the history and evolution of the universe.
+### 🇺🇸 Cosmic Explorer (USA)
 
-## Detecter les ondes gravitationnelles
+The **Cosmic Explorer** collaboration proposes building two new interferometers with **arm lengths of 20 to 40 km**, dramatically improving sensitivity. This would allow detection of nearly **all compact binary mergers in the observable universe**.  
+🔗 [Cosmic Explorer website](https://cosmicexplorer.org/index.html)  
+🖼️ *Insert CE image here*
+
+### 🇪🇺 Einstein Telescope (Europe)
+
+Europe is preparing the **Einstein Telescope (ET)**, possibly built at one or two sites. Multiple design and location options are still under study.  
+My work explores the **scientific impact of design choices** on compact binary detection rates and broader scientific potential.  
+- [ET official site](https://www.einsteintelescope-emr.eu/fr/)  
+- [Design impact study (2023)](https://ui.adsabs.harvard.edu/abs/2023JCAP...07..068B/abstract)  
+- [ET Blue Book (2025)](https://ui.adsabs.harvard.edu/abs/2025arXiv250312263A/abstract)
+
+---
+
+## Pulsar Timing Arrays
+
+Another method of detecting gravitational waves is by monitoring **millisecond pulsars**. These highly regular signals can exhibit **arrival time delays** if spacetime is distorted by a passing gravitational wave. By comparing dozens of pulsars, it's possible to reveal such distortions.
+
+In **June 2023**, the **NANOGrav collaboration** announced evidence of a **gravitational wave background**, possibly generated by **supermassive black hole binaries** or a **population** of such systems.  
+🔗 [NANOGrav discovery paper](https://ui.adsabs.harvard.edu/abs/2023ApJ...951L...9A/abstract)
+
+---
+
+## Space-Based Interferometers
+
+**LISA** (Laser Interferometer Space Antenna) is an ambitious project led by **ESA** in collaboration with **NASA**.  
+It will consist of **three spacecraft** placed in a triangle formation orbiting around the **Lagrange Point L2**, with arms stretching **2.5 million kilometers**. This enables exploration of **low-frequency gravitational waves**, inaccessible from the ground.
+
+---
+
+Would you like this content broken into multiple subpages or left as one long article? I can also generate a summary or add visual elements if needed.
+
 
