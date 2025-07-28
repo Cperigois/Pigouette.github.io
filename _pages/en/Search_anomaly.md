@@ -4,11 +4,20 @@ title: "Search for anomalies in sinusoidal signals"
 layout: projet
 classes: wide
 author_profile: true
-tags: [projets, Deep-Learning, time-series, exploration, independent]
-method: [Autoencodeur, CNN, Simulation]
-data: [Time-Series]
-skills: [Python, PyTorch, Modeling]
-initiative: [Independent Study]
+tags: 
+  - projets
+method: 
+  - Autoencodeur
+  - CNN
+  - Simulation
+data: 
+  - Time-Series
+skills: 
+  - Python
+  - PyTorch
+  - Modeling
+initiative: 
+  - Independent Study
 description: "Proof of concept (PoC) demonstrating the efficiency of autoencoders for anomaly detection in time series signals."
 ---
 

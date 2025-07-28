@@ -4,11 +4,20 @@ title: "Noise modelisation and propagation in gravitational wave detector"
 layout: projet
 classes: wide
 author_profile: true
-tags: [projets]
-method: [Statistics, Regression]
-data: [Frequency- Spectrum, Time-Series]
-skills: [Matlab, Simulink, Modeling]
-initiative: [PhD]
+tags: 
+  - projets
+method: 
+  - Statistics
+  - Regression
+data: 
+  - Frequency-Spectrum
+  - Time-Series
+skills: 
+  - Matlab
+  - Simulink
+  - Modeling
+initiative: 
+  - PhD
 description: "Study and modelisation of noise propagation through control loops in the Virgo detector"
 ---
 To detect gravitational waves with maximum efficiency, interferometers must be maintained at their operating point — ideally on a dark fringe — so that any deviation (from gravitational wave signals) creates detectable interference patterns at the photodiodes. This is achieved through multiple **feedback control loops** that stabilize the **mirror positions** and the **input laser frequency**.

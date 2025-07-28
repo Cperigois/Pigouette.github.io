@@ -38,12 +38,18 @@ layout: default
           </h1>
         {% endif %}
 
-        {% assign all_tags = method_tags | concat: data_tags | concat: skills_tags | concat: initiative_tags %}
+          {% assign method_tags = page.method | default: "" | split: "," %}
+          {% assign data_tags = page.data | default: "" | split: "," %}
+          {% assign skills_tags = page.skills | default: "" | split: "," %}
+          {% assign initiative_tags = page.initiative | default: "" | split: "," %}
+
+          {% assign all_tags = method_tags | concat: data_tags | concat: skills_tags | concat: initiative_tags %}
 
         {% if all_tags %}
           <div class="project-tags-inline">
             {% for tag in all_tags %}
-              <span class="tag-badge tag-{{ tag | slugify }}">{{ tag }}</span>
+              {% assign cleaned_tag = tag | strip | remove: '"' | remove: '[' | remove: ']' %}
+              <span class="tag-badge tag-{{ cleaned_tag | slugify }}">{{ cleaned_tag }}</span>
             {% endfor %}
           </div>
         {% endif %}

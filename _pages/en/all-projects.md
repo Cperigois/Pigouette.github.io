@@ -8,7 +8,6 @@ author_profile: false
 A list of all projects presented on this website. Projects tagged as "independent" are self-initiated, 
 driven by curiosity, and developed as part of my self-learning journey.
 
-
 ## My projects
 <ul>
   {% for page in site.pages %}
@@ -16,24 +15,25 @@ driven by curiosity, and developed as part of my self-learning journey.
       <li>
         <h3><a href="{{ page.url | relative_url }}">{{ page.title }}</a></h3>
 
-        {% if page.tags contains "projets" %}
-  <div class="project-meta">
-    {% if page.method or page.data or page.skills %}
-  <div class="project-tags-inline">
-    {% assign all_tags = page.method | concat: page.data | concat: page.skills %}
-    {% for tag in all_tags %}
-      <span class="tag-badge tag-{{ tag | slugify: 'default' }}">{{ tag }}</span>
-    {% endfor %}
-  </div>
-{% endif %}
-  </div>
-{% endif %}
-        
+        <div class="project-meta">
+          {% assign method_tags = page.method | default: "" | split: "," %}
+          {% assign data_tags = page.data | default: "" | split: "," %}
+          {% assign skills_tags = page.skills | default: "" | split: "," %}
+          {% assign initiative_tags = page.initiative | default: "" | split: "," %}
+          
+          {% assign all_tags = method_tags | concat: data_tags | concat: skills_tags | concat: initiative_tags %}
+          
+          <div class="project-tags-inline">
+            {% for tag in all_tags %}
+              {% assign cleaned_tag = tag | strip | remove: '"' | remove: '[' | remove: ']' %}
+              <span class="tag-badge tag-{{ cleaned_tag | slugify }}">{{ cleaned_tag }}</span>
+            {% endfor %}
+          </div>
+        </div>
+
         {% if page.description %}
           <p>{{ page.description }}</p>
         {% endif %}
-
-        
       </li>
     {% endif %}
   {% endfor %}
