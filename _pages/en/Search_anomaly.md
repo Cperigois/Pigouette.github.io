@@ -120,11 +120,11 @@ Due to the random nature of the added noise, perfect signal reconstruction is im
 
 Assuming:
 
-$$\text{signal}_{\text{target}} = \text{informative_{signal}} + \text{random_{noise}}$$
+$$\text{signal}_{\text{target}} = \text{informative}_{signal} + \text{random}_{noise}$$
 
 and perfect reconstruction of the informative part, the MSE becomes:
 
-$$\text{MSE} = \frac{1}{n} \sum_{i=1}^n [(\text{output} - \text{target})^2] = \frac{1}{n} \sum_{i=1}^n [\text{random_{noise}}^2]$$
+$$\text{MSE} = \frac{1}{n} \sum_{i=1}^n [(\text{output} - \text{target})^2] = \frac{1}{n} \sum_{i=1}^n [\text{random}_{noise}^2]$$
 
 In this study:
 - Steps 4–6: residual noise ≈ 0.0025
@@ -176,7 +176,7 @@ The model fails to reconstruct signals containing unseen drift, as expected. For
 
 To quantify detection threshold, we define the Noise ratio :
 
-$$\text{Noise ratio} = \frac{\text{total_{drift}}}{\text{residual_{error}}}$$
+$$\text{Noise ratio} = \frac{\text{total}_{drift}}{\text{residual}_{error}}$$
 
 The model detects anomalies as soon as the noise ratio reaches 1.6, which shows high sensitivity. This could be improved by increasing signal length.
 
