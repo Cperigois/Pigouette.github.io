@@ -349,12 +349,12 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">This study stems from a personal curiosity about the implementation of <strong>autoencoders</strong> for anomaly detection in signal processing. This type of approach is already widely documented on <em>Papers With Code</em>; here are a few relevant references. For me, it’s also an opportunity to get hands-on experience in a new area of deep learning: <strong>autoencoders applied to time series</strong>, a topic I already understand well from a signal analysis perspective.</td>
+      <td style="text-align: left">This study stems from a personal curiosity about the implementation of autoencoders for anomaly detection in signal processing. This type of approach is already widely documented on <em>Papers With Code</em>; here are a few relevant references. For me, it’s also an opportunity to get hands-on experience in a new area of deep learning: autoencoders applied to time series, a topic I already understand well from a signal analysis perspective.</td>
     </tr>
   </tbody>
 </table>
 
-<p>The goal of this study is to test the limits of autoencoder-based anomaly detection in time-series signals. Given the breadth of the topic, I limited the study to <strong>sinusoidal signals affected by Gaussian noise and drift noise</strong>, the latter being typical of wear in electronic components.</p>
+<p>The goal of this study is to test the limits of autoencoder-based anomaly detection in time-series signals. Given the breadth of the topic, I limited the study to sinusoidal signals affected by Gaussian noise and drift noise, the latter being typical of wear in electronic components.</p>
 
 <p>This post consists of three sections:</p>
 <ol>
@@ -369,14 +369,14 @@
 
 <h3 id="basics-of-autoencoders">Basics of Autoencoders</h3>
 
-<p>An autoencoder is a type of neural network designed to <strong>reconstruct its input</strong> after compressing it into a lower-dimensional latent space. It has two parts:</p>
+<p>An autoencoder is a type of neural network designed to reconstruct its input after compressing it into a lower-dimensional latent space. It has two parts:</p>
 
 <ul>
-  <li><strong>The encoder</strong>: reduces the input dimensionality to extract its essential features.</li>
-  <li><strong>The decoder</strong>: reconstructs the input from the compressed representation.</li>
+  <li>The encoder: reduces the input dimensionality to extract its essential features.</li>
+  <li>The decoder: reconstructs the input from the compressed representation.</li>
 </ul>
 
-<p>In unsupervised learning, an autoencoder can learn dominant patterns in the data. Any <strong>significant reconstruction error</strong> then indicates an <strong>anomaly</strong> (i.e., data that deviates from the learned patterns).</p>
+<p>In unsupervised learning, an autoencoder can learn dominant patterns in the data. Any significant reconstruction error then indicates an anomaly (i.e., data that deviates from the learned patterns).</p>
 
 <p>The standard loss function is the Mean Squared Error:</p>
 
@@ -436,7 +436,7 @@
 
 <h3 id="step-by-step-training-strategy">Step-by-Step Training Strategy</h3>
 
-<p>Training progresses through <strong>increasingly complex signal generations</strong>. The summary table is as follows:</p>
+<p>Training progresses through increasingly complex signal generations. The summary table is as follows:</p>
 
 <table>
   <thead>
@@ -509,26 +509,26 @@
   </tbody>
 </table>
 
-<p>A <code class="language-plaintext highlighter-rouge">ReduceLROnPlateau</code> scheduler dynamically adjusts the <strong>learning rate</strong> from an initial value of ( 10^{-4} ), if validation loss plateaus.</p>
+<p>A <code class="language-plaintext highlighter-rouge">ReduceLROnPlateau</code> scheduler dynamically adjusts the learning rate from an initial value of \(10^{-4}\), if validation loss plateaus.</p>
 
 <hr />
 
 <h3 id="residual-noise">Residual Noise</h3>
 
-<p>Due to the random nature of the added noise, perfect signal reconstruction is impossible. The final loss therefore stabilizes to a <strong>non-zero residual noise</strong>.</p>
+<p>Due to the random nature of the added noise, perfect signal reconstruction is impossible. The final loss therefore stabilizes to a non-zero residual noise.</p>
 
 <p>Assuming:</p>
 
-\[\text{signal}_{\text{target}} = \text{informative\_signal} + \text{random\_noise}\]
+\[\text{signal}_{\text{target}} = \text{informative}_{signal} + \text{random}_{noise}\]
 
 <p>and perfect reconstruction of the informative part, the MSE becomes:</p>
 
-\[\text{MSE} = \frac{1}{n} \sum_{i=1}^n [(\text{output} - \text{target})^2] = \frac{1}{n} \sum_{i=1}^n [\text{random\_noise}^2]\]
+\[\text{MSE} = \frac{1}{n} \sum_{i=1}^n [(\text{output} - \text{target})^2] = \frac{1}{n} \sum_{i=1}^n [\text{random}_{noise}^2]\]
 
 <p>In this study:</p>
 <ul>
-  <li>Steps 4–6: residual noise ≈ <strong>0.0025</strong></li>
-  <li>Step 7: residual noise ≈ <strong>0.0625</strong></li>
+  <li>Steps 4–6: residual noise ≈ 0.0025</li>
+  <li>Step 7: residual noise ≈ 0.0625</li>
 </ul>
 
 <p align="center"><img src="../../assets/images/sinusoïd_recognition.png" alt="sinusoïd_recognition.png" width="600" /></p>
@@ -547,16 +547,16 @@ Observed median loss:</p>
 
 \[\text{MSE}_{\text{test}} = 0.078^{+0.053}_{-0.012}\]
 
-<p>This is compatible with residual noise, indicating good <strong>generalization capacity</strong>.</p>
+<p>This is compatible with residual noise, indicating good generalization capacity.</p>
 
 <hr />
 
 <h3 id="drift-noise">Drift Noise</h3>
 
-<p>A <strong>drift</strong> component was added to the signals:</p>
+<p>A drift component was added to the signals:</p>
 
 <blockquote>
-  <p>Drift is a <strong>slow and continuous signal shift</strong> over time. It can be modeled with an affine function:</p>
+  <p>Drift is a slow and continuous signal shift over time. It can be modeled with an affine function:</p>
 </blockquote>
 
 \[\text{drift}(t) = \alpha \cdot t\]
@@ -570,7 +570,7 @@ Observed median loss:</p>
 
 <h3 id="anomaly-detection">Anomaly Detection</h3>
 
-<p>The model fails to reconstruct signals containing <strong>unseen drift</strong>, as expected. For each drift ratio, the loss is compared to evaluation percentiles:</p>
+<p>The model fails to reconstruct signals containing unseen drift, as expected. For each drift ratio, the loss is compared to evaluation percentiles:</p>
 
 <ul>
   <li><strong>OK</strong>: MSE &lt; 95ᵗʰ percentile</li>
@@ -578,11 +578,11 @@ Observed median loss:</p>
   <li><strong>ANOMALY</strong>: MSE &gt; max (evaluation)</li>
 </ul>
 
-<p>To quantify detection threshold, we define the <strong>noise ratio</strong>:</p>
+<p>To quantify detection threshold, we define the Noise ratio :</p>
 
-\[\text{Noise ratio} = \frac{\text{total\_drift}}{\text{residual\_error}}\]
+\[\text{Noise ratio} = \frac{\text{total}_{drift}}{\text{residual}_{error}}\]
 
-<p>The model detects anomalies as soon as the noise ratio reaches <strong>1.6</strong>, which shows <strong>high sensitivity</strong>. This could be improved by increasing signal length.</p>
+<p>The model detects anomalies as soon as the noise ratio reaches 1.6, which shows high sensitivity. This could be improved by increasing signal length.</p>
 
 <p align="center"><img src="../../assets/images/drift_impact_analysis.png" alt="drift_impact_analysis.png" width="600" /></p>
 
@@ -592,16 +592,16 @@ Observed median loss:</p>
 
 <h2 id="conclusion">Conclusion</h2>
 
-<p>Autoencoders prove effective for detecting anomalies in sinusoidal signals contaminated by Gaussian noise and drift. The method is particularly sensitive to <strong>gradual deviations</strong>, as long as their amplitude exceeds the residual noise.</p>
+<p>Autoencoders prove effective for detecting anomalies in sinusoidal signals contaminated by Gaussian noise and drift. The method is particularly sensitive to gradual deviations, as long as their amplitude exceeds the residual noise.</p>
 
-<p><strong>Next steps:</strong></p>
+<p>Next steps:</p>
 <ul>
   <li>Use longer signals to detect subtler drift.</li>
   <li>Explore other waveform types: triangular signals, Heaviside functions, etc.</li>
-  <li>Test the hypothesis that training difficulties stem from the <strong>zero-mean</strong> nature of sinusoids — e.g., by adding an offset.</li>
+  <li>Test the hypothesis that training difficulties stem from the zero-mean nature of sinusoids — e.g., by adding an offset.</li>
 </ul>
 
-<p>This project is a proof-of-concept on simulated data. It would be relevant to test this approach on <strong>real-world data</strong> to assess its industrial potential.</p>
+<p>This project is a proof-of-concept on simulated data. It would be relevant to test this approach on real-world data to assess its industrial potential.</p>
 
 <hr />
 
