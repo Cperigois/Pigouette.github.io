@@ -9,7 +9,7 @@ author_profile: true
 
 To introduce my research work, I present it through three broader, popular-science-oriented sections. These allow a general contextualization of the scientific projects I have had the pleasure of conducting throughout my career. You will find three main topics:
 
-- Gravitational waves and their detection  
+- **Gravitational waves and their detection**  
 - The origin of black holes  
 - (Upcoming content)
 

@@ -1,13 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/AGN</loc>
+</url>
+<url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/BBlack</loc>
+</url>
+<url>
 <loc>https://pigouette.github.io/Pigouette.github.io/BeyondTheLab/</loc>
+</url>
+<url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Dynamics</loc>
+</url>
+<url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Einstein_telescope_study</loc>
+</url>
+<url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Globular_clusters</loc>
 </url>
 <url>
 <loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Noisebudget</loc>
 </url>
 <url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/PRINCESS</loc>
+</url>
+<url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/PopIII_bkg</loc>
+</url>
+<url>
 <loc>https://pigouette.github.io/Pigouette.github.io/BeyondTheLab/AILab/Search_anomaly</loc>
+</url>
+<url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Spin_study</loc>
 </url>
 <url>
 <loc>https://pigouette.github.io/Pigouette.github.io/all-projects/</loc>

@@ -341,13 +341,16 @@
       <section class="page__content" itemprop="text">
         
 
-        <p>To detect gravitational waves with maximum efficiency, interferometers must be maintained at their operating point — ideally on a dark fringe — so that any deviation (from gravitational wave signals) creates detectable interference patterns at the photodiodes. This is achieved through multiple <strong>feedback control loops</strong> that stabilize the <strong>mirror positions</strong> and the <strong>input laser frequency</strong>.</p>
+        <p>To detect gravitational waves with maximum efficiency, interferometers must be maintained at their operating point — ideally on a dark fringe — so that any deviation (from gravitational wave signals) creates detectable interference patterns at the photodiodes. This is achieved through multiple feedback control loops that stabilize the mirror positions and the input laser frequency.</p>
 
-<p>However, these control systems can also serve as channels through which <strong>instrumental noise propagates</strong> within the detector. A significant part of my PhD work involved <strong>modeling these feedback loops</strong> to better understand how noise is introduced and transferred throughout the system.</p>
+<p>However, these control systems can also serve as channels through which instrumental noise propagates within the detector. A significant part of my PhD work involved modeling these feedback loops to better understand how noise is introduced and transferred throughout the system.</p>
 
 <h3 id="interferometer-degrees-of-freedom">Interferometer Degrees of Freedom</h3>
 
-<p>The longitudinal control of the interferometer is based on four main <strong>degrees of freedom</strong> (DoF), which represent critical optical lengths in the system. These are:</p>
+<p align="center"><img src="../assets/images/Optical-layout-of-Advanced-Virgo.png" alt="Optical layout of Virgo.png" width="600" /></p>
+<p><em>Representation of the interferometer, and the critical lengths.</em></p>
+
+<p>The longitudinal control of the interferometer is based on four main degrees of freedom (DoF), which represent critical optical lengths in the system. These are:</p>
 
 <ul>
   <li>
@@ -372,13 +375,16 @@ Coupled with MICH, also measured via <code class="language-plaintext highlighter
   </li>
 </ul>
 
-<p>These DoFs define the <strong>longitudinal control</strong> architecture.</p>
+<p>These DoFs define the longitudinal control architecture.</p>
 
 <hr />
 
 <h3 id="interferometer-and-control-loop-modeling">Interferometer and Control Loop Modeling</h3>
 
-<p>The control loop simulation framework, called <strong>Noise Budget</strong>, includes all major subsystems:</p>
+<p align="center"><img src="../assets/images/NB_simpl.png" alt="NB_simpl.png" width="600" /></p>
+<p><em>Interferometer control scheme</em></p>
+
+<p>The noise propagation simulation framework, called Noise Budget, includes all major subsystems:</p>
 
 <ul>
   <li><strong>Sensing (green):</strong> Converts photodiode signals into error signals for each DoF.</li>
@@ -388,26 +394,26 @@ Coupled with MICH, also measured via <code class="language-plaintext highlighter
   <li><strong>Optickle (violet):</strong> Models optical response to all mirror and laser perturbations.</li>
 </ul>
 
-<p>These modules together simulate the <strong>closed-loop noise propagation</strong> and are used to test new control strategies or predict future interferometer performance.</p>
+<p>These modules together simulate the closed-loop noise propagation and are used to test new control strategies or predict future interferometer performance.</p>
 
 <hr />
 
 <h3 id="study-of-the-mich-loop">Study of the MICH Loop</h3>
 
-<p>The <strong>MICH control loop</strong> is responsible for stabilizing short-arm asymmetry.<br />
-For frequencies above 50 Hz, the loop is dominated by <strong>detection noise</strong> (electronic + shot noise).<br />
-Assuming this dominance, I was able to derive the <strong>injection transfer function</strong> ( Y(f) ) for the loop and validate the simulated model against actual interferometer data.<br />
+<p>The MICH control loop is responsible for stabilizing short-arm asymmetry.<br />
+For frequencies above 50 Hz, the loop is dominated by detection noise (electronic + shot noise).<br />
+Assuming this dominance, I was able to derive the injection transfer function \(Y(f)\) for the loop and validate the simulated model against actual interferometer data.<br />
 This confirmed the theoretical noise paths and highlighted where detection noise dominates the system.</p>
 
 <hr />
 
 <h3 id="study-of-the-ssfs-loop-laser-frequency-stabilization">Study of the SSFS Loop (Laser Frequency Stabilization)</h3>
 
-<p>The laser introduces <strong>phase noise</strong>, which is integrated from frequency fluctuations. Due to arm asymmetries (mirror reflectivity, thermal effects), this phase noise couples into the main gravitational wave signal channel.</p>
+<p>The laser introduces phase noise, which is integrated from frequency fluctuations. Due to arm asymmetries (mirror reflectivity, thermal effects), this phase noise couples into the main gravitational wave signal channel.</p>
 
-<p>The <strong>Second Stage Frequency Stabilization (SSFS)</strong> loop uses reflected optical signals at <code class="language-plaintext highlighter-rouge">POP</code>, measured via photodiode <code class="language-plaintext highlighter-rouge">B4</code>, to compute correction signals for the laser.</p>
+<p>The Second Stage Frequency Stabilization (SSFS) loop uses reflected optical signals at <code class="language-plaintext highlighter-rouge">POP</code>, measured via photodiode <code class="language-plaintext highlighter-rouge">B4</code>, to compute correction signals for the laser.</p>
 
-<p>This loop is influenced by <strong>time-varying transfer functions</strong> due to thermal drifts and asymmetry fluctuations. To model this, I introduced time-dependent gains:</p>
+<p>This loop is influenced by time-varying transfer functions due to thermal drifts and asymmetry fluctuations. To model this, I introduced time-dependent gains:</p>
 
 <ul>
   <li>\(F_{PC}(t)\): Power Coupling Gain</li>
@@ -415,13 +421,13 @@ This confirmed the theoretical noise paths and highlighted where detection noise
   <li>\(Y(f, t)\): Injection Transfer Function</li>
 </ul>
 
-<p>These parameters were calibrated using broadband noise injections (( N_{inj} )) and validated at times ( t_{inj} ). The model was used to explain differences between simulated and real data in <code class="language-plaintext highlighter-rouge">DARM</code>.</p>
+<p>These parameters were calibrated using broadband noise injections \(N_{inj}\) and validated at times \(t_{inj}\). The model was used to explain differences between simulated and real data in <code class="language-plaintext highlighter-rouge">DARM</code>.</p>
 
 <hr />
 
 <h3 id="conclusion">Conclusion</h3>
 
-<p>The feedback control systems in the Virgo interferometer are essential for keeping the detector in its optimal operating state. By modeling the <strong>noise propagation</strong> through these loops, it’s possible to:</p>
+<p>The feedback control systems in the Virgo interferometer are essential for keeping the detector in its optimal operating state. By modeling the noise propagation through these loops, it’s possible to:</p>
 
 <ul>
   <li>Identify dominant noise sources</li>
@@ -432,8 +438,8 @@ This confirmed the theoretical noise paths and highlighted where detection noise
 <p>Through this work, I demonstrated that:</p>
 
 <ul>
-  <li>The <strong>MICH loop</strong> is dominated by detection noise above 50Hz.</li>
-  <li>The <strong>SSFS loop</strong> requires time-varying modeling due to asymmetries.</li>
+  <li>The MICH loop is dominated by detection noise above 50Hz.</li>
+  <li>The SSFS loop requires time-varying modeling due to asymmetries.</li>
 </ul>
 
 <p>Overall, this project not only validated important theoretical models, but also highlighted remaining challenges, such as unexplained bias and underestimation of some residual noise sources.</p>
