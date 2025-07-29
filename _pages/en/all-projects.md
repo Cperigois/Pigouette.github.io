@@ -3,6 +3,7 @@ layout: archive
 title: "All projects"
 permalink: /all-projects/
 author_profile: false
+classes: wide
 ---
 
 A list of all projects presented on this website. Projects tagged as "independent" are self-initiated, 

@@ -8,8 +8,8 @@ header:
   overlay_color: "#1c1c30"
   overlay_image: /assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp
 excerpt: >
-  For astrophysics, climate, and sharings.<br />
-  <small><a href="https://github.com/CPerigois/repositories">Last update Jul. 1</a></small>
+  WORK IN PROGRESS : Portfolio of scientific projects, under developpement.<br />
+  <small><a href="https://github.com/CPerigois/repositories">Last update Jul. 29</a></small>
 feature_row:
   - image_path: /assets/images/Princess_logo.png
     alt: "customizable"
