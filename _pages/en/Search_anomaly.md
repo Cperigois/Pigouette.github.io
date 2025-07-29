@@ -21,11 +21,11 @@ initiative:
 description: "Proof of concept (PoC) demonstrating the efficiency of autoencoders for anomaly detection in time series signals."
 ---
 
-| |
-|:--|
-| This study stems from a personal curiosity about the implementation of **autoencoders** for anomaly detection in signal processing. This type of approach is already widely documented on *Papers With Code*; here are a few relevant references. For me, it’s also an opportunity to get hands-on experience in a new area of deep learning: **autoencoders applied to time series**, a topic I already understand well from a signal analysis perspective. |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| This study stems from a personal curiosity about the implementation of autoencoders for anomaly detection in signal processing. This type of approach is already widely documented on *Papers With Code*; here are a few relevant references. For me, it’s also an opportunity to get hands-on experience in a new area of deep learning: autoencoders applied to time series, a topic I already understand well from a signal analysis perspective. |
 
-The goal of this study is to test the limits of autoencoder-based anomaly detection in time-series signals. Given the breadth of the topic, I limited the study to **sinusoidal signals affected by Gaussian noise and drift noise**, the latter being typical of wear in electronic components.
+The goal of this study is to test the limits of autoencoder-based anomaly detection in time-series signals. Given the breadth of the topic, I limited the study to sinusoidal signals affected by Gaussian noise and drift noise, the latter being typical of wear in electronic components.
 
 This post consists of three sections:
 1. A summary of how autoencoders work, with the parameters used in this study.
@@ -38,12 +38,12 @@ This post consists of three sections:
 
 ### Basics of Autoencoders
 
-An autoencoder is a type of neural network designed to **reconstruct its input** after compressing it into a lower-dimensional latent space. It has two parts:
+An autoencoder is a type of neural network designed to reconstruct its input after compressing it into a lower-dimensional latent space. It has two parts:
 
-- **The encoder**: reduces the input dimensionality to extract its essential features.
-- **The decoder**: reconstructs the input from the compressed representation.
+- The encoder: reduces the input dimensionality to extract its essential features.
+- The decoder: reconstructs the input from the compressed representation.
 
-In unsupervised learning, an autoencoder can learn dominant patterns in the data. Any **significant reconstruction error** then indicates an **anomaly** (i.e., data that deviates from the learned patterns).
+In unsupervised learning, an autoencoder can learn dominant patterns in the data. Any significant reconstruction error then indicates an anomaly (i.e., data that deviates from the learned patterns).
 
 The standard loss function is the Mean Squared Error:
 
@@ -98,7 +98,7 @@ Training is conducted on batches of 12,000 signals, each 500 samples long, fed i
 
 ### Step-by-Step Training Strategy
 
-Training progresses through **increasingly complex signal generations**. The summary table is as follows:
+Training progresses through increasingly complex signal generations. The summary table is as follows:
 
 | Step | Epochs | Amplitude                 | Phase                   | Frequency (Hz)                | Noise                        |
 |-----:|-------:|:--------------------------|:------------------------|:------------------------------|:-----------------------------|
@@ -110,25 +110,25 @@ Training progresses through **increasingly complex signal generations**. The sum
 | 6    | 250    | $$\mathcal{U}(2, 6)$$     | $$\mathcal{U}(0, 2π)$$  | $$\mathcal{U}(0.025, 0.225)$$ | $$\mathcal{N}(0, 0.05)$$     |
 | 7    | 400    | $$\mathcal{U}(2, 6)$$     | $$\mathcal{U}(0, 2π)$$  | $$\mathcal{U}(0.025, 0.225)$$ | $$\mathcal{N}(0, 0.25)$$     |
 
-A `ReduceLROnPlateau` scheduler dynamically adjusts the **learning rate** from an initial value of \( 10^{-4} \), if validation loss plateaus.
+A `ReduceLROnPlateau` scheduler dynamically adjusts the learning rate from an initial value of $$10^{-4}$$, if validation loss plateaus.
 
 ---
 
 ### Residual Noise
 
-Due to the random nature of the added noise, perfect signal reconstruction is impossible. The final loss therefore stabilizes to a **non-zero residual noise**.
+Due to the random nature of the added noise, perfect signal reconstruction is impossible. The final loss therefore stabilizes to a non-zero residual noise.
 
 Assuming:
 
-$$\text{signal}_{\text{target}} = \text{informative\_signal} + \text{random\_noise}$$
+$$\text{signal}_{\text{target}} = \text{informative_{signal}} + \text{random_{noise}}$$
 
 and perfect reconstruction of the informative part, the MSE becomes:
 
-$$\text{MSE} = \frac{1}{n} \sum_{i=1}^n [(\text{output} - \text{target})^2] = \frac{1}{n} \sum_{i=1}^n [\text{random\_noise}^2]$$
+$$\text{MSE} = \frac{1}{n} \sum_{i=1}^n [(\text{output} - \text{target})^2] = \frac{1}{n} \sum_{i=1}^n [\text{random_{noise}}^2]$$
 
 In this study:
-- Steps 4–6: residual noise ≈ **0.0025**
-- Step 7: residual noise ≈ **0.0625**
+- Steps 4–6: residual noise ≈ 0.0025
+- Step 7: residual noise ≈ 0.0625
 
 <p align="center"><img src="../../assets/images/sinusoïd_recognition.png" alt="sinusoïd_recognition.png" width="600"/></p>
 
@@ -146,15 +146,15 @@ Observed median loss:
 
 $$\text{MSE}_{\text{test}} = 0.078^{+0.053}_{-0.012}$$
 
-This is compatible with residual noise, indicating good **generalization capacity**.
+This is compatible with residual noise, indicating good generalization capacity.
 
 ---
 
 ### Drift Noise
 
-A **drift** component was added to the signals:
+A drift component was added to the signals:
 
-> Drift is a **slow and continuous signal shift** over time. It can be modeled with an affine function:
+> Drift is a slow and continuous signal shift over time. It can be modeled with an affine function:
 
 $$\text{drift}(t) = \alpha \cdot t$$
 
@@ -168,17 +168,17 @@ where $$\alpha$$ is the drift coefficient.
 
 ### Anomaly Detection
 
-The model fails to reconstruct signals containing **unseen drift**, as expected. For each drift ratio, the loss is compared to evaluation percentiles:
+The model fails to reconstruct signals containing unseen drift, as expected. For each drift ratio, the loss is compared to evaluation percentiles:
 
 - **OK**: MSE < 95ᵗʰ percentile
 - **WARNING**: 95ᵗʰ percentile < MSE < max
 - **ANOMALY**: MSE > max (evaluation)
 
-To quantify detection threshold, we define the **noise ratio**:
+To quantify detection threshold, we define the Noise ratio :
 
-$$\text{Noise ratio} = \frac{\text{total\_drift}}{\text{residual\_error}}$$
+$$\text{Noise ratio} = \frac{\text{total_{drift}}}{\text{residual_{error}}}$$
 
-The model detects anomalies as soon as the noise ratio reaches **1.6**, which shows **high sensitivity**. This could be improved by increasing signal length.
+The model detects anomalies as soon as the noise ratio reaches 1.6, which shows high sensitivity. This could be improved by increasing signal length.
 
 <p align="center"><img src="../../assets/images/drift_impact_analysis.png" alt="drift_impact_analysis.png" width="600"/></p>
 
@@ -188,13 +188,13 @@ The model detects anomalies as soon as the noise ratio reaches **1.6**, which sh
 
 ## Conclusion
 
-Autoencoders prove effective for detecting anomalies in sinusoidal signals contaminated by Gaussian noise and drift. The method is particularly sensitive to **gradual deviations**, as long as their amplitude exceeds the residual noise.
+Autoencoders prove effective for detecting anomalies in sinusoidal signals contaminated by Gaussian noise and drift. The method is particularly sensitive to gradual deviations, as long as their amplitude exceeds the residual noise.
 
-**Next steps:**
+Next steps:
 - Use longer signals to detect subtler drift.
 - Explore other waveform types: triangular signals, Heaviside functions, etc.
-- Test the hypothesis that training difficulties stem from the **zero-mean** nature of sinusoids — e.g., by adding an offset.
+- Test the hypothesis that training difficulties stem from the zero-mean nature of sinusoids — e.g., by adding an offset.
 
-This project is a proof-of-concept on simulated data. It would be relevant to test this approach on **real-world data** to assess its industrial potential.
+This project is a proof-of-concept on simulated data. It would be relevant to test this approach on real-world data to assess its industrial potential.
 
 ---

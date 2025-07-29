@@ -19,7 +19,7 @@ skills:
   - Modeling
   - Tool-Developement
 initiative: 
-  - PhD
+  - Post-doc
 description: "Study and modelisation of noise propagation through control loops in the Virgo detector"
 ---
 TBW
