@@ -53,6 +53,17 @@ layout: default
             {% endfor %}
           </div>
         {% endif %}
+
+        {% if page.papers %}
+  <div class="project-papers" style="margin-top: 1em;">
+    <h4>📄 Related Publications</h4>
+    {% for paper in page.papers %}
+      <a href="{{ paper.url }}" class="btn btn--inverse" style="margin-right: 0.5em;" target="_blank" rel="noopener">
+        {{ paper.title }}
+      </a>
+    {% endfor %}
+  </div>
+{% endif %}
       </header>
 
       <section class="page__content" itemprop="text">
