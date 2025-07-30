@@ -96,7 +96,7 @@ My work explores the scientific impact of design choices on compact binary detec
 - [ET Blue Book (2025)](https://ui.adsabs.harvard.edu/abs/2025arXiv250312263A/abstract)
 
 
-<div style="margin-top: 1em;"> <a href="/gravitational-waves/Einstein_telescope_study.md" class="btn btn--primary">Explore Science with ET</a> </div>
+<div style="margin-top: 1em;"> <a href="/Pigouette.github.io/gravitational-waves/Einstein_telescope_study" class="btn btn--primary">Explore Science with ET</a> </div>
 
 <div style="margin-top: 1em;"> <a href="/gravitational-waves/Einstein_telescope_study" class="btn btn--primary">Explore Science with ET</a> </div>
 
