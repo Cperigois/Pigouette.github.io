@@ -1,1 +1,1 @@
-Sitemap: https://pigouette.github.io/Pigouette.github.io/sitemap.xml
+Sitemap: http://localhost:4000/Pigouette.github.io/sitemap.xml
