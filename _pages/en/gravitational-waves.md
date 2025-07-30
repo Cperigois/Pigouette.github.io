@@ -74,7 +74,7 @@ Gravitational waves slightly stretch and squeeze spacetime. On Earth, this is me
 Interferometers are tuned to operate on a dark fringe, meaning destructive interference cancels the signal at the output. This requires real-time feedback control of mirror positions to maintain stability.  
 In this section, I present my research on modeling and simulating these feedback control loops to keep the interferometer at its operating point.
 
-<div style="margin-top: 1em;"> <a href="/Noisebudget" class="btn btn--primary">Explore Noise Analysis</a> </div>
+<div style="margin-top: 1em;"> <a href="/gravitational-waves/Noisebudget" class="btn btn--primary">Explore Noise Analysis</a> </div>
 ---
 
 ## The Future of Ground-Based Detectors
@@ -95,8 +95,10 @@ My work explores the scientific impact of design choices on compact binary detec
 - [Design impact study (2023)](https://ui.adsabs.harvard.edu/abs/2023JCAP...07..068B/abstract)  
 - [ET Blue Book (2025)](https://ui.adsabs.harvard.edu/abs/2025arXiv250312263A/abstract)
 
+
 <div style="margin-top: 1em;"> <a href="/gravitational-waves/Einstein_telescope_study" class="btn btn--primary">Explore Science with ET</a> </div>
 
+<div style="margin-top: 1em;"> <a href="/gravitational-waves/Einstein_telescope_study" class="btn btn--primary">Explore Science with ET</a> </div>
 
 ---
 
