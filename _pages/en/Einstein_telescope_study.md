@@ -106,6 +106,47 @@ From this analysis, we can draw several conclusions:
 This comparative study helps inform the design decisions for the Einstein Telescope by linking technical choices to their scientific impact.
 
 
-## The Science with Einstein Telescope
+## Beyond Design: What the Einstein Telescope Can Tell Us About the Universe
 
-TBW
+In addition to evaluating detector design, I also contributed to a broader collaborative study exploring the full scientific potential of the Einstein Telescope. My work focused on two key questions related to the astrophysical gravitational-wave background (SGWB):
+
+- What can we learn about the **formation channels of binary black holes (BBH)**?
+- How can we **identify gravitational waves from the first stars** — the so-called Population III?
+
+These studies are essential for interpreting the SGWB, which is expected to carry rich information about compact object populations that are too distant or too faint to resolve individually.
+
+### Understanding BBH Formation Channels
+
+<p align="center">
+  <img src="../assets/images/ET_channel_BBook.png" alt="ET_c.png" width="600"/>
+</p>
+
+A major component of the SGWB in the Einstein Telescope will come from **binary black hole mergers** with masses between ~10 and 1,000 solar masses, and redshifts below 5. These black holes can form through several channels, grouped into two main families:
+
+- **Isolated channel**: binaries evolve from massive stellar pairs in isolation, often in the field (Field channel).
+- **Dynamical channel**: binaries form through interactions in dense stellar environments, such as globular clusters (GC), young star clusters (YSC), or nuclear star clusters (NSC). Other scenarios include gas-rich environments like active galactic nuclei (AGN).
+
+Each channel leaves a distinct imprint on the black holes' masses, spins, and orbital properties. These differences affect both the **rate of mergers** and the **spectral shape of the SGWB**.
+
+In the study, we modeled the SGWB contributions from the Field, YSC, NSC, and GC channels using the **PRINCESS** code and population models from the literature. The analysis included both the **total background** and the **residual background** — the latter obtained by subtracting individually detectable sources (with SNR > 20), simulating realistic data processing by the ET.
+
+The figure below (from the original publication) shows how each formation channel contributes to the SGWB, including uncertainties in merger rates. Notably, the **frequency where the SGWB deviates from a simple power-law** carries information about the minimal black hole mass and redshift distribution for each formation channel.
+
+### Probing the First Stars: Population III Remnants
+
+
+<p align="center">
+  <img src="../assets/images/ET_popIII_BBook.png" alt="ET_c.png" width="600"/>
+</p>
+
+Population III stars — the first generation of stars formed in the early universe — are also expected to contribute to the SGWB. Their black hole remnants are believed to be more massive and to merge at higher redshifts compared to later stellar populations (Pop I/II). This results in a **gravitational-wave background that deviates from the typical power-law at lower frequencies**.
+
+Our study used population models from the literature to estimate both the total and residual SGWB from Pop III black holes. Even though their overall contribution is predicted to be weaker (due to low merger rates), detecting this background would provide unique constraints on the **early universe**.
+
+However, identifying a residual Pop III signal is extremely challenging. Its detection relies on:
+
+- Accurate subtraction of individually detectable Pop I/II signals.
+- Excellent low-frequency sensitivity of the Einstein Telescope.
+- Improved modeling of merger rates and mass distributions for Pop III stars.
+
+Even if a clear detection remains out of reach, the SGWB observed by ET can **place upper limits on high-redshift black hole mergers**, offering indirect evidence for early star formation scenarios.
