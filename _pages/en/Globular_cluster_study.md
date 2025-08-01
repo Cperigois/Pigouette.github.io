@@ -78,7 +78,7 @@ These assumptions affect both the mass distribution and the number of hierarchic
 
 <p align="center">
   <span style="background-color: white; display: inline-block;">
-    <img src="../assets/images/GC_masses.png" alt="Mass distribution figure from Fig. 6" width="600"/>
+    <img src="../assets/images/GC_masses.png" alt="Mass distribution figure from Fig. 6" width="800"/>
   </span>
 </p>
 

@@ -1,9 +1,9 @@
 ---
+permalink: /gravitational-waves
 title: 
   "Binary Black Hole Observations with Gravitational Waves"
 lang: en
 layout: splash
-permalink: /
 header:
   overlay_color: "#1c1c30"
   overlay_image: /assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp

@@ -57,7 +57,7 @@ Two physical models are considered:
 To understand whether black hole (BH) mergers occurring in AGN disks are truly distinct, the authors systematically compared their results to four other formation scenarios. This comparison was carried out using **BBlack**, a statistical tool that allows Bayesian inference of the contribution (or *mixing fraction*) of each channel based on gravitational-wave data.  
 
 <div style="text-align: center; margin: 1em 0;">
-  <a class="button" href="Pigouette.github.io/gravitational-waves/BBlack">Explore BBlack Tool →</a>
+  <a class="button" href="/Pigouette.github.io/gravitational-waves/BBlack">Explore BBlack Tool →</a>
 </div>
 
 ---
@@ -77,7 +77,7 @@ These environments differ in density, metallicity, and dynamical conditions, whi
 
 ## Mass Distributions and Channel Fingerprints
 
-<p align="center"> <img src="../assets/images/AGN_mass_distrib.png" alt="Mass distributions" width="600"/> </p>
+<p align="center"> <img src="../assets/images/AGN_mass_distrib.png" alt="Mass distributions" width="800"/> </p>
 
 The **AGN disk with gas hardening (GH)** stands out sharply from the other channels. In this model, black holes can undergo multiple successive mergers, leading to very high final masses — up to ~5,000 solar masses. This is well beyond the range achievable by the other channels:
 
@@ -91,7 +91,7 @@ The no-GH AGN model produces a mass spectrum much more similar to NSCs or GCs, w
 ## Quantifying the Contribution of Each Channel
 
 Using **BBlack**, I analyzed 56 high-purity gravitational wave events from the LVK catalog (GWTC-3) and inferred the relative contribution of each formation channel (called **mixing fractions**). 
-<p align="center"> <img src="../assets/images/agn_mixing_fractions.png" alt="Mixing fractions" width="600"/> </p>
+<p align="center"> <img src="../assets/images/agn_mixing_fractions.png" alt="Mixing fractions" width="800"/> </p>
 The key conclusions are:
 
 - **NSC and YSC channels** dominate the observed population due to their ability to produce mergers in the 10–40 M☉ range, which is where most current detections lie.
@@ -101,7 +101,7 @@ The key conclusions are:
 
 > In other words, gas hardening in AGN disks leaves a unique imprint on the mass distribution of merging black holes, but confirming its role will likely require future detectors sensitive to lower gravitational-wave frequencies (such as the Einstein Telescope or LISA).
 
-<p align="center"> <img src="../assets/images/agn_detection.png" alt="ISCO Frequency Distribution" width="600"/> </p>
+<p align="center"> <img src="../assets/images/agn_detection.png" alt="ISCO Frequency Distribution" width="400"/> </p>
 
 ---
 
