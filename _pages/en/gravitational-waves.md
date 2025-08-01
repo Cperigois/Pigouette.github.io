@@ -1,5 +1,5 @@
 ---
-permalink: /gravitational-waves
+permalink: /gravitational-waves/
 title: 
   "Binary Black Hole Observations with Gravitational Waves"
 lang: en
