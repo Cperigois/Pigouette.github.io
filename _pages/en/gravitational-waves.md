@@ -52,8 +52,7 @@ I chose to present my work on binary black holes through the lens of gravitation
 ## Introductions
 {% include feature_row %}
 
-## Tools
-{% include feature_row2 %}
+
 
 
 
