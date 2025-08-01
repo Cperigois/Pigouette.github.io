@@ -1,7 +1,7 @@
 ---
 permalink: /gravitational-waves/
 title: 
-  "Binary Black Hole Observations with Gravitational Waves"
+  "Binary black hole observations with gravitational waves"
 lang: en
 layout: splash
 header:
@@ -15,7 +15,7 @@ excerpt: >
 feature_row:
   - image_path: /assets/images/GW190521-Massive-Black-Hole-Merger-scaled.jpg
     alt: "Black hole evolution"
-    title: "Origins and Evolution of Black Holes"
+    title: "Origins and evolution of black holes"
     excerpt: "Understanding black hole formation and growth across cosmic time through gravitational wave and electromagnetic observations. *Credit: ©LIGO, ©MIT*"
     url: "/gravitational-waves/BBH-intro"
     btn_class: "btn--primary"
@@ -23,7 +23,7 @@ feature_row:
     
   - image_path: /assets/images/41586_2019_1129_Fig1_HTML.png
     alt: "Gravitational wave detection"
-    title: "Gravitational Wave Detection"
+    title: "Gravitational Wave detection"
     excerpt: "From Einstein's theory to modern detectors: an overview of how gravitational waves are produced and how we detect them. *Image credit: ©Johan Jarnestad/The Royal Swedish Academy of Sciences.*"
     url: "/gravitational-waves/GW-intro"
     btn_class: "btn--primary"
