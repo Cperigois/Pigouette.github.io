@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/AGN</loc>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/AGN_study</loc>
+</url>
+<url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/</loc>
 </url>
 <url>
 <loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/BBlack</loc>
@@ -14,6 +17,9 @@
 </url>
 <url>
 <loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Einstein_telescope_study</loc>
+</url>
+<url>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/GW-intro</loc>
 </url>
 <url>
 <loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Globular_clusters</loc>
@@ -37,10 +43,10 @@
 <loc>https://pigouette.github.io/Pigouette.github.io/all-projects/</loc>
 </url>
 <url>
-<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/</loc>
+<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/binary-blak-holes</loc>
 </url>
 <url>
-<loc>https://pigouette.github.io/Pigouette.github.io/gravitational-waves/</loc>
+<loc>https://pigouette.github.io/Pigouette.github.io/</loc>
 </url>
 <url>
 <loc>https://pigouette.github.io/Pigouette.github.io/</loc>

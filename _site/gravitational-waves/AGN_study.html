@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>PRINCESS : Python tool to predict and characterize gravitational wave observation from astrophysical models - Data science</title>
-<meta name="description" content="Princess is a fast and flexible tool to simulate gravitational-wave backgrounds from compact binary populations. It supports realistic population models and is designed for scalability and ease of use.">
+<!-- begin _includes/seo.html --><title>Binary black holes merging from active galactic nuclei - Data science</title>
+<meta name="description" content="How does the presence of gas in active galactic nucleus (AGN) disks influence the growth of black holes through mergers? This study explores how gas hardening changes the mass and spin distribution of hierarchical black hole binaries.">
 
 
   <meta name="author" content="Carole Périgois">
@@ -21,14 +21,11 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Data science">
-<meta property="og:title" content="PRINCESS : Python tool to predict and characterize gravitational wave observation from astrophysical models">
-<meta property="og:url" content="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/PRINCESS">
+<meta property="og:title" content="Binary black holes merging from active galactic nuclei">
+<meta property="og:url" content="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/AGN_study">
 
 
-  <meta property="og:description" content="Princess is a fast and flexible tool to simulate gravitational-wave backgrounds from compact binary populations. It supports realistic population models and is designed for scalability and ease of use.">
-
-
-
+  <meta property="og:description" content="How does the presence of gas in active galactic nucleus (AGN) disks influence the growth of black holes through mergers? This study explores how gas hardening changes the mass and spin distribution of hierarchical black hole binaries.">
 
 
 
@@ -37,12 +34,15 @@
 
 
 
-  
+
+
 
   
 
+  
 
-<link rel="canonical" href="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/PRINCESS">
+
+<link rel="canonical" href="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/AGN_study">
 
 
 
@@ -286,7 +286,7 @@
 
     <!-- Meta tags for SEO -->
     
-      <meta itemprop="headline" content="PRINCESS : Python tool to predict and characterize gravitational wave observation from astrophysical models">
+      <meta itemprop="headline" content="Binary black holes merging from active galactic nuclei">
     
     
     
@@ -296,7 +296,7 @@
       <header style="margin-bottom: 0.5em;">
         
           <h1 id="page-title" class="page__title" itemprop="headline" style="margin-bottom: 0.2em;">
-            PRINCESS : Python tool to predict and characterize gravitational wave observation from astrophysical models
+            Binary black holes merging from active galactic nuclei
           </h1>
         
 
@@ -311,37 +311,40 @@
           <div class="project-tags-inline">
             
               
-              <span class="tag-badge tag-population-synthesis">Population synthesis</span>
+              <span class="tag-badge tag-population-synthesis">Population Synthesis</span>
             
               
-              <span class="tag-badge tag-stochastic-modeling">Stochastic modeling</span>
+              <span class="tag-badge tag-semi-analytic-modeling">Semi-Analytic Modeling</span>
             
               
-              <span class="tag-badge tag-monte-carlo">Monte Carlo</span>
+              <span class="tag-badge tag-simulation">Simulation</span>
             
               
-              <span class="tag-badge tag-markov-chains">Markov chains</span>
+              <span class="tag-badge tag-bayesian-analysis">Bayesian analysis</span>
             
               
-              <span class="tag-badge tag-frequency-spectrums">Frequency spectrums</span>
+              <span class="tag-badge tag-mass-distribution">Mass-Distribution</span>
             
               
-              <span class="tag-badge tag-sky-location">sky-location</span>
+              <span class="tag-badge tag-spin-distribution">Spin-Distribution</span>
+            
+              
+              <span class="tag-badge tag-frequency-spectrum">Frequency-Spectrum</span>
             
               
               <span class="tag-badge tag-python">Python</span>
             
               
-              <span class="tag-badge tag-tool-devlopement">Tool-devlopement</span>
+              <span class="tag-badge tag-tool-devlopement">Tool devlopement</span>
             
               
-              <span class="tag-badge tag-git">Git</span>
+              <span class="tag-badge tag-astrophysical-modeling">Astrophysical Modeling</span>
             
               
-              <span class="tag-badge tag-machine-learning">Machine learning</span>
+              <span class="tag-badge tag-monte-carlo-methods">Monte Carlo Methods</span>
             
               
-              <span class="tag-badge tag-astrophysics">Astrophysics</span>
+              <span class="tag-badge tag-statistics">Statistics</span>
             
               
               <span class="tag-badge tag-post-doc">Post-doc</span>
@@ -353,8 +356,8 @@
   <div class="project-papers" style="margin-top: 1em;">
     <h4>📄 Related Publications</h4>
     
-      <a href="https://arxiv.org/abs/2501.16127" class="btn btn--inverse" style="margin-right: 0.5em;" target="_blank" rel="noopener">
-        PRINCESS: Prediction of compact binaries observations with gravitational waves
+      <a href="https://doi.org/10.1051/0004-6361/202348509" class="btn btn--inverse" style="margin-right: 0.5em;" target="_blank" rel="noopener">
+        Impact of gas hardening on the population properties of hierarchical black hole mergers in active galactic nucleus disks
       </a>
     
   </div>
@@ -364,77 +367,103 @@
       <section class="page__content" itemprop="text">
         
 
-        <h2 id="a-fast-and-scalable-code-to-explore-the-gravitational-wave-background">A Fast and Scalable Code to Explore the Gravitational-Wave Background</h2>
+        <p>This project investigates how black holes embedded in AGN disks can grow through repeated mergers, and how gas interactions — particularly <em>gas hardening</em> — can shape their properties. The study contrasts two models: one with gas hardening (GH), where the gas facilitates orbital decay of binaries, and one without it (no-GH), where mergers proceed solely due to gravitational wave (GW) emission.</p>
 
-<p><strong>Princess</strong> is a Python-based code developed to model the gravitational-wave background produced by the population of compact binary mergers — including binary black holes (BBH), binary neutron stars (BNS), and mixed systems (BHNS).</p>
+<h2 id="scientific-context-black-hole-growth-in-agn-disks">Scientific Context: Black Hole Growth in AGN Disks</h2>
 
-<p>It was designed to answer a growing need in the gravitational-wave community: the ability to quickly generate synthetic background signals across a wide range of astrophysical scenarios, detector sensitivities, and subtraction strategies. It is open-source and documented to promote reproducibility and collaboration.</p>
+<p>Supermassive black holes (SMBHs) at galactic centers are often surrounded by dense gaseous disks. These active galactic nuclei (AGN) can host populations of stellar-origin black holes that sink toward special regions known as migration traps. Within these traps, black holes can interact and merge, sometimes repeatedly, leading to hierarchical mergers that build up intermediate-mass black holes (IMBHs).</p>
 
-<hr />
-
-<h2 id="key-features-and-capabilities">Key Features and Capabilities</h2>
-
-<p>Princess was built around three main objectives: <strong>speed</strong>, <strong>flexibility</strong>, and <strong>realism</strong>.</p>
+<p>Key scientific goals of this work include:</p>
 
 <ul>
-  <li>🔁 <strong>Fast generation of population catalogs</strong> using Monte Carlo sampling of binary parameters.</li>
-  <li>⚙️ <strong>Flexible modeling</strong> of astrophysical assumptions: merger rates, mass/spin distributions, metallicity evolution, delay times, etc.</li>
-  <li>🎯 <strong>Realistic observability filters</strong> to separate resolved and unresolved sources, supporting signal subtraction studies.</li>
-  <li>🔉 <strong>Spectral computation of gravitational-wave energy density</strong> across frequency, including residual backgrounds.</li>
-  <li>🔬 <strong>Support for detector network configurations</strong> (e.g. ET, CE, LIGO, Virgo), using instrument sensitivity curves and overlap reduction functions.</li>
-</ul>
-
-<p align="center">
-  <img src="../assets/images/princess_workflow.png" alt="Princess Workflow" width="600" />
-</p>
-
-<p><em>Simplified workflow of the Princess code: from astrophysical assumptions to stochastic background prediction.</em></p>
-
-<hr />
-
-<h2 id="applications-and-scientific-goals">Applications and Scientific Goals</h2>
-
-<p>Princess was used in several published studies to assess the capabilities of current and future detectors to:</p>
-
-<ul>
-  <li>Constrain <strong>compact binary formation channels</strong> via the spectral features of the gravitational-wave background;</li>
-  <li>Detect or place limits on the background from <strong>Population III remnants</strong>;</li>
-  <li>Evaluate the impact of <strong>binary subtraction techniques</strong> on the detectability of stochastic signals;</li>
-  <li>Compare different <strong>detector designs</strong> (e.g. triangle vs. dual L-shapes in Einstein Telescope).</li>
-</ul>
-
-<p>Its performance allows researchers to explore large parameter spaces efficiently, and to simulate observational scenarios under varying model uncertainties.</p>
-
-<hr />
-
-<h2 id="access-and-documentation">Access and Documentation</h2>
-
-<p>Princess is open source and available on GitHub:<br />
-🔗 <a href="https://github.com/CPerigois/Princess">https://github.com/CPerigois/Princess</a></p>
-
-<p>The repository includes:</p>
-
-<ul>
-  <li>📘 A detailed user guide and API reference;</li>
-  <li>📊 Example notebooks to reproduce published figures;</li>
-  <li>🔧 Tutorials for customizing input models and adding new detectors.</li>
+  <li>Understanding the role of gas torques and orbital damping in black hole mergers.</li>
+  <li>Quantifying the impact of gas hardening on the mass and spin distribution of resulting binaries.</li>
+  <li>Comparing AGN-driven mergers with other formation channels (e.g., young star clusters, globular clusters, isolated binaries).</li>
 </ul>
 
 <hr />
 
-<h2 id="associated-publication">Associated Publication</h2>
+<h3 id="gas-hardening-vs-no-gas-hardening-two-evolutionary-scenarios">Gas Hardening vs. No Gas Hardening: Two Evolutionary Scenarios</h3>
 
-<p>This tool is described in the following article:</p>
+<p>Two physical models are considered:</p>
 
 <ul>
-  <li><strong>“Princess: A tool for fast and flexible modeling of gravitational wave backgrounds from compact binary coalescences”</strong><br />
-C. Perigois, et al. (2025)<br />
-<a href="https://arxiv.org/abs/2501.16127">https://arxiv.org/abs/2501.16127</a></li>
+  <li><strong>Gas Hardening (GH)</strong>: The gas surrounding binaries extracts angular momentum and energy, significantly speeding up the inspiral. This promotes multiple merger generations and efficient spin alignment.</li>
+  <li><strong>No Gas Hardening</strong>: Mergers rely only on gravitational radiation. Fewer hierarchical events occur, and remnant spins remain isotropically distributed.</li>
 </ul>
 
-<p>Princess is actively maintained and used in current research projects involving the Einstein Telescope, LISA, and next-generation detector networks.</p>
+<hr />
+
+<h2 id="comparing-agn-mergers-to-other-astrophysical-channels">Comparing AGN Mergers to Other Astrophysical Channels</h2>
+
+<p>To understand whether black hole (BH) mergers occurring in AGN disks are truly distinct, the authors systematically compared their results to four other formation scenarios. This comparison was carried out using <strong>BBlack</strong>, a statistical tool that allows Bayesian inference of the contribution (or <em>mixing fraction</em>) of each channel based on gravitational-wave data.</p>
+
+<div style="text-align: center; margin: 1em 0;">
+  <a class="button" href="Pigouette.github.io/gravitational-waves/BBlack">Explore BBlack Tool →</a>
+</div>
 
 <hr />
+
+<h3 id="what-are-the-competing-formation-channels">What Are the Competing Formation Channels?</h3>
+
+<p>Besides the AGN disk scenario, four environments were modeled consistently using the same population synthesis framework (<code class="language-plaintext highlighter-rouge">sevn</code>) and astrophysical assumptions:</p>
+
+<ul>
+  <li><strong>Young Star Clusters (YSC)</strong>: Compact clusters of newly formed stars where dynamical interactions between massive remnants are frequent.</li>
+  <li><strong>Globular Clusters (GC)</strong>: Dense, old stellar systems that can retain black holes and facilitate repeated mergers over time.</li>
+  <li><strong>Nuclear Star Clusters (NSC)</strong>: Stellar systems surrounding supermassive black holes, similar to the centers of galaxies.</li>
+  <li><strong>Isolated Binaries</strong>: Binary stars evolving without dynamical interactions, where black holes form and merge solely through stellar evolution and gravitational radiation.</li>
+</ul>
+
+<p>These environments differ in density, metallicity, and dynamical conditions, which all influence the mass, spin, and rate of BH mergers.</p>
+
+<hr />
+
+<h2 id="mass-distributions-and-channel-fingerprints">Mass Distributions and Channel Fingerprints</h2>
+
+<p align="center"> <img src="../assets/images/agn_masses.png" alt="Mass distributions" width="600" /> </p>
+
+<p>The <strong>AGN disk with gas hardening (GH)</strong> stands out sharply from the other channels. In this model, black holes can undergo multiple successive mergers, leading to very high final masses — up to ~5,000 solar masses. This is well beyond the range achievable by the other channels:</p>
+
+<ul>
+  <li><strong>Dynamical channels</strong> (YSC, GC, NSC) typically produce primary black holes up to a few hundred solar masses, with one or two mass peaks around 20–50 M☉.</li>
+  <li><strong>Isolated binaries</strong> are more limited, with primary BHs rarely exceeding ~50 M☉ due to supernova mass loss and pair-instability constraints.</li>
+</ul>
+
+<p>The no-GH AGN model produces a mass spectrum much more similar to NSCs or GCs, where the hierarchical chain is typically truncated after 2–3 mergers.</p>
+
+<hr />
+
+<h2 id="quantifying-the-contribution-of-each-channel">Quantifying the Contribution of Each Channel</h2>
+
+<p>Using <strong>BBlack</strong>, I analyzed 56 high-purity gravitational wave events from the LVK catalog (GWTC-3) and inferred the relative contribution of each formation channel (called <strong>mixing fractions</strong>).</p>
+<p align="center"> <img src="../assets/images/agn_mixing_fractions.png" alt="Mixing fractions" width="200" /> </p>
+<p>The key conclusions are:</p>
+
+<ul>
+  <li><strong>NSC and YSC channels</strong> dominate the observed population due to their ability to produce mergers in the 10–40 M☉ range, which is where most current detections lie.</li>
+  <li>The <strong>isolated binary channel</strong> is disfavored because it predicts too few systems with high spin and mass.</li>
+  <li>The <strong>AGN+GH channel</strong>, while unique in producing extremely massive systems, contributes little to the currently <em>detectable</em> sample — simply because those massive mergers emit at frequencies below the sensitivity range of current detectors like LIGO and Virgo.</li>
+  <li>The <strong>AGN+no-GH</strong> scenario overlaps substantially with NSCs and GCs and is thus hard to distinguish observationally.</li>
+</ul>
+
+<blockquote>
+  <p>In other words, gas hardening in AGN disks leaves a unique imprint on the mass distribution of merging black holes, but confirming its role will likely require future detectors sensitive to lower gravitational-wave frequencies (such as the Einstein Telescope or LISA).</p>
+</blockquote>
+
+<p align="center"> <img src="../assets/images/agn_detection.png" alt="ISCO Frequency Distribution" width="600" /> </p>
+
+<hr />
+
+<h2 id="summary">Summary</h2>
+<p>This study highlights the critical role of gas dynamics in the evolution of black holes within AGN disks:</p>
+
+<ul>
+  <li>Gas hardening enhances the number and mass of hierarchical mergers.</li>
+  <li>It leads to high spin alignment, producing effective spin distributions peaking near 1.</li>
+  <li>The AGN+GH channel stands out for creating extremely massive black holes, offering a potential explanation for some gavitational-wave sources in the mass gap or beyond.</li>
+  <li>Next-generation detectors will be essential to test these predictions and differentiate between competing formation channels.</li>
+</ul>
 
 
         

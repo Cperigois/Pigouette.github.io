@@ -11,7 +11,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Hierarchical binary black holes evolution in Globular Clusters - Data science</title>
-<meta name="description" content="Simulation of binary black holes evolution in Globular cluster. Cluster model comparison. A BBlack study.">
+<meta name="description" content="This project investigates how the internal dynamics and long-term evolution of globular clusters shape the mass, spin, and merger-rate distributions of black holes through repeated mergers.">
 
 
   <meta name="author" content="Carole Périgois">
@@ -25,7 +25,7 @@
 <meta property="og:url" content="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Globular_clusters">
 
 
-  <meta property="og:description" content="Simulation of binary black holes evolution in Globular cluster. Cluster model comparison. A BBlack study.">
+  <meta property="og:description" content="This project investigates how the internal dynamics and long-term evolution of globular clusters shape the mass, spin, and merger-rate distributions of black holes through repeated mergers.">
 
 
 
@@ -311,25 +311,37 @@
           <div class="project-tags-inline">
             
               
-              <span class="tag-badge tag-statistics">Statistics</span>
+              <span class="tag-badge tag-semi-analytic-modeling">Semi-Analytic Modeling</span>
             
               
-              <span class="tag-badge tag-regression">Regression</span>
+              <span class="tag-badge tag-population-synthesis">Population Synthesis</span>
             
               
-              <span class="tag-badge tag-frequency-spectrum">Frequency-Spectrum</span>
+              <span class="tag-badge tag-monte-carlo-simulation">Monte Carlo Simulation</span>
             
               
-              <span class="tag-badge tag-time-series">Time-Series</span>
+              <span class="tag-badge tag-hierarchical-bayesian-inference">Hierarchical Bayesian Inference</span>
+            
+              
+              <span class="tag-badge tag-mass-distribution">Mass-Distribution</span>
+            
+              
+              <span class="tag-badge tag-spin-distribution">Spin-Distribution</span>
+            
+              
+              <span class="tag-badge tag-merger-rate">Merger-Rate</span>
             
               
               <span class="tag-badge tag-python">Python</span>
             
               
-              <span class="tag-badge tag-tool-developement">Tool-Developement</span>
+              <span class="tag-badge tag-astrophysical-modeling">Astrophysical Modeling</span>
             
               
-              <span class="tag-badge tag-modeling">Modeling</span>
+              <span class="tag-badge tag-statistical-inference">Statistical Inference</span>
+            
+              
+              <span class="tag-badge tag-gravitational-wave-astrophysics">Gravitational-Wave Astrophysics</span>
             
               
               <span class="tag-badge tag-post-doc">Post-doc</span>
@@ -338,12 +350,111 @@
         
 
         
+  <div class="project-papers" style="margin-top: 1em;">
+    <h4>📄 Related Publications</h4>
+    
+      <a href="https://doi.org/10.1051/0004-6361/202449272" class="btn btn--inverse" style="margin-right: 0.5em;" target="_blank" rel="noopener">
+        Hierarchical binary black hole mergers in globular clusters: Mass function and evolution with redshift
+      </a>
+    
+  </div>
+
       </header>
 
       <section class="page__content" itemprop="text">
         
 
-        <p>TBW</p>
+        <h2 id="the-challenge-massive-black-holes-in-the-gravitational-wave-sky">The Challenge: Massive Black Holes in the Gravitational-Wave Sky</h2>
+
+<p>One of the key open questions in gravitational-wave astronomy is the origin of black holes heavier than ~50 solar masses. The so-called <strong>pair-instability mass gap</strong> is expected to prevent black holes from forming via single-star evolution in this range. Yet, LIGO/Virgo have detected many mergers involving such massive black holes.</p>
+
+<p>This project explores one promising pathway: <strong>hierarchical mergers</strong> in <strong>globular clusters (GCs)</strong>. In these dense stellar environments, black holes can form binaries, merge, and the remnants can remain bound, leading to second- and third-generation mergers. This study aims to model this process and compare its imprint on observable parameters—mass, spin, and merger rate—with those of isolated binaries.</p>
+
+<hr />
+
+<h2 id="modeling-strategy-and-cluster-evolution-scenarios">Modeling Strategy and Cluster Evolution Scenarios</h2>
+
+<p>We use a fast, semi-analytic model (<code class="language-plaintext highlighter-rouge">fastcluster</code>) to simulate the dynamics and evolution of black holes in GCs. The model accounts for:</p>
+
+<ul>
+  <li>Stellar evolution and black hole formation</li>
+  <li>Binary formation via three-body interactions</li>
+  <li>Binary hardening and gravitational-wave decay</li>
+  <li>Relativistic recoil and black hole ejection</li>
+  <li>Cluster expansion and mass loss (internal and tidal)</li>
+</ul>
+
+<p>Three <strong>cluster evolution scenarios</strong> are considered:</p>
+
+<ul>
+  <li><strong>NoEv</strong>: The cluster does not evolve over time.</li>
+  <li><strong>Evol</strong>: The cluster evolves in isolation, expanding due to internal dynamics.</li>
+  <li><strong>Tidal</strong>: The cluster is also affected by the tidal field of the host galaxy.</li>
+</ul>
+
+<hr />
+
+<h2 id="three-models-of-black-hole-pairing">Three Models of Black Hole Pairing</h2>
+
+<p>A key uncertainty in modeling black hole binaries is how black holes pair up. This project explores three models, each making different assumptions about how black holes form binaries, particularly at later generations.</p>
+
+<h3 id="model-a"><strong>Model A</strong></h3>
+<ul>
+  <li>First-generation (1g) BHs pair preferentially by mass via three-body dynamics.</li>
+  <li>Only first-generation black holes are allowed as merger companions at later generations.</li>
+</ul>
+
+<h3 id="model-b"><strong>Model B</strong></h3>
+<ul>
+  <li>1g BHs are drawn from the population using a broader pairing prescription.</li>
+  <li>Secondary BHs at later generations can themselves be products of previous mergers.</li>
+</ul>
+
+<h3 id="model-c"><strong>Model C</strong></h3>
+<ul>
+  <li>Same pairing for 1g BHs as in Model B.</li>
+  <li>But, at later generations, the secondary must be a 1g BH.</li>
+</ul>
+
+<p>These assumptions affect both the mass distribution and the number of hierarchical generations achievable before black holes are ejected from the cluster.</p>
+
+<hr />
+
+<h2 id="mass-distributions-of-merging-black-holes">Mass Distributions of Merging Black Holes</h2>
+
+<p align="center"><img src="../assets/images/GC_masses.png" alt="Mass distribution figure from Fig. 6" width="600" /></p>
+
+<p>Figure above shows the primary black hole mass distribution for each model (A, B, C), compared to mergers from isolated binaries (blue) and LIGO/Virgo observations (grey shaded). Key insights:</p>
+
+<ul>
+  <li>Isolated binaries dominate at ~10 M☉, but cannot account for heavier black holes.</li>
+  <li>GC mergers (especially Models B and C) reproduce the high-mass tail (m₁ &gt; 50 M☉) through hierarchical assembly.</li>
+  <li>Model A lacks low-mass mergers due to its strict pairing rule favoring massive BHs.</li>
+  <li>The shape and slope of the high-mass end strongly depend on how black holes are allowed to combine across generations.</li>
+</ul>
+
+<p>The models also reveal how mass ratio distributions and spin misalignments differ between GC and isolated scenarios, helping distinguish their contributions in gravitational-wave data.</p>
+
+<hr />
+
+<h2 id="summary-of-key-findings">Summary of Key Findings</h2>
+
+<ul>
+  <li>Cluster dynamics limit hierarchical growth to 2–3 generations, with mergers beyond 3g rare due to expansion and ejection.</li>
+  <li>Models B and C produce a <strong>dual-peak mass distribution</strong>, with one peak around 10 M☉ and another around 35–40 M☉.</li>
+  <li>Hierarchical mergers dominate the high-mass tail (m₁ &gt; 50 M☉) and explain the presence of BHs in the pair-instability gap.</li>
+  <li>The mass distribution evolves with redshift, with heavier mergers more common at higher redshift (z ≳ 2), reflecting metallicity evolution.</li>
+  <li>A Bayesian mixture analysis shows that globular clusters may account for &gt;60% of observed BBH mergers, particularly when spin misalignment is included.</li>
+  <li>Spin distributions from hierarchical mergers also predict a secondary peak in precession (χₚ), which future detectors may be able to test.</li>
+</ul>
+
+<hr />
+
+<h2 id="why-it-matters">Why It Matters</h2>
+
+<p>This work demonstrates that <strong>globular clusters are efficient factories of massive black hole mergers</strong>, especially when their internal evolution and hierarchical assembly are taken into account. It also provides concrete predictions for spin, mass, and redshift evolution that can be tested with current and future gravitational-wave observatories (e.g., LIGO, Virgo, KAGRA, Einstein Telescope).</p>
+
+<p>Understanding the role of globular clusters is key to decoding the full population of binary black holes—and ultimately the stellar and dynamical environments that create them.</p>
 
 
         
