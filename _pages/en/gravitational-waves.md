@@ -23,7 +23,7 @@ feature_row:
     
   - image_path: /assets/images/41586_2019_1129_Fig1_HTML.png
     alt: "Gravitational wave detection"
-    title: "Gravitational Wave detection"
+    title: "Gravitational wave detection"
     excerpt: "From Einstein's theory to modern detectors: an overview of how gravitational waves are produced and how we detect them. *Image credit: ©Johan Jarnestad/The Royal Swedish Academy of Sciences.*"
     url: "/gravitational-waves/GW-intro"
     btn_class: "btn--primary"

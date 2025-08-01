@@ -13,7 +13,7 @@ excerpt: >
 feature_row:
   - image_path: /assets/images/sinusoïd_recognition.png
     alt: "customizable"
-    title: "Search for anomalies in Time Series"
+    title: "Search for anomalies in time series"
     excerpt: "Developpement of an autoencoder to detect anomalies such as drift in sinusoïdal signals."
     url: "/BeyondTheLab/AILab/Search_anomaly"
     btn_class: "btn--primary"
