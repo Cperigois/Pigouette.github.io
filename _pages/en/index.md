@@ -15,7 +15,7 @@ feature_row:
     alt: "customizable"
     title: "Princess"
     excerpt: "Open source tool to predict gravitational waves from astrophysical models."
-    url: "/_pages/princess"
+    url: "/gravitational-waves/PRINCESS"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/Oil_palm_plantation_in_Cigudeg-03.jpg #

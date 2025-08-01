@@ -77,7 +77,7 @@ These environments differ in density, metallicity, and dynamical conditions, whi
 
 ## Mass Distributions and Channel Fingerprints
 
-<p align="center"> <img src="../assets/images/agn_masses.png" alt="Mass distributions" width="600"/> </p>
+<p align="center"> <img src="../assets/images/AGN_mass_distrib.png" alt="Mass distributions" width="600"/> </p>
 
 The **AGN disk with gas hardening (GH)** stands out sharply from the other channels. In this model, black holes can undergo multiple successive mergers, leading to very high final masses — up to ~5,000 solar masses. This is well beyond the range achievable by the other channels:
 
@@ -91,7 +91,7 @@ The no-GH AGN model produces a mass spectrum much more similar to NSCs or GCs, w
 ## Quantifying the Contribution of Each Channel
 
 Using **BBlack**, I analyzed 56 high-purity gravitational wave events from the LVK catalog (GWTC-3) and inferred the relative contribution of each formation channel (called **mixing fractions**). 
-<p align="center"> <img src="../assets/images/agn_mixing_fractions.png" alt="Mixing fractions" width="200"/> </p>
+<p align="center"> <img src="../assets/images/agn_mixing_fractions.png" alt="Mixing fractions" width="600"/> </p>
 The key conclusions are:
 
 - **NSC and YSC channels** dominate the observed population due to their ability to produce mergers in the 10–40 M☉ range, which is where most current detections lie.

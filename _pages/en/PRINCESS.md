@@ -5,7 +5,7 @@ layout: projet
 classes: wide
 author_profile: true
 tags: 
-  - projet
+  - projets
 method: 
   - Population synthesis
   - Stochastic modeling

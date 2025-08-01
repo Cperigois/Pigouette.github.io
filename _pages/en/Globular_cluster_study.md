@@ -76,7 +76,11 @@ These assumptions affect both the mass distribution and the number of hierarchic
 
 ## Mass Distributions of Merging Black Holes
 
-<p align="center"><img src="../assets/images/GC_masses.png" alt="Mass distribution figure from Fig. 6" width="600"/></p>
+<p align="center">
+  <span style="background-color: white; display: inline-block;">
+    <img src="../assets/images/GC_masses.png" alt="Mass distribution figure from Fig. 6" width="600"/>
+  </span>
+</p>
 
 Figure above shows the primary black hole mass distribution for each model (A, B, C), compared to mergers from isolated binaries (blue) and LIGO/Virgo observations (grey shaded). Key insights:
 

@@ -1,5 +1,5 @@
 ---
-permalink: /gravitational-waves/
+permalink: /gravitational-waves/BBH-intro
 title: Black Holes & Gravitational Waves
 lang: en
 layout: single
