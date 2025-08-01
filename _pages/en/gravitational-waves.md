@@ -13,19 +13,19 @@ excerpt: >
   <small><a href="https://github.com/CPerigois/repositories">Last update: Aug. 1</a></small>
 
 feature_row:
-  - image_path: /assets/images/detector.png
+  - image_path: /assets/images/GW190521-Massive-Black-Hole-Merger-scaled.jpg
     alt: "Black hole evolution"
     title: "Origins and Evolution of Black Holes"
-    excerpt: "Understanding black hole formation and growth across cosmic time through gravitational wave and electromagnetic observations."
-    url: "/Pigouette.github.io/gravitational-waves/BBH-intro"
+    excerpt: "Understanding black hole formation and growth across cosmic time through gravitational wave and electromagnetic observations. *Credit: ©LIGO, ©MIT*"
+    url: "/gravitational-waves/BBH-intro"
     btn_class: "btn--primary"
     btn_label: "Learn more"
     
-  - image_path: /assets/images/Detection of gravitational waves.jpg
+  - image_path: /assets/images/41586_2019_1129_Fig1_HTML.png
     alt: "Gravitational wave detection"
     title: "Gravitational Wave Detection"
-    excerpt: "From Einstein's theory to modern detectors: an overview of how gravitational waves are produced and how we detect them."
-    url: "/Pigouette.github.io/gravitational-waves/GW-intro"
+    excerpt: "From Einstein's theory to modern detectors: an overview of how gravitational waves are produced and how we detect them. *Image credit: ©Johan Jarnestad/The Royal Swedish Academy of Sciences.*"
+    url: "/gravitational-waves/GW-intro"
     btn_class: "btn--primary"
     btn_label: "Learn more"
     
@@ -34,7 +34,7 @@ feature_row2:
     alt: "Analysis tools"
     title: "Princess"
     excerpt: "Prediction of gravitational wave observations from astrophysical models"
-    url: "/Pigouette.github.io/gravitational-waves/PRINCESS"
+    url: "/gravitational-waves/PRINCESS"
     btn_class: "btn--primary"
     btn_label: "Learn more"  
     
@@ -42,7 +42,7 @@ feature_row2:
     alt: "Analysis tools"
     title: "BBLack"
     excerpt: "Bayesian comparison between astrophysical models using gravitational wave observations"
-    url: "/Pigouette.github.io/gravitational-waves/BBLack"
+    url: "/gravitational-waves/BBLack"
     btn_class: "btn--primary"
     btn_label: "Learn more"  
 ---
@@ -52,7 +52,8 @@ I chose to present my work on binary black holes through the lens of gravitation
 ## Introductions
 {% include feature_row %}
 
-
+## Tools
+{% include feature_row2 %}
 
 
 
