@@ -11,7 +11,7 @@ feature_row:
     alt: "customizable"
     title: "Binary Black holes from Globular cluster"
     excerpt: "This project investigates how the internal dynamics and long-term evolution of globular clusters shape the mass, spin, and merger-rate distributions of black holes through repeated mergers. Image : Cluster Messier 15, credit: NASA, ESA"
-    url: "/gravitational-waves/Globular_cluster_study"
+    url: "/gravitational-waves/AGGlobular_cluster_study"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/Tagawa-mechanisms.jpg #
@@ -48,7 +48,7 @@ feature_row2:
     alt: "customizable"
     title: "Prospects of background observations with Einstein Telescope"
     excerpt: "Footprints of binary black holes evolution environment on gravitational wave background in Einstein Telescope. A Princess study."
-    url: "/Pigouette.github.io/gravitational-waves/Einstein_telescope_study"
+    url: "/gravitational-waves/Einstein_telescope_study"
     btn_class: "btn--primary"
     btn_label: "Learn more"  
 ---

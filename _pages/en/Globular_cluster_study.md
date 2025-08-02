@@ -1,5 +1,5 @@
 ---
-permalink: /gravitational-waves/Globular_clusters
+permalink: /gravitational-waves/Globular_cluster_study
 title: "Hierarchical binary black holes evolution in Globular Clusters"
 layout: projet
 classes: wide
