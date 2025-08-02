@@ -5,6 +5,29 @@ lang: en
 layout: single
 classes: wide
 author_profile: true
+
+feature_row:
+  - image_path: /assets/images/Hubble-Views-Messier-15.jpg
+    alt: "customizable"
+    title: "Binary Black holes from Globular cluster"
+    excerpt: "This project investigates how the internal dynamics and long-term evolution of globular clusters shape the mass, spin, and merger-rate distributions of black holes through repeated mergers. Image : Cluster Messier 15, credit: NASA, ESA"
+    url: "/gravitational-waves/Globular_cluster_study"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/Tagawa-mechanisms.jpg #
+    alt: "fully responsive"
+    title: "Binary black holes from active galactic nuclei"
+    excerpt: "How does the presence of gas in active galactic nucleus (AGN) disks influence the growth of black holes through mergers? This study explores how gas hardening changes the mass and spin distribution of hierarchical black hole binaries. Credit : THEA, Columbia university"
+    url: "/gravitational-waves/AGN_study"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/screen-shot-2018-01-02-at-10-20-00-am.avif
+    alt: "customizable"
+    title: "Angular momentum transportation : Model comparison through gravitational wave data."
+    excerpt: "Page not ready yes"
+    url: "/BeyondTheLab/AILab/Search_anomaly"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"  
 ---
 
 ## Black Hole Formation and the Puzzle of Mass and Time
@@ -13,28 +36,32 @@ Black holes are among the most enigmatic objects in the universe. They are born 
 
 ### Stellar Evolution and the Birth of Black Holes
 
-The formation of a black hole is intimately linked to the **initial mass and composition of a star**. Massive stars (above ~20 solar masses) can end their life as black holes, depending on how much mass they lose during their evolution — a process strongly influenced by metallicity (chemical composition) and stellar winds.  
+The formation of a black hole is tightly connected to the **initial mass and metallicity** (chemical composition) of the progenitor star. Metallicity influences how much mass a star loses through stellar winds during its lifetime — a key factor in determining the mass of the resulting black hole:
 
-- **Low-metallicity stars** lose less mass via winds and are more likely to produce heavy black holes.
-- **High-metallicity stars**, by contrast, shed a large part of their mass before collapsing, leading to lower-mass remnants or even neutron stars.
+- **Low-metallicity stars** lose little mass and are more likely to collapse into **massive or intermediate-mass black holes**.
+- **High-metallicity stars**, on the other hand, shed a significant fraction of their mass through strong winds, often resulting in **lighter black holes** or even **neutron stars**.
 
-The **age of the star** also matters: the earliest generations of stars, known as **Population III stars**, formed in a metal-free environment shortly after the Big Bang. These stars are thought to be extremely massive (100–300 M☉ or more), and their collapse could give birth to massive black holes directly — possibly seeding the supermassive black holes observed at high redshift.
+Metallicity also encodes **cosmic time**: it increases with each generation of stars as heavy elements are synthesized and dispersed by supernovae. 
 
-A critical feature of stellar evolution is the **pair-instability process**, which affects very massive stars:
+The **first generation of stars**, known as **Population III (Pop III)** stars, formed in a **pristine, metal-free Universe**, roughly **200 to 500 million years after the Big Bang**, corresponding to a **redshift of z ≈ 20–10**. Their unique composition led to extremely massive stellar bodies (typically 100–300 M☉, possibly more), with **weak stellar winds** and minimal mass loss. When these stars died, many are believed to have collapsed directly into **black holes with masses ranging from 100 to 1000 M☉**, placing them in the category of **intermediate-mass black holes**. These objects are prime candidates for the **seeds of future supermassive black holes**.
 
-- Stars with helium core masses between ~64 and 135 M☉ are thought to undergo **pair-instability supernovae**, leading to **complete disruption**, with no black hole remnant.
-- This process creates a **“mass gap”** in the black hole spectrum, typically expected between ~50 and 120 M☉. Observing black holes in this mass range could challenge or refine current models of stellar evolution.
+**Later generations of stars**, known as **Population I and II (Pop I/II)** stars, formed as the Universe became progressively enriched in heavy elements from earlier stellar explosions. Pop II stars began forming around **redshift z ≈ 10–6** (~500 Myr to 1 Gyr after the Big Bang), while Pop I stars dominate **from z ≈ 2 to the present** (the last ~10 billion years). These younger stars, with **higher metallicity**, exhibit **stronger stellar winds** and follow different evolutionary paths, generally leading to **lighter black hole remnants**.
 
-### Observational Landscape
+An additional layer of complexity arises with **very massive stars** due to the **pair-instability process**:
+
+- Stars with **helium core masses between ~64 and 135 M☉** are thought to undergo **pair-instability supernovae**, which lead to **total disruption** of the star, leaving behind **no remnant black hole**.
+- This phenomenon creates a predicted **mass gap** in the black hole mass spectrum, between approximately **50 and 120 M☉**. Finding black holes in this range could challenge existing models of stellar evolution, particularly those involving **Pop III progenitors in the early Universe**.
+
+### Observational Landscape<p align="center">
 
 Current observations reveal a wide variety of black holes:
 
 - **Stellar-mass black holes** (5–100 M☉), primarily detected via gravitational waves or X-ray binaries;
-- **Intermediate-mass black holes** (100–10⁴ M☉), for which evidence remains sparse and debated;
-- **Supermassive black holes** (10⁶–10¹⁰ M☉), observed in galactic centers across the universe, even at high redshifts (z > 6).
+- **Intermediate-mass black holes** (100–3.10$$^5$$ M☉), for which evidence remains sparse and debated;
+- **Massive black holes** (3.10$$^5$$–10¹⁰ M☉), observed in galactic centers across the universe, even at high redshifts (z > 6).
 
 <p align="center">
-  <img src="../assets/images/BH_mass_redshift.png" alt="BH_mass_redshift" width="600"/>
+  <img src="../assets/images/masse_bh_en.png" alt="BH_mass_redshift" width="600"/>
 </p>
 
 *Parameter space of observed black holes from electromagnetic and gravitational-wave observations (mass vs redshift).*
@@ -49,6 +76,9 @@ This landscape raises two fundamental questions:
 
 Addressing these questions requires new observational tools — and this is where **gravitational waves** play a key role.
 
+### Studies on Binary black holes formation and evolutions
+{% include feature_row %}
+
 ---
 
 ## Gravitational-Wave Observations of Black Hole Mergers
@@ -61,6 +91,10 @@ Each binary black hole coalescence emits gravitational waves in three phases:
 - **Merger**: the black holes collide and form a single, highly deformed object.
 - **Ringdown**: the remnant settles into a stable black hole, emitting GWs at characteristic frequencies (quasi-normal modes).
 
+<p align="center">
+  <img src="../assets/images/formes_waves.png" alt="BH_mass_redshift" width="600"/>
+</p>
+
 There are two main observables from GW data:
 
 ### 1. Individual Merger Events
@@ -70,6 +104,10 @@ Individual mergers are detected through **matched filtering**, where a bank of t
 ### 2. The Astrophysical Gravitational-Wave Background
 
 In addition to isolated events, the universe is filled with the **stochastic gravitational-wave background (SGWB)** — the superposition of countless unresolved mergers across cosmic history. This signal cannot be detected in a single detector. Instead, it is extracted statistically via **cross-correlation between detectors** in a network (e.g., LIGO, Virgo, KAGRA, Einstein Telescope).
+
+<p align="center">
+  <img src="../assets/images/formes_waves.png" alt="BH_mass_redshift" width="600"/>
+</p>
 
 The SGWB offers a unique window into:
 
