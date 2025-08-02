@@ -28,6 +28,29 @@ feature_row:
     url: "/BeyondTheLab/AILab/Search_anomaly"
     btn_class: "btn--primary"
     btn_label: "Learn more"  
+
+feature_row2:
+  - image_path: /assets/images/ET2CE_Res.png
+    alt: "customizable"
+    title: "Insights about Pop III stars from binary black holes contribution to the gravitational wave background."
+    excerpt: "To be written"
+    url: "/Pigouette.github.io/gravitational-waves/PopIII_bkg"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/SNR_V2.png #
+    alt: "fully responsive"
+    title: "Impact of star formation and evolution on the gravitational wave background."
+    excerpt: "Not ready yet"
+    url: "/Pigouette.github.io/gravitational-waves/Dynamics"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/ET_channel_BBook.png
+    alt: "customizable"
+    title: "Prospects of background observations with Einstein Telescope"
+    excerpt: "Footprints of binary black holes evolution environment on gravitational wave background in Einstein Telescope. A Princess study."
+    url: "/Pigouette.github.io/gravitational-waves/Einstein_telescope_study"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"  
 ---
 
 ## Black Hole Formation and the Puzzle of Mass and Time
@@ -106,8 +129,10 @@ Individual mergers are detected through **matched filtering**, where a bank of t
 In addition to isolated events, the universe is filled with the **stochastic gravitational-wave background (SGWB)** — the superposition of countless unresolved mergers across cosmic history. This signal cannot be detected in a single detector. Instead, it is extracted statistically via **cross-correlation between detectors** in a network (e.g., LIGO, Virgo, KAGRA, Einstein Telescope).
 
 <p align="center">
-  <img src="../assets/images/formes_waves.png" alt="BH_mass_redshift" width="600"/>
+  <img src="../assets/images/exemple_omega2.png" alt="BH_mass_redshift" width="600"/>
 </p>
+
+*Typical background from a population of binary black holes with masses around 40 M☉ and redshifts of 14 ± 4. One can distinguish the different phases of the coalescence through the characteristic shape of the spectrum.*
 
 The SGWB offers a unique window into:
 
@@ -116,3 +141,7 @@ The SGWB offers a unique window into:
 - Early-universe phenomena, such as the first generations of stars (Population III).
 
 Together, these observations — from discrete signals to background noise — provide a comprehensive picture of black hole formation, growth, and distribution across space and time.
+
+### Studies related on gravitational wave backgrounds
+{% include feature_row2 %}
+
