@@ -52,7 +52,7 @@ An additional layer of complexity arises with **very massive stars** due to the 
 - Stars with **helium core masses between ~64 and 135 M☉** are thought to undergo **pair-instability supernovae**, which lead to **total disruption** of the star, leaving behind **no remnant black hole**.
 - This phenomenon creates a predicted **mass gap** in the black hole mass spectrum, between approximately **50 and 120 M☉**. Finding black holes in this range could challenge existing models of stellar evolution, particularly those involving **Pop III progenitors in the early Universe**.
 
-### Observational Landscape<p align="center">
+### Observational Landscape
 
 Current observations reveal a wide variety of black holes:
 
@@ -61,7 +61,7 @@ Current observations reveal a wide variety of black holes:
 - **Massive black holes** (3.10$$^5$$–10¹⁰ M☉), observed in galactic centers across the universe, even at high redshifts (z > 6).
 
 <p align="center">
-  <img src="../assets/images/masse_bh_en.png" alt="BH_mass_redshift" width="600"/>
+  <img src="../assets/images/masse_bh_en.png" alt="BH_mass_redshift" width="800"/>
 </p>
 
 *Parameter space of observed black holes from electromagnetic and gravitational-wave observations (mass vs redshift).*
@@ -92,7 +92,7 @@ Each binary black hole coalescence emits gravitational waves in three phases:
 - **Ringdown**: the remnant settles into a stable black hole, emitting GWs at characteristic frequencies (quasi-normal modes).
 
 <p align="center">
-  <img src="../assets/images/formes_waves.png" alt="BH_mass_redshift" width="600"/>
+  <img src="../assets/images/formes_waves.png" alt="BH_mass_redshift" width="400"/>
 </p>
 
 There are two main observables from GW data:
