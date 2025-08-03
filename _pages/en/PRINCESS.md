@@ -1,93 +1,133 @@
 ---
 permalink: /gravitational-waves/PRINCESS
-title: "PRINCESS : Python tool to predict and characterize gravitational wave observation from astrophysical models"
+title: "PRINCESS: Predicting Gravitational-Wave Observations"
 layout: projet
 classes: wide
 author_profile: true
 tags: 
-  - projets
+  - projects
 method: 
-  - Population synthesis
-  - Stochastic modeling
-  - Monte Carlo
-  - Markov chains
+  - SNR Calculation
+  - Stochastic Background Analysis
+  - Population Synthesis
+  - Monte Carlo Simulation
 data: 
-  - Frequency spectrums
-  - sky-location
+  - Mass-Distribution
+  - Redshift-Evolution
+  - Stochastic Spectrum
 skills: 
   - Python
-  - Tool-devlopement
-  - Git
-  - Machine learning
-  - Astrophysics
+  - Gravitational-Wave Modeling
+  - Detector Simulation
+  - Statistical Astrophysics
 initiative: 
-  - Post-doc
-description: "Princess is a fast and flexible tool to simulate gravitational-wave backgrounds from compact binary populations. It supports realistic population models and is designed for scalability and ease of use."
+  - Tool
+description: "PRINCESS is an open-source tool designed to predict gravitational-wave observations, estimating both individual events and the associated stochastic background based on astrophysical models and detector configurations."
 papers:
   - title: "PRINCESS: Prediction of compact binaries observations with gravitational waves"
     url: "https://arxiv.org/abs/2501.16127"
 ---
 
-## A Fast and Scalable Code to Explore the Gravitational-Wave Background
+## Overview of the PRINCESS Code
 
-**Princess** is a Python-based code developed to model the gravitational-wave background produced by the population of compact binary mergers — including binary black holes (BBH), binary neutron stars (BNS), and mixed systems (BHNS).  
+**PRINCESS** (Prediction of Compact Binaries Observations with Gravitational Waves) is an **open-source Python tool** that forecasts both individual gravitational-wave events and the stochastic background from unresolved sources.
 
-It was designed to answer a growing need in the gravitational-wave community: the ability to quickly generate synthetic background signals across a wide range of astrophysical scenarios, detector sensitivities, and subtraction strategies. It is open-source and documented to promote reproducibility and collaboration.
+- Developed for use with **second- and third-generation detectors** (LIGO, Virgo, KAGRA, Einstein Telescope, Cosmic Explorer)
+- Easy to install and use: includes **ready-to-run templates** and example configurations
+- Designed to be **user-friendly and modular**, suitable for researchers and students
+- Fully **documented using Sphinx**, with tutorials and examples available on [GitHub](https://github.com/Cperigois/Princess)
 
 ---
 
-## Key Features and Capabilities
+## Gravitational Wave Detection Theory
 
-Princess was built around three main objectives: **speed**, **flexibility**, and **realism**.
+Gravitational-wave detections rely on computing the **signal-to-noise ratio (SNR)** of each event:
 
-- 🔁 **Fast generation of population catalogs** using Monte Carlo sampling of binary parameters.
-- ⚙️ **Flexible modeling** of astrophysical assumptions: merger rates, mass/spin distributions, metallicity evolution, delay times, etc.
-- 🎯 **Realistic observability filters** to separate resolved and unresolved sources, supporting signal subtraction studies.
-- 🔉 **Spectral computation of gravitational-wave energy density** across frequency, including residual backgrounds.
-- 🔬 **Support for detector network configurations** (e.g. ET, CE, LIGO, Virgo), using instrument sensitivity curves and overlap reduction functions.
+$$
+\rho^2 = 4 \int_{f_{\min}}^{f_{\max}} \frac{|\tilde{h}(f)|^2}{S_n(f)} df
+$$
+
+Here, $$ \tilde{h}(f) $$ is the Fourier-domain waveform, and $$ S_n(f) $$ is the detector noise power spectral density. The SNR depends strongly on:
+
+- the binary masses
+- distance/redshift
+- source orientation
+- detector sensitivity
+
+PRINCESS computes SNRs for each source in a catalog, based on waveform modeling, detector geometry, and sky-averaged antenna patterns.
+
+---
+
+## Detection Biases and Event Predictions
+
+Detection requires a threshold (e.g., $$ \rho > 8 $$). PRINCESS takes into account the **selection bias** introduced by this threshold and forecasts the number of resolvable events per detector configuration.  
+See **Figure 1** below:
 
 <p align="center">
-  <img src="../assets/images/princess_workflow.png" alt="Princess Workflow" width="600"/>
+  <img src="../assets/images/princess_detections.png" alt="Figure 1 - PRINCESS Detection Predictions" width="700"/>
 </p>
 
-*Simplified workflow of the Princess code: from astrophysical assumptions to stochastic background prediction.*
+The tool reproduces trends observed in real data. Overestimates are often due to optimistic merger rates or mass distributions in the input population models.
 
 ---
 
-## Applications and Scientific Goals
+## Merger Rates and Observational Comparisons
 
-Princess was used in several published studies to assess the capabilities of current and future detectors to:
+The tested models span a wide range of local merger rates $$ R_0 $$ from 18 to 100 Gpc$$^{-3}$$yr$$^{-1}$$, compared to the observed LVK value of $$ R_0 = 23.9^{+14.9}_{-8.6} $$.
 
-- Constrain **compact binary formation channels** via the spectral features of the gravitational-wave background;
-- Detect or place limits on the background from **Population III remnants**;
-- Evaluate the impact of **binary subtraction techniques** on the detectability of stochastic signals;
-- Compare different **detector designs** (e.g. triangle vs. dual L-shapes in Einstein Telescope).
+Key findings:
 
-Its performance allows researchers to explore large parameter spaces efficiently, and to simulate observational scenarios under varying model uncertainties.
+- Models with lower metallicity spread (σZ = 0.2) align better with current observations.
+- Mass distributions with an excess of high-mass black holes inflate SNR values and detection counts.
 
 ---
 
-## Access and Documentation
+## Stochastic Gravitational-Wave Background
 
-Princess is open source and available on GitHub:  
-🔗 [https://github.com/CPerigois/Princess](https://github.com/CPerigois/Princess)
+In addition to individual detections, unresolved sources generate a **stochastic background**. Its amplitude is quantified through the energy density spectrum:
 
-The repository includes:
+$$
+\Omega_{\mathrm{GW}}(f) = \frac{f}{\rho_c c} F(f)
+$$
 
-- 📘 A detailed user guide and API reference;
-- 📊 Example notebooks to reproduce published figures;
-- 🔧 Tutorials for customizing input models and adding new detectors.
+with $$ F(f) $$ the total GW flux and $$ \rho_c $$ the Universe’s critical energy density. In PRINCESS, the spectrum is computed as:
+
+$$
+\Omega_{\mathrm{GW}}(f) \propto f^2 \langle |\tilde{h}(f)|^2 \rangle
+$$
+
+Both **total** and **residual** (after subtracting detected sources) spectra are calculated.
 
 ---
 
-## Associated Publication
+## Spectral Shape and Detectability
 
-This tool is described in the following article:
+<p align="center">
+  <img src="../assets/images/princess_background.png" alt="Figure 3 - Stochastic Background Spectrum" width="700"/>
+</p>
 
-- **"Princess: A tool for fast and flexible modeling of gravitational wave backgrounds from compact binary coalescences"**  
-  C. Perigois, et al. (2025)  
-  [https://arxiv.org/abs/2501.16127](https://arxiv.org/abs/2501.16127)
+The typical $$ f^{2/3} $$ slope below ~200 Hz arises from the inspiral phase. High-frequency cutoffs reflect the end of the merger process. Spectral variations stem from different redshift and mass distributions.
 
-Princess is actively maintained and used in current research projects involving the Einstein Telescope, LISA, and next-generation detector networks.
+PRINCESS also computes the background's detectability (SNR), including cross-correlation across detectors.
 
+| Network     | SNR (total) | SNR (residual) |
+|-------------|-------------|----------------|
+| ET          | 1700        | 59             |
+| 2×CE        | 3601        | 8              |
+| ET + 2×CE   | 4332        | <1             |
+
+This shows that the **residual background becomes undetectable** when using a full 3G detector network, after subtracting individually resolved sources.
+
+---
+
+## Conclusion
+
+**PRINCESS bridges theoretical population models and observational forecasts.** It enables:
+
+- Predicting the number and properties of detectable gravitational-wave events
+- Modeling and assessing the astrophysical stochastic background
+- Accounting for observational biases (mass, redshift, orientation)
+- Testing detector configurations and network sensitivity
+
+> PRINCESS is a key tool for preparing the next era of gravitational-wave astronomy and for constraining the astrophysical origin of compact binaries.
 ---

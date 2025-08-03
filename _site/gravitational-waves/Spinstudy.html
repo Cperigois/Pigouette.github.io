@@ -10,8 +10,8 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>Binary black holes spin model comparison with gravitational wave data. - Data science</title>
-<meta name="description" content="Study comparing angular momentum transportation models using gravitational wave observation. A BBlack study.">
+<!-- begin _includes/seo.html --><title>Black Hole Spin Evolution and Model Selection from GWTC-3 - Data science</title>
+<meta name="description" content="This project investigates the physical origin of black hole spins in merging binaries, assessing competing angular momentum transport models using hierarchical Bayesian inference on gravitational-wave data.">
 
 
   <meta name="author" content="Carole Périgois">
@@ -21,14 +21,11 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="Data science">
-<meta property="og:title" content="Binary black holes spin model comparison with gravitational wave data.">
-<meta property="og:url" content="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Spin_study">
+<meta property="og:title" content="Black Hole Spin Evolution and Model Selection from GWTC-3">
+<meta property="og:url" content="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Spinstudy">
 
 
-  <meta property="og:description" content="Study comparing angular momentum transportation models using gravitational wave observation. A BBlack study.">
-
-
-
+  <meta property="og:description" content="This project investigates the physical origin of black hole spins in merging binaries, assessing competing angular momentum transport models using hierarchical Bayesian inference on gravitational-wave data.">
 
 
 
@@ -37,12 +34,15 @@
 
 
 
-  
+
+
 
   
 
+  
 
-<link rel="canonical" href="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Spin_study">
+
+<link rel="canonical" href="https://pigouette.github.io/Pigouette.github.io/gravitational-waves/Spinstudy">
 
 
 
@@ -286,7 +286,7 @@
 
     <!-- Meta tags for SEO -->
     
-      <meta itemprop="headline" content="Binary black holes spin model comparison with gravitational wave data.">
+      <meta itemprop="headline" content="Black Hole Spin Evolution and Model Selection from GWTC-3">
     
     
     
@@ -296,7 +296,7 @@
       <header style="margin-bottom: 0.5em;">
         
           <h1 id="page-title" class="page__title" itemprop="headline" style="margin-bottom: 0.2em;">
-            Binary black holes spin model comparison with gravitational wave data.
+            Black Hole Spin Evolution and Model Selection from GWTC-3
           </h1>
         
 
@@ -311,22 +311,34 @@
           <div class="project-tags-inline">
             
               
-              <span class="tag-badge tag-statistics">Statistics</span>
+              <span class="tag-badge tag-binary-population-synthesis">Binary Population Synthesis</span>
             
               
-              <span class="tag-badge tag-regression">Regression</span>
+              <span class="tag-badge tag-hierarchical-bayesian-inference">Hierarchical Bayesian Inference</span>
             
               
-              <span class="tag-badge tag-frequency-spectrum">Frequency-Spectrum</span>
+              <span class="tag-badge tag-kernel-density-estimation">Kernel Density Estimation</span>
             
               
-              <span class="tag-badge tag-time-series">Time-Series</span>
+              <span class="tag-badge tag-spin-distribution">Spin-Distribution</span>
+            
+              
+              <span class="tag-badge tag-chirp-mass">Chirp-Mass</span>
+            
+              
+              <span class="tag-badge tag-effective-spin-χ-eff">Effective Spin (χ_eff)</span>
+            
+              
+              <span class="tag-badge tag-precessing-spin-χ-p">Precessing Spin (χ_p)</span>
             
               
               <span class="tag-badge tag-python">Python</span>
             
               
-              <span class="tag-badge tag-modeling">Modeling</span>
+              <span class="tag-badge tag-astrophysical-modeling">Astrophysical Modeling</span>
+            
+              
+              <span class="tag-badge tag-statistical-inference">Statistical Inference</span>
             
               
               <span class="tag-badge tag-post-doc">Post-doc</span>
@@ -335,12 +347,128 @@
         
 
         
+  <div class="project-papers" style="margin-top: 1em;">
+    <h4>📄 Related Publications</h4>
+    
+      <a href="https://ui.adsabs.harvard.edu/abs/2023Univ....9..507P/abstract" class="btn btn--inverse" style="margin-right: 0.5em;" target="_blank" rel="noopener">
+        Binary black hole spins: model selection with GWTC-3
+      </a>
+    
+  </div>
+
       </header>
 
       <section class="page__content" itemprop="text">
         
 
-        <p>TBW</p>
+        <h2 id="the-challenge-what-sets-black-hole-spins">The Challenge: What Sets Black Hole Spins?</h2>
+
+<p>Understanding black hole (BH) spins is critical for unveiling the physics of massive stellar evolution and binary interactions. Spins encode how angular momentum is transported within progenitor stars and can be influenced by binary interactions, tidal forces, and supernova kicks. However, the physical mechanisms regulating these processes remain uncertain.</p>
+
+<p>This project confronts several theoretical models with gravitational-wave observations to determine which best explain the observed spin distribution of merging binary black holes (BBHs).</p>
+
+<hr />
+
+<h2 id="competing-models-of-angular-momentum-transport">Competing Models of Angular Momentum Transport</h2>
+
+<p>We explore four toy models that represent a broad range of assumptions on internal angular momentum transport:</p>
+
+<ul>
+  <li><strong>GENEVA (G):</strong> Inefficient transport via meridional currents and shear (low spin dissipation).</li>
+  <li><strong>MESA (M):</strong> Efficient transport using Tayler–Spruit dynamo (moderate spins).</li>
+  <li><strong>FULLER (F):</strong> Extremely efficient magnetic transport, resulting in nearly vanishing spins (χ ≈ 0.01).</li>
+  <li><strong>MAXWELLIAN (Max):</strong> A phenomenological model with spins drawn from a Maxwellian distribution (σ = 0.1), empirically motivated.</li>
+</ul>
+
+<p>Each model is also tested with an added <strong>tidal spin-up mechanism</strong> for the second-born black hole, following Bavera et al. (2020)—referred to as <code class="language-plaintext highlighter-rouge">_B21</code> variants.</p>
+
+<hr />
+
+<h2 id="tidal-spin-up-in-wolfrayet-stars-the-_b21-prescription">Tidal Spin-Up in Wolf–Rayet Stars: The _B21 Prescription</h2>
+
+<p>In tight binaries, the progenitor of the second-born BH may be a <strong>Wolf–Rayet (WR)</strong> star that is tidally spun up before collapse. The <strong>B21 model</strong> provides a fit for the final BH spin as a function of the WR mass and orbital period.</p>
+
+<p>This mechanism is critical for models like FULLER or MESA, where most BHs would otherwise have negligible spin. Including B21 enables a small sub-population of highly spinning BHs, reconciling models with non-zero spin observations.</p>
+
+<hr />
+
+<h2 id="observational-spin-parameters">Observational Spin Parameters</h2>
+
+<p>Gravitational-wave detectors provide access to two spin observables:</p>
+
+<ul>
+  <li><strong>Effective spin (χ_eff):</strong> The mass-weighted projection of individual spins along the orbital angular momentum.</li>
+  <li><strong>Precessing spin (χ_p):</strong> A proxy for spin components misaligned with the orbit, responsible for precession.</li>
+</ul>
+
+<p>These observables are compared across models using distributions extracted from hierarchical population synthesis simulations.</p>
+
+<h3 id="figure-2-mass-distribution">Figure 2: Mass Distribution</h3>
+
+<p>The model mass distributions are relatively insensitive to spin assumptions. However, kick models affect the mass peaks. The <strong>GM20</strong> model shows more low-mass mergers due to its lower kicks preserving wider binaries, while <strong>σ150</strong> and <strong>σ265</strong> suppress low-mass systems through disruptions.</p>
+
+<h3 id="figure-4-spin-distributions">Figure 4: Spin Distributions</h3>
+
+<p align="center"><img src="../assets/images/spin_chi_eff_chi_p_dist.png" alt="Spin distribution" width="800" /></p>
+
+<ul>
+  <li><strong>GENEVA</strong> models peak at high spins.</li>
+  <li><strong>FULLER</strong> yields spins near zero — strongly disfavored unless B21 is included.</li>
+  <li><strong>MESA and MAX</strong> exhibit intermediate behavior.</li>
+  <li>Including B21 raises χ_p and χ_eff, especially in models with otherwise low spins.</li>
+</ul>
+
+<h3 id="figure-5-model-likelihoods">Figure 5: Model Likelihoods</h3>
+
+<p align="center"><img src="../assets/images/spin_model_likelihoods.png" alt="Model likelihoods" width="600" /></p>
+
+<p>Log-likelihood values demonstrate that:</p>
+
+<ul>
+  <li><strong>FULLER</strong> (F) is rejected unless the B21 spin-up mechanism is included.</li>
+  <li><strong>MAX and MESA_B21</strong> are among the most compatible with GWTC-3 data.</li>
+  <li>The <strong>precessing spin parameter χ_p</strong> is crucial for discriminating between models.</li>
+</ul>
+
+<hr />
+
+<h2 id="bayesian-analysis-framework">Bayesian Analysis Framework</h2>
+
+<p>The model comparison is performed using <strong>hierarchical Bayesian inference</strong>. The likelihood of each model is computed using the spin and mass posteriors from 59 BBH events in GWTC-3. The analysis includes:</p>
+
+<ul>
+  <li>Marginalization over 5 parameters: <code class="language-plaintext highlighter-rouge">{chirp mass, mass ratio, redshift, χ_eff, χ_p}</code></li>
+  <li>A population prior from binary population synthesis with metallicity and star-formation history</li>
+  <li>Kernel density estimation for constructing continuous model predictions</li>
+</ul>
+
+<p>Likelihoods are normalized with respect to detection biases, ensuring proper comparison with LIGO/Virgo/KAGRA observations.</p>
+
+<hr />
+
+<h2 id="key-results">Key Results</h2>
+
+<ul>
+  <li>Models predicting <strong>only negligible spins</strong> (e.g., FULLER without B21) are <strong>ruled out</strong>.</li>
+  <li>A <strong>sub-population of tidally spun-up BHs</strong> (via B21) is sufficient to match observations.</li>
+  <li>Spin orientation (χ_p) contains crucial information: ignoring χ_p significantly weakens the constraints.</li>
+  <li>Models with <strong>efficient angular momentum transport</strong> (e.g., MESA + B21) offer the best match.</li>
+  <li><strong>Low natal kick models (GM20)</strong> underperform due to their prediction of too many aligned, low-χ_p systems.</li>
+</ul>
+
+<hr />
+
+<h2 id="why-it-matters">Why It Matters</h2>
+
+<p>This analysis provides the <strong>first comprehensive test of spin magnitude models</strong> using hierarchical Bayesian inference and real gravitational-wave data. The findings support:</p>
+
+<ul>
+  <li><strong>Efficient internal angular momentum transport</strong> (as in the Tayler–Spruit model),</li>
+  <li><strong>Tidal spin-up mechanisms</strong> in close WR binaries,</li>
+  <li>The <strong>necessity of spin precession measurements</strong> to break degeneracies between astrophysical scenarios.</li>
+</ul>
+
+<p>As more precessing systems are detected, we will be able to refine these constraints and further resolve the origin of black hole spins.</p>
 
 
         
