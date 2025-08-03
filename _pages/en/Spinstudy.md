@@ -71,24 +71,18 @@ The model mass distributions are relatively insensitive to spin assumptions. How
 
 ### Figure 4: Spin Distributions
 
-<p align="center"><img src="../assets/images/spin_chi_eff_chi_p_dist.png" alt="Spin distribution" width="800"/></p>
+<p align="center"><img src="../assets/images/fig2.pdf" alt="Spin distribution" width="600"/></p>
 
 - **GENEVA** models peak at high spins.
 - **FULLER** yields spins near zero — strongly disfavored unless B21 is included.
 - **MESA and MAX** exhibit intermediate behavior.
 - Including B21 raises χ_p and χ_eff, especially in models with otherwise low spins.
 
+<p align="center"><img src="../assets/images/fig4.pdf" alt="Model likelihoods" width="600"/></p>
+
+
 ### Figure 5: Model Likelihoods
 
-<p align="center"><img src="../assets/images/spin_model_likelihoods.png" alt="Model likelihoods" width="600"/></p>
-
-Log-likelihood values demonstrate that:
-
-- **FULLER** (F) is rejected unless the B21 spin-up mechanism is included.
-- **MAX and MESA_B21** are among the most compatible with GWTC-3 data.
-- The **precessing spin parameter χ_p** is crucial for discriminating between models.
-
----
 
 ## Bayesian Analysis Framework
 
@@ -99,6 +93,15 @@ The model comparison is performed using **hierarchical Bayesian inference**. The
 - Kernel density estimation for constructing continuous model predictions
 
 Likelihoods are normalized with respect to detection biases, ensuring proper comparison with LIGO/Virgo/KAGRA observations.
+
+---
+<p align="center"><img src="../assets/images/fig5.png" alt="Model likelihoods" width="800"/></p>
+
+Log-likelihood values demonstrate that:
+
+- **FULLER** (F) is rejected unless the B21 spin-up mechanism is included.
+- **MAX and MESA_B21** are among the most compatible with GWTC-3 data.
+- The **precessing spin parameter χ_p** is crucial for discriminating between models.
 
 ---
 

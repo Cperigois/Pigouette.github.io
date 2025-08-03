@@ -61,10 +61,10 @@ PRINCESS computes SNRs for each source in a catalog, based on waveform modeling,
 ## Detection Biases and Event Predictions
 
 Detection requires a threshold (e.g., $$ \rho > 8 $$). PRINCESS takes into account the **selection bias** introduced by this threshold and forecasts the number of resolvable events per detector configuration.  
-See **Figure 1** below:
+See **figure** below:
 
 <p align="center">
-  <img src="../assets/images/princess_detections.png" alt="Figure 1 - PRINCESS Detection Predictions" width="700"/>
+  <img src="../assets/images/Detections_log.pdf" alt="Figure 1 - PRINCESS Detection Predictions" width="700"/>
 </p>
 
 The tool reproduces trends observed in real data. Overestimates are often due to optimistic merger rates or mass distributions in the input population models.
@@ -103,7 +103,7 @@ Both **total** and **residual** (after subtracting detected sources) spectra are
 ## Spectral Shape and Detectability
 
 <p align="center">
-  <img src="../assets/images/princess_background.png" alt="Figure 3 - Stochastic Background Spectrum" width="700"/>
+  <img src="../assets/images/Figure_1.png" alt="Figure 3 - Stochastic Background Spectrum" width="700"/>
 </p>
 
 The typical $$ f^{2/3} $$ slope below ~200 Hz arises from the inspiral phase. High-frequency cutoffs reflect the end of the merger process. Spectral variations stem from different redshift and mass distributions.
