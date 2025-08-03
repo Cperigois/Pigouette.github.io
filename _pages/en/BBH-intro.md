@@ -24,8 +24,8 @@ feature_row:
   - image_path: /assets/images/screen-shot-2018-01-02-at-10-20-00-am.avif
     alt: "customizable"
     title: "Angular momentum transportation : Model comparison through gravitational wave data."
-    excerpt: "Page not ready yes"
-    url: "/BeyondTheLab/AILab/Search_anomaly"
+    excerpt: "Comparison of angular momentum transportation models with gravitational wave data."
+    url: "/gravitational-waves/Spinstudy"
     btn_class: "btn--primary"
     btn_label: "Learn more"  
 

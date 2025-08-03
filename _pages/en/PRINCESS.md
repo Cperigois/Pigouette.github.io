@@ -64,7 +64,7 @@ Detection requires a threshold (e.g., $$ \rho > 8 $$). PRINCESS takes into accou
 See **figure** below:
 
 <p align="center">
-  <img src="../assets/images/Detections_log.pdf" alt="Figure 1 - PRINCESS Detection Predictions" width="700"/>
+  <img src="../assets/images/Detections_log.png" alt="Figure 1 - PRINCESS Detection Predictions" width="700"/>
 </p>
 
 The tool reproduces trends observed in real data. Overestimates are often due to optimistic merger rates or mass distributions in the input population models.

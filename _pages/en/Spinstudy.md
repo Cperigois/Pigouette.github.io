@@ -71,14 +71,14 @@ The model mass distributions are relatively insensitive to spin assumptions. How
 
 ### Figure 4: Spin Distributions
 
-<p align="center"><img src="../assets/images/fig2.pdf" alt="Spin distribution" width="600"/></p>
+<p align="center"><img src="../assets/images/fig2.png" alt="Spin distribution" width="600"/></p>
 
 - **GENEVA** models peak at high spins.
 - **FULLER** yields spins near zero — strongly disfavored unless B21 is included.
 - **MESA and MAX** exhibit intermediate behavior.
 - Including B21 raises χ_p and χ_eff, especially in models with otherwise low spins.
 
-<p align="center"><img src="../assets/images/fig4.pdf" alt="Model likelihoods" width="600"/></p>
+<p align="center"><img src="../assets/images/fig4.pnp" alt="Model likelihoods" width="600"/></p>
 
 
 ### Figure 5: Model Likelihoods
