@@ -21,7 +21,7 @@ skills:
   - Detector Simulation
   - Statistical Astrophysics
 initiative: 
-  - Tool
+  - Post-doc
 description: "PRINCESS is an open-source tool designed to predict gravitational-wave observations, estimating both individual events and the associated stochastic background based on astrophysical models and detector configurations."
 papers:
   - title: "PRINCESS: Prediction of compact binaries observations with gravitational waves"

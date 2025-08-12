@@ -33,33 +33,58 @@ search: false
   color: white;
 }
 
-.tag-simulation        { background-color: #1f77b4; }
-.tag-autoencodeur        { background-color: #1f77b4; }
-.tag-cnn        { background-color: #1f77b4; }
+/* Colors by category (harmonized) */
+  /* Initiatives / Parcours */
+  .tag-post-doc,
+  .tag-phd,
+  .tag-independent-study { background-color: #d62728; }
 
-.tag-visualization     { background-color: #2ca02c; }
-.tag-modeling          { background-color: #9467bd; }
+  /* Langages & Outils */
+  .tag-python,
+  .tag-pytorch,
+  .tag-matlab,
+  .tag-simulink { background-color: #ff7f0e; }
 
-.tag-python            { background-color: #ff7f0e; }
-.tag-pytorch            { background-color: #ff7f0e; }
-.tag-matlab            { background-color: #ff7f0e; }
-.tag-simulink            { background-color: #ff7f0e; }
+  /* Modélisation, Simulation & IA */
+  .tag-modeling,
+  .tag-astrophysical-modeling,
+  .tag-gravitational-wave-modeling,
+  .tag-detector-simulation,
+  .tag-population-synthesis,
+  .tag-binary-population-synthesis,
+  .tag-semi-analytic-modeling,
+  .tag-monte-carlo-simulation,
+  .tag-simulation,
+  .tag-snr-calculation,
+  .tag-stochastic-background-analysis,
+  .tag-autoencoder,
+  .tag-cnn,
+  .tag-machine-learning,
+  .tag-deep-learning { background-color: #9467bd; }
 
-.tag-machine-learning  { background-color: #d62728; }
-.tag-deep-learning     { background-color: #d62728; }
+  /* Statistiques & Méthodes */
+  .tag-statistics,
+  .tag-statistical-inference,
+  .tag-bayesian-analysis,
+  .tag-hierarchical-bayesian-inference,
+  .tag-regression,
+  .tag-kernel-density-estimation,
+  .tag-data-analysis,
+  .tag-signal-processing { background-color: #e377c2; }
 
-.tag-statistics         { background-color: #e377c2; }
-.tag-bayesian-analysis         { background-color: #e377c2; }
-.tag-regression         { background-color: #e377c2; }
-.tag-classification         { background-color: #e377c2; }
+  /* Données & Domaines d'Analyse */
+  .tag-parameter-distribution
+  .tag-merger-rate,
+  .tag-frequency-spectrum,
+  .tag-time-series,
+  .tag-redshift-evolution,
+  .tag-stochastic-spectrum,
+  .tag-black-holes-spin { background-color: #17becf; color: #063241; }
 
-
-.tag-time-series       { background-color: #17becf; }
-.tag-frequency-spectrum       { background-color: #17becf; }
-
-.tag-independent-study     { background-color: #d62728; }
-.tag-phd     { background-color: #d62728; }
-.tag-post-doc     { background-color: #d62728; }
+  /* Domaines Scientifiques */
+  .tag-gravitational-wave-astrophysics,
+  .tag-detection,
+  .tag-statistical-astrophysics { background-color: #2ca02c; color: #063241; }
 
 
 
