@@ -9,7 +9,7 @@ tags:
 method: 
   - Statistics
   - Regression
-  - MCMC
+  - Monte Carlo Methods
 data: 
   - Frequency-Spectrum
   - Time-Series
@@ -17,7 +17,9 @@ skills:
   - Matlab
   - Simulink
   - Modeling
-  - Tool-Developement
+  - Software Architecture
+  - Project Management
+  - Git-version-control
 initiative: 
   - Post-doc
 description: "Study and modelisation of noise propagation through control loops in the Virgo detector"

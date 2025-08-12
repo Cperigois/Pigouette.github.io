@@ -9,16 +9,20 @@ tags:
 method: 
   - Semi-Analytic Modeling
   - Population Synthesis
-  - Monte Carlo Simulation
+  - Monte Carlo Methods
   - Hierarchical Bayesian Inference
 data: 
-  - Mass-Distribution
+  - Parameter Distribution
+  - Gravitational-waves Detection
   - Spin-Distribution
   - Merger-Rate
 skills: 
   - Python
   - Astrophysical Modeling
   - Statistical Inference
+  - Software Architecture
+  - Project Management
+  - Mentoring
   - Gravitational-Wave Astrophysics
 initiative: 
   - Post-doc

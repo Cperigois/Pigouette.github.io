@@ -53,7 +53,7 @@ search: false
   .tag-population-synthesis,
   .tag-binary-population-synthesis,
   .tag-semi-analytic-modeling,
-  .tag-monte-carlo-simulation,
+  .tag-monte-carlo-methods,
   .tag-simulation,
   .tag-snr-calculation,
   .tag-stochastic-background-analysis,
@@ -67,7 +67,9 @@ search: false
   .tag-statistical-inference,
   .tag-bayesian-analysis,
   .tag-hierarchical-bayesian-inference,
+  .tag-monte-carlo-methods,
   .tag-regression,
+  .tag-classification
   .tag-kernel-density-estimation,
   .tag-data-analysis,
   .tag-signal-processing { background-color: #e377c2; }
@@ -83,9 +85,26 @@ search: false
 
   /* Domaines Scientifiques */
   .tag-gravitational-wave-astrophysics,
-  .tag-detection,
-  .tag-statistical-astrophysics { background-color: #2ca02c; color: #063241; }
+  .tag-gravitational-wave-detection,
+  .tag-statistical-astrophysics { background-color: #008020; }
 
+/* Gestion & Communication */
+  .tag-project-management       { background-color: #005b96; }
+  .tag-team-lead                { background-color: #005b96; }
+  .tag-team-building            { background-color: #005b96; }
+  .tag-scientific-communication { background-color: #005b96; }
+  .tag-collaboration            { background-color: #005b96; }
+  .tag-conference-organization  { background-color: #005b96; }
+  .tag-mentoring                { background-color: #005b96; }
+
+  /* Développement & Outils Collaboratifs */
+  .tag-open-source-development  { background-color: #006d77; }
+  .tag-git-version-control      { background-color: #006d77; }
+  .tag-github                   { background-color: #006d77; }
+  .tag-documentation            { background-color: #006d77; }
+  .tag-api-design               { background-color: #006d77; }
+  .tag-software-architecture    { background-color: #006d77; }
+  .tag-continuous-integration   { background-color: #006d77; }
 
 
 

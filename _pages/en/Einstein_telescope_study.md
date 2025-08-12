@@ -10,12 +10,18 @@ method:
   - Statistics
   - Regression
   - Simulation
-data: 
+  - Gravitational-waves Detection
+  - Scientific Communication
+  - Collaboration
+  - Team Lead
+  - Stochastic Spectrum
   - Frequency-Spectrum
-  - Time-Series
+  - Detector-simulation
 skills: 
   - Python
   - Modeling
+  - Project Management
+  
 initiative: 
   - Post-doc
 description: "How will the shape of the Einstein Telescope influence what we can observe? This project explores the impact of detector design on gravitational-wave science, using Princess simulations."

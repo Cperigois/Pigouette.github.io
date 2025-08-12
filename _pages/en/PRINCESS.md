@@ -7,10 +7,11 @@ author_profile: true
 tags: 
   - projects
 method: 
-  - SNR Calculation
-  - Stochastic Background Analysis
   - Population Synthesis
-  - Monte Carlo Simulation
+  - Monte Carlo Methods
+  - Team Lead
+  - Stochastic Spectrum
+  - Frequency-Spectrum
 data: 
   - Mass-Distribution
   - Redshift-Evolution
@@ -18,8 +19,15 @@ data:
 skills: 
   - Python
   - Gravitational-Wave Modeling
+  - Gravitational-Wave Detection
   - Detector Simulation
   - Statistical Astrophysics
+  - Git-version-control
+  - Documentation
+  - Software Architecture
+  - Project Management
+  - Regression
+  - Classification
 initiative: 
   - Post-doc
 description: "PRINCESS is an open-source tool designed to predict gravitational-wave observations, estimating both individual events and the associated stochastic background based on astrophysical models and detector configurations."

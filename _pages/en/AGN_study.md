@@ -11,13 +11,17 @@ method:
   - Semi-Analytic Modeling
   - Simulation
   - Bayesian analysis
+  - Gravitational-waves Detection
 data: 
-  - Mass-Distribution
-  - Spin-Distribution
+  - Parameter-Distribution
   - Frequency-Spectrum
 skills: 
   - Python
-  - Tool devlopement
+  - Git-version-control
+  - Documentation
+  - Software Architecture
+  - Project Management
+  - Mentoring
   - Astrophysical Modeling
   - Monte Carlo Methods
   - Statistics

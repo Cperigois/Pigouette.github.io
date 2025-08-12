@@ -10,15 +10,16 @@ method:
   - Binary Population Synthesis
   - Hierarchical Bayesian Inference
   - Kernel Density Estimation
+  - Team Lead
 data: 
-  - Spin-Distribution
-  - Chirp-Mass
-  - Effective Spin (χ_eff)
-  - Precessing Spin (χ_p)
+  - Parameter Distribution
+  - Project Management
+  - Monte Carlo Methods
+  - Statistical Astrophysics
+  - Software Architecture
 skills: 
   - Python
   - Astrophysical Modeling
-  - Statistical Inference
 initiative: 
   - Post-doc
 description: "This project investigates the physical origin of black hole spins in merging binaries, assessing competing angular momentum transport models using hierarchical Bayesian inference on gravitational-wave data."
