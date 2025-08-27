@@ -18,8 +18,16 @@ I thrive in **interdisciplinary environments** where innovation meets concrete a
 
 You can explore more details of my professional path here:  
 
-- [Download my **Compact CV** (PDF)](/assets/download/CarolePerigois_CV_compact.pdf) (recommanded ^^)  
-- [Download my **Academic CV** (PDF)](/assets/docs/CarolePerigois_CV_academic.pdf)  
+- **Compact CV (recommended ^^)**  
+  {: .text-center}
+  <a href="/assets/download/CarolePerigois_CV_compact.pdf" target="_blank" class="btn btn--info btn--small"><i class="fas fa-eye"></i> View PDF</a>
+  <a href="/assets/download/CarolePerigois_CV_compact.pdf" download class="btn btn--success btn--small"><i class="fas fa-download"></i> Download</a>
+
+- **Academic CV**  
+  {: .text-center}
+  <a href="/assets/docs/CarolePerigois_CV_academic.pdf" target="_blank" class="btn btn--info btn--small"><i class="fas fa-eye"></i> View PDF</a>
+  <a href="/assets/docs/CarolePerigois_CV_academic.pdf" download class="btn btn--success btn--small"><i class="fas fa-download"></i> Download</a>
+
 - [See my full list of publications (ADS library)](https://ui.adsabs.harvard.edu/public-libraries/bM-NAS_tQlOasK7BUXXBug)  
 
 ---
