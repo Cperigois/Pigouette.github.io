@@ -6,7 +6,6 @@ lang: en
 layout: splash
 header:
   overlay_color: "#1c1c30"
-  overlay_image: /assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp
 excerpt: >
   These pages introduce my academic work on black holes and gravitational waves.  
   You’ll find here the main research projects I’ve developed in recent years.  

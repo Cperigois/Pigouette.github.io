@@ -31,7 +31,7 @@ url                      : "https://Pigouette.github.io"
 baseurl                  : "/Pigouette.github.io"
 repository               : ""
 teaser                   : #"/assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp"
-logo                     : #"/assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp"#"/assets/images/photo.jpeg"
+logo                     : "/assets/images/avatar.jpeg"
 masthead_title           :  " "
 breadcrumbs              : true
 words_per_minute         : 200

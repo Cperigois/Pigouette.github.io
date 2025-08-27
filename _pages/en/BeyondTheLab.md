@@ -6,7 +6,6 @@ layout: splash
 permalink: /BeyondTheLab/
 header:
   overlay_color: "#1c1c30"
-  overlay_image: /assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp
 excerpt: >
   Personnal project led by curiosity.<br />
   <small><a href="https://github.com/CPerigois/repositories">Last update Jul. 1</a></small>

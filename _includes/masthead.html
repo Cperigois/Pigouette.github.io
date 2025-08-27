@@ -3,6 +3,13 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+        <!-- Début de l'insertion de l'avatar -->
+        {% if site.avatar_img %}
+            <div class="masthead__avatar">
+                <img src="{{ site.avatar_img | relative_url }}" alt="Avatar de {{ site.author.name | default: site.title }}" class="avatar-image">
+            </div>
+        {% endif %}
+      <!-- Fin de l'insertion de l'avatar -->
       <nav id="site-nav" class="greedy-nav">
         {% unless logo_path == empty %}
           <a class="site-logo" href="{{ '/' | relative_url }}"><img src="{{ logo_path | relative_url }}" alt="{{ site.masthead_title | default: site.title }}"></a>
