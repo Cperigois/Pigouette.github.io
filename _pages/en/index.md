@@ -32,7 +32,6 @@ feature_row:
     url: "/BeyondTheLab/AILab/Search_anomaly"
     btn_class: "btn--primary"
     btn_label: "Learn more"  
-avatar_img: "/assets/images/avatar.jpeg"
 ---
 
 ## From the Cosmos to Code: Decoding Signals, Deriving Meaning
