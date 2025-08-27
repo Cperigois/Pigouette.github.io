@@ -18,9 +18,9 @@ I thrive in **interdisciplinary environments** where innovation meets concrete a
 
 You can explore more details of my professional path here:  
 
-- **Compact CV (recommended ^^)**  
+- **Compact CV (recommended)**  
   {: .text-center}
-  <a href="/assets/download/CarolePerigois_CV_compact.pdf" target="_blank" class="btn btn--info btn--small"><i class="fas fa-eye"></i> View PDF</a>
+  <a href="../assets/download/CarolePerigois_CV_compact.pdf" target="_blank" class="btn btn--info btn--small"><i class="fas fa-eye"></i> View PDF</a>
   <a href="/assets/download/CarolePerigois_CV_compact.pdf" download class="btn btn--success btn--small"><i class="fas fa-download"></i> Download</a>
 
 - **Academic CV**  
