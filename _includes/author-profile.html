@@ -15,6 +15,7 @@
     <h3 class="author__name p-name" itemprop="name">
       <a class="u-url" rel="me" href="{{ author.home | default: '/' | absolute_url }}" itemprop="url">{{ author.name }}</a>
     </h3>
+
     {% if author.bio %}
       <div class="author__bio p-note" itemprop="description">
         {{ author.bio | markdownify }}
@@ -29,12 +30,12 @@
 
     <div class="author__cv-buttons">
       {% if author.cv_compact %}
-        <a href="{{ author.cv_compact | relative_url }}" class="btn btn--primary" target="_blank">
+        <a href="{{ author.cv_compact | relative_url }}" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-file-pdf"></i> Compact CV
         </a>
       {% endif %}
       {% if author.publications %}
-        <a href="{{ author.publications }}" class="btn btn--primary" target="_blank">
+        <a href="{{ author.publications }}" class="btn btn--primary" target="_blank" rel="noopener">
           <i class="fas fa-book"></i> Publications
         </a>
       {% endif %}
@@ -46,7 +47,8 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ author.location }}</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+          <span itemprop="name" class="p-locality">{{ author.location }}</span>
         </li>
       {% endif %}
 
@@ -80,4 +82,3 @@
   </div>
 </div>
 
-</div>

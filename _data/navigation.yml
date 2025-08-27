@@ -1,5 +1,8 @@
 main:
   - title:
+      "Home"
+    url: /index/
+  - title:
       "Black holes and gravitational waves"
     url: /gravitational-waves/
   - title:
