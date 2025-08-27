@@ -66,11 +66,7 @@ Gravitational-wave detectors provide access to two spin observables:
 
 These observables are compared across models using distributions extracted from hierarchical population synthesis simulations.
 
-### Figure 2: Mass Distribution
-
-The model mass distributions are relatively insensitive to spin assumptions. However, kick models affect the mass peaks. The **GM20** model shows more low-mass mergers due to its lower kicks preserving wider binaries, while **σ150** and **σ265** suppress low-mass systems through disruptions.
-
-### Figure 4: Spin Distributions
+### Parameter prescriptions
 
 <p align="center"><img src="../assets/images/fig2.png" alt="Spin distribution" width="600"/></p>
 
@@ -79,10 +75,7 @@ The model mass distributions are relatively insensitive to spin assumptions. How
 - **MESA and MAX** exhibit intermediate behavior.
 - Including B21 raises χ_p and χ_eff, especially in models with otherwise low spins.
 
-<p align="center"><img src="../assets/images/fig4.pnp" alt="Model likelihoods" width="600"/></p>
-
-
-### Figure 5: Model Likelihoods
+<p align="center"><img src="../assets/images/fig4.png" alt="Model likelihoods" width="600"/></p>
 
 
 ## Bayesian Analysis Framework
@@ -94,6 +87,12 @@ The model comparison is performed using **hierarchical Bayesian inference**. The
 - Kernel density estimation for constructing continuous model predictions
 
 Likelihoods are normalized with respect to detection biases, ensuring proper comparison with LIGO/Virgo/KAGRA observations.
+
+This comparison was carried out using **BBlack**, a statistical tool that allows Bayesian inference of the contribution (or *mixing fraction*) of each channel based on gravitational-wave data.  
+
+<div style="text-align: center; margin: 1em 0;">
+  <a class="button" href="/Pigouette.github.io/gravitational-waves/BBlack">Explore BBlack Tool →</a>
+</div>
 
 ---
 <p align="center"><img src="../assets/images/fig5.png" alt="Model likelihoods" width="800"/></p>

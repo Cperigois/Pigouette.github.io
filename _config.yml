@@ -86,22 +86,23 @@ analytics:
 author:
   name             : "Carole Périgois"
   avatar           : "/assets/images/avatar.jpeg"
-  bio              : "Scientifique."
-  location         : "Toulouse."
-  email            :
+  bio              : "Astrophysicist & Data Scientist"
+  intro            : "Curious, rigorous, and creative. Passionate about scientific challenges, teamwork, and applying data science to societal and environmental impact."
+  location: "Toulouse, France"
+  email: "caroleperigois@outlook.com"
+  github: "Cperigois"
+  gitlab: "Cperigois"
+  linkedin: "caroleperigois"
+  cv_compact: "/assets/docs/CarolePerigois_CV_compact.pdf"
+  publications: "https://ui.adsabs.harvard.edu/public-libraries/bM-NAS_tQlOasK7BUXXBug"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:caroleperigois@outlook.com"
-    - label: "Publications"
-      icon: "fa-solid fa-newspaper"
-      url:  "https://ui.adsabs.harvard.edu/public-libraries/bM-NAS_tQlOasK7BUXXBug"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/users/Cperigois/projects"
+      url: "https://github.com/Cperigois"
+      icon: "fab fa-github"
     - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      url: "https://gitlab.com/users/Cperigois/projects"
+      url: "https://gitlab.com/Cperigois"
+      icon: "fab fa-gitlab"
+
 
 # Site Footer
 footer:
