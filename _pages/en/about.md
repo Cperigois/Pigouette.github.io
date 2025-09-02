@@ -25,8 +25,8 @@ You can explore more details of my professional path here:
 
 - **Academic CV**  
   {: .text-center}
-  <a href="/Pigouette.github.io/assets/downloads/CarolePerigois_CV_academic.pdf" target="_blank" class="btn btn--info btn--small"><i class="fas fa-eye"></i> View PDF</a>
-  <a href="/Pigouette.github.io/assets/downloads/CarolePerigois_CV_academic.pdf" download class="btn btn--success btn--small"><i class="fas fa-download"></i> Download</a>
+  <a href="/CarolePerigois_CV_academic.pdf" target="_blank" class="btn btn--info btn--small"><i class="fas fa-eye"></i> View PDF</a>
+  <a href="/CarolePerigois_CV_academic.pdf" download class="btn btn--success btn--small"><i class="fas fa-download"></i> Download</a>
 
 - [See my full list of publications (ADS library)](https://ui.adsabs.harvard.edu/public-libraries/bM-NAS_tQlOasK7BUXXBug)  
 
