@@ -21,7 +21,7 @@ default_lang: "en"
 exclude_from_localizations: ["assets", "images"]
 locale                   : "en-US"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Data science"
+title                    : "Carole Périgois"
 title_separator          : "-"
 subtitle                 : ""
 name                     : "Carole Périgois"
@@ -31,7 +31,7 @@ url                      : "https://Pigouette.github.io"
 baseurl                  : "/Pigouette.github.io"
 repository               : ""
 teaser                   : #"/assets/images/Supermassive-Black-Holes-Emit-Gravitational-Waves-scaled.webp"
-logo                     : #"/assets/images/avatar.jpeg"
+#logo                     : #"/assets/images/avatar.jpeg"
 masthead_title           :  " "
 breadcrumbs              : true
 words_per_minute         : 200

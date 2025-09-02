@@ -24,7 +24,7 @@ feature_row:
     url: "/_pages/Palm_oil_project"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/raspberry-lanza-editor-codigo-aprender-python-lenguaje-ia-3008158.webp
+  - image_path: /assets/images/Carte site internet.png
     alt: "100% free"
     title: "Reasearch portfolio."
     excerpt: "Creation of an accessible portfolio online to present my research domain and projects."
