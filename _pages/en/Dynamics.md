@@ -20,4 +20,10 @@ initiative:
   - PhD
 description: "Study and modelisation of noise propagation through control loops in the Virgo detector"
 ---
-TBW
+Article based on these publications : 
+
+https://ui.adsabs.harvard.edu/abs/2025arXiv250312263A/abstract
+
+https://ui.adsabs.harvard.edu/abs/2022PhRvD.105j3032P/abstract
+
+Under development.

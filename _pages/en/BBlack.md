@@ -22,6 +22,12 @@ skills:
   - Git-version-control
 initiative: 
   - Post-doc
-description: "Study and modelisation of noise propagation through control loops in the Virgo detector"
+description: "Pipeline of bayesian comparison between gravitational wave observations ans black holes predictions."
 ---
-TBW
+Article based on these publications : 
+
+https://ui.adsabs.harvard.edu/abs/2024A%26A...688A.148T/abstract
+
+https://ui.adsabs.harvard.edu/abs/2024A%26A...685A..51V/abstract
+
+Under development.
