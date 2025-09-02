@@ -46,7 +46,7 @@ feature_row2:
     btn_label: "Learn more"  
 ---
 
-I chose to present my work on binary black holes through the lens of gravitational wave observations, structured in three key sections:
+I chose to present my work on binary black holes through the lens of gravitational wave observations, structured in two key sections:
 
 ## Introductions
 {% include feature_row %}
