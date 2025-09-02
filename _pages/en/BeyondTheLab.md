@@ -7,8 +7,8 @@ permalink: /BeyondTheLab/
 header:
   overlay_color: "#1c1c30"
 excerpt: >
-  Personnal project led by curiosity.<br />
-  <small><a href="https://github.com/CPerigois/repositories">Last update Jul. 1</a></small>
+  Personal projects blending science, creativity, and curiosity.<br />
+  <small><a href="https://github.com/CPerigois/repositories">Last update Sep. 2</a></small>
 feature_row:
   - image_path: /assets/images/sinusoïd_recognition.png
     alt: "customizable"
@@ -30,5 +30,7 @@ feature_row:
     excerpt: "Creation of an accessible portfolio online to present my research domain and projects."
     url: "/docs/python_courses/"      
 ---
-## Current projects
+
+Outside my academic work, I enjoy exploring side projects that allow me to test new ideas, learn different tools, and tackle challenges in a more creative way. From artificial intelligence to environmental issues, these initiatives reflect both my curiosity and my willingness to keep experimenting beyond the lab.
+
 {% include feature_row %}
