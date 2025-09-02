@@ -93,7 +93,7 @@ author:
   github: "Cperigois"
   gitlab: "Cperigois"
   linkedin: "caroleperigois"
-  cv_compact: "/assets/docs/CarolePerigois_CV_compact.pdf"
+  cv_compact: "https://cperigois.github.io/Pigouette.github.io/assets/downloads/CarolePerigois_CV_compact.pdf"
   publications: "https://ui.adsabs.harvard.edu/public-libraries/bM-NAS_tQlOasK7BUXXBug"
   links:
     - label: "GitHub"
