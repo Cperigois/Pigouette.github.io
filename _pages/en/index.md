@@ -18,11 +18,11 @@ feature_row:
     url: "/gravitational-waves/PRINCESS"
     btn_class: "btn--primary"
     btn_label: "Learn more"
-  - image_path: /assets/images/Oil_palm_plantation_in_Cigudeg-03.jpg #
-    alt: "fully responsive"
-    title: "Detection of palm oil plantations via satellite imagery"
-    excerpt: "Applying computer vision and deep learning (CNN-based models) to automatically identify palm oil plantations from satellite imagery. This project aims to provide scalable monitoring for environmental and sustainability research."
-    url: "/_pages/Palm_oil_project"
+  - image_path: /assets/images/Oil_palm_plantation_in_Cigudeg-03.jpg
+    alt: "Satellite view of palm oil plantations"
+    title: "Palm Oil Plantation Detection"
+    excerpt: "Deep learning model for detecting palm oil farms from satellite imagery. Currently under development."
+    url: "/BeyondTheLab/AILab/classif_palm_oil"
     btn_class: "btn--primary"
     btn_label: "Learn more"
   - image_path: /assets/images/sinusoïd_recognition.png
