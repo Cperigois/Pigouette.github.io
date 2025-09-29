@@ -1,0 +1,456 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.1 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en-US" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Classification of Palm Oil Satellite Images - Carole Périgois</title>
+<meta name="description" content="Proof of concept (PoC) demonstrating the efficiency of autoencoders for anomaly detection in time series signals.">
+
+
+  <meta name="author" content="Carole Périgois">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Carole Périgois">
+<meta property="og:title" content="Classification of Palm Oil Satellite Images">
+<meta property="og:url" content="https://cperigois.github.io/Pigouette.github.io/cperigois.github.io/Pigouette.github.io/BeyondTheLab/AILab/classif_palm_oil">
+
+
+  <meta property="og:description" content="Proof of concept (PoC) demonstrating the efficiency of autoencoders for anomaly detection in time series signals.">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://cperigois.github.io/Pigouette.github.io/cperigois.github.io/Pigouette.github.io/BeyondTheLab/AILab/classif_palm_oil">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/cperigois.github.io/Pigouette.github.io/feed.xml" type="application/atom+xml" rel="alternate" title="Carole Périgois Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  window.enable_copy_code_button = true;
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/cperigois.github.io/Pigouette.github.io/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--projet wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/cperigois.github.io/Pigouette.github.io/">
+          
+          <span class="site-subtitle"></span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/cperigois.github.io/Pigouette.github.io/"
+                
+                
+              >Home</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/cperigois.github.io/Pigouette.github.io/gravitational-waves/"
+                
+                
+              >Black holes and gravitational waves</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/cperigois.github.io/Pigouette.github.io/BeyondTheLab/"
+                
+                
+              >Beyond the Lab</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/cperigois.github.io/Pigouette.github.io/all-projects/"
+                
+                
+              >All projects</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/cperigois.github.io/Pigouette.github.io/about/"
+                
+                
+              >About me</a>
+            </li></ul>
+        
+        <button class="search__toggle" type="button">
+          <span class="visually-hidden">Toggle search</span>
+          <i class="fas fa-search"></i>
+        </button>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<!-- MathJax for LaTeX rendering -->
+<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async defer></script>
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="https://cperigois.github.io/Pigouette.github.io/cperigois.github.io/Pigouette.github.io/">
+        <img src="/cperigois.github.io/Pigouette.github.io/assets/images/avatar.jpeg" alt="Carole Périgois" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <h3 class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="https://cperigois.github.io/Pigouette.github.io/cperigois.github.io/Pigouette.github.io/" itemprop="url">Carole Périgois</a>
+    </h3>
+
+    
+      <div class="author__bio p-note" itemprop="description">
+        <p>Astrophysicist &amp; Data Scientist</p>
+
+      </div>
+    
+
+    
+      <div class="author__intro">
+        <p>Curious, rigorous, and creative. Passionate about scientific challenges, teamwork, and applying data science to societal and environmental impact.</p>
+
+      </div>
+    
+
+    <div class="author__cv-buttons">
+      
+        <a href="https://cperigois.github.io/Pigouette.github.io/assets/downloads/CarolePerigois_CV_compact.pdf" class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fas fa-file-pdf"></i> Compact CV
+        </a>
+      
+      
+        <a href="https://ui.adsabs.harvard.edu/public-libraries/bM-NAS_tQlOasK7BUXXBug" class="btn btn--primary" target="_blank" rel="noopener">
+          <i class="fas fa-book"></i> Publications
+        </a>
+      
+    </div>
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i>
+          <span itemprop="name" class="p-locality">Toulouse, France</span>
+        </li>
+      
+
+      
+        
+          
+            <li><a href="https://github.com/Cperigois" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-github" aria-hidden="true"></i><span class="label">GitHub</span></a></li>
+          
+        
+          
+            <li><a href="https://gitlab.com/Cperigois" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fab fa-gitlab" aria-hidden="true"></i><span class="label">GitLab</span></a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:caroleperigois@outlook.com" rel="me" class="u-email">
+            <meta itemprop="email" content="caroleperigois@outlook.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span>
+          </a>
+        </li>
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+
+  
+  </div>
+
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+
+    <!-- Meta tags for SEO -->
+    
+      <meta itemprop="headline" content="Classification of Palm Oil Satellite Images">
+    
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      <header style="margin-bottom: 0.5em;">
+        
+          <h1 id="page-title" class="page__title" itemprop="headline" style="margin-bottom: 0.2em;">
+            Classification of Palm Oil Satellite Images
+          </h1>
+        
+
+          
+          
+          
+          
+
+          
+
+        
+          <div class="project-tags-inline">
+            
+              
+              <span class="tag-badge tag-deep-learning">Deep Learning</span>
+            
+              
+              <span class="tag-badge tag-cnn">CNN</span>
+            
+              
+              <span class="tag-badge tag-simulation">Simulation</span>
+            
+              
+              <span class="tag-badge tag-images">Images</span>
+            
+              
+              <span class="tag-badge tag-python">Python</span>
+            
+              
+              <span class="tag-badge tag-pytorch">PyTorch</span>
+            
+              
+              <span class="tag-badge tag-classification">Classification</span>
+            
+              
+              <span class="tag-badge tag-independent-study">Independent Study</span>
+            
+          </div>
+        
+
+        
+      </header>
+
+      <section class="page__content" itemprop="text">
+        
+
+        <h1 id="classification-of-satellite-images-with-deep-learning">Classification of Satellite Images with Deep Learning</h1>
+
+<p>This study stems from a personal curiosity and self-training on image processing with deep learning.</p>
+
+<p><em><strong>Classif_Palm_oil</strong></em> is a small project aimed at becoming familiar with the classification of satellite images using <strong>PyTorch</strong>.<br />
+The goal is to classify images according to the presence or absence of palm oil plantations.</p>
+
+<p>This project was originally proposed on <strong>Kaggle</strong>, and the original dataset and publication can be found here:<br />
+<a href="https://www.kaggle.com/competitions/widsdatathon2019/data">WiDS Datathon 2019 – Kaggle Competition</a></p>
+
+<p>The project is developed by <strong>Carole Périgois</strong> (<a href="mailto:carolperigois@outlook.com">carolperigois@outlook.com</a>) and was chosen for its environmental and humanitarian relevance.</p>
+
+<hr />
+
+<h2 id="overview">Overview</h2>
+
+<p>This project explores the classification of satellite images using deep learning techniques, with a focus on detecting palm oil plantations.<br />
+Palm oil production has a significant impact on the environment, contributing to deforestation and habitat loss.<br />
+By automating the detection of such plantations, this work could contribute to large-scale monitoring tools for environmental impact assessments.</p>
+
+<p>The dataset comes from the <strong>WiDS Datathon 2019</strong> on Kaggle and includes labeled satellite images from various geographical locations.<br />
+The project aims to:</p>
+
+<ul>
+  <li>Preprocess and visualize satellite imagery</li>
+  <li>Build and train a convolutional neural network (CNN) with PyTorch</li>
+  <li>Evaluate model performance using appropriate metrics</li>
+  <li>Test generalization on unseen data</li>
+</ul>
+
+<p>While the scope is currently exploratory and educational, the methodology can be extended to other <strong>remote sensing classification tasks</strong>.</p>
+
+<hr />
+
+<h2 id="logbook">Logbook</h2>
+
+<ul>
+  <li>✅ Project structure setup</li>
+  <li>✅ Data preprocessing and augmentation</li>
+  <li>✅ Model architecture definition</li>
+  <li>⬜ Preparation of outputs and checkpoints</li>
+  <li>⬜ Training and performance analysis</li>
+</ul>
+
+<hr />
+
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+      </footer>
+
+      
+
+      
+
+    </div>
+
+    
+  </article>
+</div>
+
+      
+    </div>
+
+    
+      <div class="search-content">
+        <div class="search-content__inner-wrap"><form class="search-content__form" onkeydown="return event.key != 'Enter';" role="search">
+    <label class="sr-only" for="search">
+      Enter your search term...
+    </label>
+    <input type="search" id="search" class="search-input" tabindex="-1" placeholder="Enter your search term..." />
+  </form>
+  <div id="results" class="results"></div></div>
+
+      </div>
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="mailto:caroleperigois@outlook.com" rel="nofollow noopener noreferrer"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email</a></li>
+        
+      
+        
+          <li><a href="https://github.com/Cperigois?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://gitlab.com/Cperigois?tab=repositories" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-gitlab" aria-hidden="true"></i> GitLab</a></li>
+        
+      
+    
+
+    
+      <li><a href="/cperigois.github.io/Pigouette.github.io/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 <a href="https://cperigois.github.io/Pigouette.github.io">Carole Périgois</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/cperigois.github.io/Pigouette.github.io/assets/js/main.min.js"></script>
+
+
+
+
+<script src="/cperigois.github.io/Pigouette.github.io/assets/js/lunr/lunr.min.js"></script>
+<script src="/cperigois.github.io/Pigouette.github.io/assets/js/lunr/lunr-store.js"></script>
+<script src="/cperigois.github.io/Pigouette.github.io/assets/js/lunr/lunr-en.js"></script>
+
+
+
+
+
+
+  </body>
+</html>
