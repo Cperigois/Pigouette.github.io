@@ -18,7 +18,8 @@ skills:
   - Classification
 initiative: 
   - Independent Study
-description: "Proof of concept (PoC) demonstrating the efficiency of autoencoders for anomaly detection in time series signals."
+description: "Exploratory project using deep learning to identify palm oil plantations from satellite imagery, with a focus on environmental monitoring."
+   
 ---
 
 # Classification of Satellite Images with Deep Learning
