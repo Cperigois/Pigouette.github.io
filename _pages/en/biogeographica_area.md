@@ -1,6 +1,6 @@
 ---
 permalink: /BeyondTheLab/AILab/hackathon_climat_olivier
-title: ""
+title: "Biogeographical Compatibility of Olive Cultivation Under Future TRACC Climate Scenarios"
 layout: projet
 classes: wide
 author_profile: true
@@ -34,7 +34,7 @@ Our case study centers on the **olive tree** and its potential suitability in **
 Participants:
 - **Mathilde Hibon** – GIP LIA: agronomy engineering, indicators, data visualization  
 - **Aurélien Mure** – CEREMA: data science  
-- **Carole Perigois** – astrophysics & data  
+- **Carole Perigois** – programming & data  
 - **Marion Houdayer** – programming & data handling  
 - **Guillaume Taburet** – SOLAGRO: programming & advanced visualization  
 
