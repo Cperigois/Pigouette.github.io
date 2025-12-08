@@ -36,40 +36,41 @@ Participants:
 - **Marion Houdayer** – programming & data handling  
 - **Guillaume Taburet** – SOLAGRO: programming & advanced visualization  
 
-🔗 **GitHub repository:** https://github.com/GuillaumeTaburet/hackathon-defi2-agricole  
-🌐 **Deployed platform:** https://guillaumetaburet.github.io/hackathon-defi2-agricole/
+🔗 **GitHub repository:** <https://github.com/GuillaumeTaburet/hackathon-defi2-agricole>  
+🌐 **Deployed platform:** <https://guillaumetaburet.github.io/hackathon-defi2-agricole/>
 
 ---
 
 ## Context and Motivation
 
-As climate change accelerates, territorial actors—public services, agricultural organizations, cooperatives, and local decision-makers—need **operational tools** to explore adaptation pathways for agriculture. While climate impact platforms (e.g., Climadiag) exist, **dynamic, map-based visualizations** at relevant territorial scales remain rare, particularly for evaluating the future suitability of emerging crops.
+As climate change accelerates, territorial actors need **operational tools** to explore adaptation pathways for agriculture. While climate impact platforms exist, **dynamic, map-based visualizations** at relevant territorial scales remain rare, particularly for evaluating the future suitability of emerging crops.
 
 Our project tackles the question:
 
 > **Are there biogeographical areas within Occitanie compatible with olive cultivation under the future TRACC climate scenarios (2°C, 2.7°C, 4°C)?**
 
 We created a workflow capable of:
-- Computing climate-based **abiotic stress indicators**,
+
+- Computing climate-based **abiotic stress indicators**,  
 - Mapping their evolution across **three TRACC horizons**,  
-- Identifying **compatible or incompatible zones** for olive cultivation,  
-- Highlighting the potential role of the **Gers**, where olive trees are traditionally absent due to past climatic constraints.
+- Identifying **compatible or incompatible zones**,  
+- Highlighting the potential role of the **Gers**, traditionally too cold for olive trees.
 
 ---
 
 ## Overview
 
-The study aims to provide a **scientific, transparent, and reproducible approach** to evaluating crop suitability under climate change by using:
+The study uses:
 
-- **Two regional climate models (RCM)** at 8 km resolution,  
-- Forced by **two different global circulation models (GCM)**,  
-- Producing maps for each indicator and each scenario,  
-- Over **20-year TRACC windows**:
-  - 2°C
-  - 2.7°C
-  - 4°C warming
+- **Two RCMs** at 8 km resolution,  
+- Forced by **two GCMs**,  
+- Producing maps for each indicator and each TRACC scenario,  
+- Over **20-year climate windows**:
+  - +2°C  
+  - +2.7°C  
+  - +4°C  
 
-Indicators were selected from the literature on **olive phenology**, **agronomy**, and **climate constraints**, focusing on abiotic stress thresholds that strongly affect survival or productivity.
+Indicators were selected from the literature on **olive phenology** and **agronomic constraints**, focusing on thresholds affecting survival and productivity.
 
 ---
 
@@ -77,203 +78,100 @@ Indicators were selected from the literature on **olive phenology**, **agronomy*
 
 ### Selected Indicators
 
-Based on scientific literature, four key phenological stress categories were retained:
+#### 1. Minimum temperatures (winter frost risk)
 
-1. **Minimum temperatures (winter frost risk)**
-   - Occurrences of:
-     - **Tmin < –12°C**, or
-     - **≥ 5 occurrences of Tmin < –7°C** within one winter
-   - Even a single event may irreversibly damage the olive tree.
+- **Tmin < –12°C**, or  
+- **≥ 5 occurrences of Tmin < –7°C** in winter.
 
-2. **Maximum temperatures (extreme heat stress)**
-   - Occurrences of:
-     - **Tmax > 40°C**, or
-     - **Tmax > 35°C for 3 consecutive days** between April and June
-   - This threshold corresponds to physiological failure.
+A single extreme event may kill the tree.
 
-3. **Hydric deficit (JJA water stress)**
-   - Computed via the **daily hydric deficit**, as used in climatology and agronomy.
+#### 2. Maximum temperatures (extreme heat stress)
 
-4. **Chilling requirement**
-   - Number of years in which:
-     - The mean temperature (Tmin + Tmax)/2 ≤ 12°C  
-     - For fewer than 70 days between November and February
+- **Tmax > 40°C**, or  
+- **Tmax > 35°C for 3 consecutive days** (April–June).
 
-Each indicator is mapped across all TRACC horizons to identify **temporary suitability windows** and **long-term compatible zones**.
+This corresponds to physiological breakdown.
 
-![ ](assets/images/Projet_Hackaton_Aires_Biogeo_Olivier.pdf)
+#### 3. Hydric deficit (JJA water stress)
 
+Daily hydric deficit is:
 
----
-
-## Mathematical Definitions of Climate Indicators
-
-### 🌧️ Daily and Seasonal Hydric Deficit
-
-Daily hydric deficit is defined as:
-
-\[
+$$
 Déficit(t) = \max(0,\ ET_0(t) - P(t))
-\]
+$$
 
-where  
-- \(ET_0\) = reference evapotranspiration,  
-- \(P\) = precipitation.
+Cumulative deficit over a season:
 
-The cumulative hydric deficit over a period (e.g., JJA) is:
-
-\[
+$$
 Déficit_{\text{cumulé}} = \sum_{t \in \text{période}} Déficit(t)
-\]
+$$
 
-This follows classical definitions used in FAO-56, hydrology, agronomy, and crop water balance models.
+#### 4. Chilling requirement
 
----
+Number of years where:
 
-### 🌡️ 1. Saturation Vapor Pressure \(e_s(T)\)
+$$
+\frac{T_{\min} + T_{\max}}{2} \le 12^\circ\mathrm{C}
+$$
 
-\[
-e_s(T) = 0.6108\, \exp\left(\frac{17.27\,T}{T + 237.3}\right)
-\]
-
-Daily mean saturation vapor pressure:
-
-\[
-e_s = \frac{e_s(T_{\min}) + e_s(T_{\max})}{2}
-\]
-
-Source: FAO-56, Allen et al. (1998).
+for fewer than **70 days** between November and February.
 
 ---
 
-### 💨 2. Actual Vapor Pressure \(e_a\)
-
-Using specific humidity \(q = huss\):
-
-\[
-q = \frac{0.622\, e_a}{P - 0.378\, e_a}
-\]
-
-Isolating \(e_a\):
-
-\[
-e_a = \frac{q\, P}{0.622 + 0.378\, q}
-\]
-
-Widely used in NOAA, ECMWF reanalysis, and FAO formulations.
+<p align="center">
+  <img src="../assets/images/Projet_Hackaton_Aires_Biogeo_Olivier.png" alt="Biogeographical suitability maps for olive cultivation" width="700"/>
+</p>
 
 ---
 
-### 🔥 3. Psychrometric Constant \( \gamma \)
-
-\[
-\gamma = 0.000665\, P
-\]
-
-Pressure from altitude (\(z\)):
-
-\[
-P = 101.3\left(\frac{293 - 0.0065\, z}{293}\right)^{5.26}
-\]
-
----
-
-### 📈 4. Slope of Saturation Vapor Curve \( \Delta \)
-
-\[
-\Delta = \frac{4098\, e_s(T)}{(T + 237.3)^2}
-\]
-
-Critical for weighting energy vs. aerodynamic terms in Penman-Monteith.
-
----
-
-### 🌍 5. Soil Heat Flux Approximation
-
-At daily resolution:
-
-\[
-G \approx 0
-\]
-
-Following FAO-56 recommendations for Rn–G terms.
-
----
-
-### 🌤️ Penman–Monteith Reference Evapotranspiration
-
-\[
-ET_0 = 
-\frac{
-0.408\, \Delta\, (R_n - G) + \gamma \frac{900}{T + 273} u_2 (e_s - e_a)
-}{
-\Delta + \gamma(1 + 0.34 u_2)
-}
-\]
-
-Where all variables follow FAO-56 definitions.
-
----
-
-### 🌱 Actual Crop Evapotranspiration
-
-\[
-ET_c = K_c\, ET_0
-\]
-
----
 
 ## Key Findings
 
-### **1. Intense Frost Risk (Tmin < –12°C)**
+### 1. Intense Frost Risk (Tmin < –12°C)
 
-- Historically (1960–1979), the **Gers was exposed to 1–3 days below –12°C**, making olive cultivation highly unsuitable.
-- Under TRACC **4°C horizon (2071–2090)**:
-  - Nearly the entire Occitanie region (excluding mountains) sees **0–1 frost days**,  
-  - Making the region **largely compatible** with respect to this indicator.
+- Historically (1960–1979), the **Gers experienced 1–3 frost days < –12°C**, prohibiting olive cultivation.  
+- Under TRACC **+4°C (2071–2090)**:  
+  - Most of Occitanie (except mountains) shows **0–1 frost days**,  
+  - Making the region largely frost-compatible.
 
-![Evolution of the frost indicator (number of days with Tmin < –12°C) in Occitanie](assets/images/indicateur_gel.png)
+<p align="center">
+  <img src="../assets/images/indicateur_gel.png" alt="Frost indicator evolution" width="700"/>
+</p>
 
+---
 
-### **2. Extreme Heat Risk (Tmax > 40°C)**
+### 2. Extreme Heat Risk (Tmax > 40°C)
 
-- Historically absent in Occitanie.
-- Under TRACC trajectories:
-  - By **2032–2051 (+2°C)**: Eastern Gers already shows **1–2 days >40°C** per year.
-  - By **2052–2071 (+2.7°C)**: Gers reaches **2–3 days >40°C**.
-  - By **2071–2090 (+4°C)**:
-    - Gers averages **5 days >40°C**,  
-    - Mediterranean coast reaches **5–12 days** per year.
-- This indicator makes the **Gers mostly incompatible**, despite its improved frost resilience.
+- Historically absent.  
+- Under TRACC scenarios:  
+  - +2°C: **1–2 days >40°C** in Eastern Gers  
+  - +2.7°C: **2–3 days**  
+  - +4°C: **5 days** in Gers; **5–12 days** on the Mediterranean coast  
 
-This contrast illustrates how **single-indicator assessments can be misleading**, reinforcing the need for multi-criteria integration.
+This makes the **Gers climatically unsuitable**, despite improved frost resistance.
 
-
-![Evolution of the extreme-heat indicator (number of days with Tmax > 40°C) in Occitanie](assets/images/indicateur_canicule.png)
-
+<p align="center">
+  <img src="../assets/images/indicateur_canicule.png" alt="Extreme heat indicator evolution" width="700"/>
+</p>
 
 ---
 
 ## Limitations and Future Improvements
 
-- Only two indicators (frost, heat) were fully processed.  
-- Remaining indicators (hydric deficit, chilling requirement) must be computed for a complete assessment.  
-- Phenological stage sensitivity (juvenile phase, flowering, fruit set) requires finer temporal analysis.  
-- Indicator-specific colormaps should align with olive physiological thresholds.  
-- A **multi-criteria composite suitability index** would allow a more holistic view.  
-- Visualization enhancements include:
-  - **Multi-map grids** per indicator and horizon,
-  - **Scenario slider** for dynamic comparison.
-
-The long-term objective is a **systemic tool** helping territorial actors evaluate the compatibility of emerging crops under future climates.
+- Only frost and heat indicators fully computed.  
+- Hydric deficit and chilling requirement still needed.  
+- Phenological sensitivity requires finer temporal resolution.  
+- A **multi-criteria suitability index** is needed.  
+- Visualization could be enhanced through interactive map grids and scenario sliders.
 
 ---
 
 ## References
 
-- Orlandi, F., Garcia-Mozo, H., Dhiab, A.B. et al. *Climatic indices in the interpretation of the phenological phases of the olive …* Climatic Change 116, 263–284 (2013).  
+- Orlandi, F., Garcia-Mozo, H., Dhiab, A.B. et al. *Climatic indices in the interpretation of the phenological phases of the olive*, Climatic Change 116, 263–284 (2013).  
 - International Olive Council: *World Olive Catalogue – High Temperature Module*.  
 - Allen et al. (FAO-56), *Irrigation and Drainage Paper 56*.
+
 
 
 

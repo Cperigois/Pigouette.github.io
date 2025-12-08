@@ -1,0 +1,85 @@
+
+## Mathematical Definitions of Climate Indicators
+
+### 🌡️ Saturation Vapor Pressure \( e_s(T) \)
+
+$$
+e_s(T) = 0.6108\, \exp\left(\frac{17.27\,T}{T + 237.3}\right)
+$$
+
+Daily mean saturation vapor pressure:
+
+$$
+e_s = \frac{e_s(T_{\min}) + e_s(T_{\max})}{2}
+$$
+
+---
+
+### 💨 Actual Vapor Pressure \( e_a \)
+
+From specific humidity:
+
+$$
+q = \frac{0.622\, e_a}{P - 0.378\, e_a}
+$$
+
+Thus:
+
+$$
+e_a = \frac{q\, P}{0.622 + 0.378\, q}
+$$
+
+---
+
+### 🔥 Psychrometric Constant \( \gamma \)
+
+$$
+\gamma = 0.000665\, P
+$$
+
+with pressure estimated from altitude \(z\):
+
+$$
+P = 101.3\left(\frac{293 - 0.0065\, z}{293}\right)^{5.26}
+$$
+
+---
+
+### 📈 Slope of Saturation Vapor Curve \( \Delta \)
+
+$$
+\Delta = \frac{4098\, e_s(T)}{(T + 237.3)^2}
+$$
+
+---
+
+### 🌍 Soil Heat Flux
+
+At daily resolution:
+
+$$
+G \approx 0
+$$
+
+---
+
+### 🌤️ Penman–Monteith Reference Evapotranspiration
+
+$$
+ET_0 = 
+\frac{
+0.408\, \Delta\, (R_n - G) + \gamma \frac{900}{T + 273} u_2 (e_s - e_a)
+}{
+\Delta + \gamma(1 + 0.34 u_2)
+}
+$$
+
+---
+
+### 🌱 Actual Crop Evapotranspiration
+
+$$
+ET_c = K_c\, ET_0
+$$
+
+---
