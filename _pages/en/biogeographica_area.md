@@ -97,13 +97,13 @@ This corresponds to physiological breakdown.
 Daily hydric deficit is:
 
 $$
-Déficit(t) = \max(0,\ ET_0(t) - P(t))
+\text{Deficit}(t) = \max(0,\ ET_0(t) - P(t))
 $$
 
 Cumulative deficit over a season:
 
 $$
-Déficit_{\text{cumulé}} = \sum_{t \in \text{période}} Déficit(t)
+\text{Deficit}_{\text{cumul}} = \sum_{t \in \text{duration}} \text{Deficit}(t)
 $$
 
 #### 4. Chilling requirement
@@ -119,7 +119,7 @@ for fewer than **70 days** between November and February.
 ---
 
 <p align="center">
-  <img src="../../assets/images/Projet_Hackaton_Aires_Biogeo_Olivier.png" alt="Biogeographical suitability maps for olive cultivation" width="700"/>
+  <img src="../../assets/images/Projet_Hackaton_Aires_Biogeo_Olivier.png" alt="Biogeographical suitability maps for olive cultivation" width="900"/>
 </p>
 
 ---
@@ -135,7 +135,7 @@ for fewer than **70 days** between November and February.
   - Making the region largely frost-compatible.
 
 <p align="center">
-  <img src="../../assets/images/indicateur_gel.png" alt="Frost indicator evolution" width="700"/>
+  <img src="../../assets/images/indicateur_gel.png" alt="Frost indicator evolution" width="900"/>
 </p>
 
 ---
@@ -151,7 +151,7 @@ for fewer than **70 days** between November and February.
 This makes the **Gers climatically unsuitable**, despite improved frost resistance.
 
 <p align="center">
-  <img src="../../assets/images/indicateur_canicule.png" alt="Extreme heat indicator evolution" width="700"/>
+  <img src="../../assets/images/indicateur_canicule.png" alt="Extreme heat indicator evolution" width="900"/>
 </p>
 
 ---
