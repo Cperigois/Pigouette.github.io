@@ -25,8 +25,6 @@ initiative:
 description: "Scientific analysis of future biogeographical suitability for olive cultivation in Occitanie under TRACC climate scenarios, developed during the Climate Data Hackathon (bronze medal)."
 ---
 
-# Biogeographical Compatibility of Olive Cultivation Under Future TRACC Climate Scenarios
-
 This work was conducted during the **Hackathon Climat en Données**, where the project won a **bronze medal among 32 submissions**.  
 It addresses **Challenge 2 and Challenge 8 – Agricultural Transition Issues**, focusing on identifying **regional biogeographical areas compatible with emerging crops**, under **future TRACC climate trajectories**.  
 Our case study centers on the **olive tree** and its potential suitability in **Occitanie**, including the department of **Gers (32)**.
