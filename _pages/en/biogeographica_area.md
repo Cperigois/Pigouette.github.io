@@ -119,7 +119,7 @@ for fewer than **70 days** between November and February.
 ---
 
 <p align="center">
-  <img src="../assets/images/Projet_Hackaton_Aires_Biogeo_Olivier.png" alt="Biogeographical suitability maps for olive cultivation" width="700"/>
+  <img src="../../assets/images/Projet_Hackaton_Aires_Biogeo_Olivier.png" alt="Biogeographical suitability maps for olive cultivation" width="700"/>
 </p>
 
 ---
@@ -135,7 +135,7 @@ for fewer than **70 days** between November and February.
   - Making the region largely frost-compatible.
 
 <p align="center">
-  <img src="../assets/images/indicateur_gel.png" alt="Frost indicator evolution" width="700"/>
+  <img src="../../assets/images/indicateur_gel.png" alt="Frost indicator evolution" width="700"/>
 </p>
 
 ---
@@ -151,7 +151,7 @@ for fewer than **70 days** between November and February.
 This makes the **Gers climatically unsuitable**, despite improved frost resistance.
 
 <p align="center">
-  <img src="../assets/images/indicateur_canicule.png" alt="Extreme heat indicator evolution" width="700"/>
+  <img src="../../assets/images/indicateur_canicule.png" alt="Extreme heat indicator evolution" width="700"/>
 </p>
 
 ---
