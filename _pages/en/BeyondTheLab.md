@@ -18,11 +18,11 @@ feature_row:
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
-  - image_path: /assets/images/Oil_palm_plantation_in_Cigudeg-03.jpg
-    alt: "Satellite view of palm oil plantations"
-    title: "Palm Oil Plantation Detection"
-    excerpt: "Deep learning model for detecting palm oil farms from satellite imagery. Currently under development."
-    url: "/BeyondTheLab/AILab/classif_palm_oil"
+  - image_path: /assets/images/vignette_canicule.pdf
+    alt: "Evolution of biogeographical suitability under future climate scenarios"
+    title: "Biogeographical Suitability Across Future Climate Projections"
+    excerpt: "Climate indicators used to assess future suitability of emerging crops under climate change. Hackathon award (3rd place): Climat en Données 2025 – Toulouse."
+    url: "/BeyondTheLab/AILab/hackathon_climat_olivier"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 
