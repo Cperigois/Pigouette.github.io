@@ -20,8 +20,8 @@ You can explore more details of my professional path here:
 
 - **Compact CV (recommended)**  
   {: .text-center}
-  <a href="https://cperigois.github.io/Pigouette.github.io/assets/downloads/CarolePerigois_CV_compact.pdf" target="_blank" class="btn btn--info btn--small"><i class="fas fa-eye"></i> View PDF</a>
-  <a href="https://cperigois.github.io/Pigouette.github.io/assets/downloads/CarolePerigois_CV_compact.pdf" download class="btn btn--success btn--small"><i class="fas fa-download"></i> Download</a>
+  <a href="https://cperigois.github.io/Pigouette.github.io/assets/downloads/CarolePerigois_CV.pdf" target="_blank" class="btn btn--info btn--small"><i class="fas fa-eye"></i> View PDF</a>
+  <a href="https://cperigois.github.io/Pigouette.github.io/assets/downloads/CarolePerigois_CV.pdf" download class="btn btn--success btn--small"><i class="fas fa-download"></i> Download</a>
 
 - **Academic CV**  
   {: .text-center}
