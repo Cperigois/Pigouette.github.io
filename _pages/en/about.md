@@ -45,27 +45,105 @@ You can explore more details of my professional path here:
 - **National Qualification as *Maître de Conférences*** (Associate Professor, 2022–2027, France)  
 
 ---
+## Professional Experience
 
-## 🛠️ Skills & Expertise
+### Research & Development (PhD + Postdoctoral)
+**2018 – 2025**
 
-**Scientific & Technical**  
-- Data analysis: statistical inference, Bayesian and frequentist methods  
-- Signal processing: time/frequency analysis, noise modeling  
-- Machine learning: classification, regression, convolutional neural networks  
-- Simulation and modeling: astrophysical populations, noise propagation  
-- Software development: modular pipelines, documentation (Sphinx), open-source tools  
+- Design, development, and validation of advanced algorithms for complex and noisy data analysis  
+- Signal processing, temporal and frequency analysis, detection of rare events  
+- Statistical modeling (frequentist and Bayesian approaches)  
+- Development of reproducible data processing pipelines:  
+  - Data cleaning  
+  - Feature extraction  
+  - Modeling / simulation  
+  - Validation and performance analysis  
+- Software development mainly in **Python**, with occasional **C++** and **Matlab/Simulink**  
+- Structuring modular, documented, and versioned software architectures (**Git**, **Sphinx/ReadTheDocs**)  
+- Critical analysis of results, uncertainty estimation, rigorous scientific validation  
 
-**Programming**  
-- Python (Pandas, Scikit-learn, PyTorch, …)  
-- Git (version control & collaborative development)  
-- Matlab / Simulink  
-- C++ / C#  
+---
 
-**Project Leadership & Collaboration**  
-- Leading international research projects  
-- Team building and mentoring (Ph.D. students, postdocs, workshops)  
-- Scientific communication (seminars, publications, conferences)  
-- Interdisciplinary collaborations and agile teamwork  
+## Key Projects
+
+#### PRINCESS (Software / Data Project)
+- Full Python pipeline development  
+- Data structuring and automated processing  
+- Validation and complete documentation  
+- Strong focus on **robustness, reproducibility, and maintainability**
+
+#### BBlack (Software / Data Project)
+- Development of algorithms for information extraction and modeling  
+- Working on noisy and constrained datasets  
+- Implementation of documented and versioned workflows  
+- Quality-oriented approach and validation
+
+---
+
+## Machine Learning / Deep Learning Projects
+- **Autoencoders applied to signal processing**  
+  - Detection of operational anomalies  
+  - Unsupervised analysis of complex signals  
+- **Transformers for image analysis**  
+  - Separate project focused on extracting structures and interpreting visual data  
+- Continuous **self-training in machine learning and deep learning**  
+- Ability to select models adapted to underlying physical or functional problems
+
+---
+
+## Personal Projects & Engagement
+- **Climate Data Hackathon**  
+  - Teamwork on environmental challenges  
+  - Exploitation and valorization of climate datasets  
+  - Bronze medal awarded to the team, demonstrating motivation, innovation, and collaborative skills  
+- Strong interest in **climate, environmental, and space-related challenges**
+
+---
+
+## Technical Skills
+
+### Algorithmics & Data
+- Signal processing  
+- Analysis of complex and noisy data  
+- Statistical modeling  
+- Anomaly detection  
+- Algorithm validation and qualification  
+
+### Programming
+- **Python** (pandas, numpy, scikit-learn, PyTorch, etc.)  
+- **Matlab / Simulink**  
+- **C++** (targeted use)  
+- Scripting, automation, testing  
+
+### Software Engineering
+- Robust pipeline design  
+- Modular software architecture  
+- **Git** version control  
+- Technical documentation (**Sphinx, ReadTheDocs**)  
+- Validation, testing, reproducibility  
+
+---
+
+## Functional Skills
+- Requirements analysis and formalization  
+- Technical specification writing  
+- Traceability (requirements/tests)  
+- R&D project management and coordination  
+- Scientific and technical validation  
+- Results communication and reporting  
+
+---
+
+## Management & Collaboration
+- Supervision and mentoring of PhD students, interns, and junior engineers  
+- Facilitation of internal workshops  
+- Regular presentations at international conferences and seminars  
+- Work in multidisciplinary and international teams  
+- Strong focus on:  
+  - Technical clarity  
+  - Knowledge sharing  
+  - Trust and team dynamics  
+
 
 **Languages**  
 - English (fluent)  
@@ -74,7 +152,7 @@ You can explore more details of my professional path here:
 
 ---
 
-## 🌟 Values & Soft Skills
+### 🌟 Values & Soft Skills
 
 - **Scientific rigor** with a strong analytical mindset  
 - **Curiosity & creativity** in exploring new research directions  
