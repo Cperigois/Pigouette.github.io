@@ -9,7 +9,7 @@ header:
   overlay_image: /assets/images/canvas.jpeg
 excerpt: >
   Gravitational wave physicist and data scientist. Expert in machine learning, signal processing, and turning complex data into clear insights. Portfolio of research and applied projects.<br />
-  <small><a href="https://github.com/CPerigois/repositories">Last update Dec. 17</a></small>
+  <small><a href="https://github.com/CPerigois/repositories">Last update Mar. 05</a></small>
 feature_row:
   - image_path: /assets/images/Princess_logo.png
     alt: "customizable"
