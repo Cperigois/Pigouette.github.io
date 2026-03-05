@@ -159,7 +159,10 @@ The table below summarizes the correspondence between the **physical meaning of 
 | **travail_du_sol_mano** | Frequency of manual soil management operations | Not available | Estimated as `nb_passages − travail_sol_meca` |
 | **intervention_plante** | Type of plant-level intervention | Not available | Encoded as: `Mechanical → 0`, `Mixed → 0.5`, `Manual → 1` |
 
+
 This feature engineering step ensures that heterogeneous information sources—structured observational datasets and qualitative farmer responses—are transformed into a consistent numerical representation. These standardized variables constitute the input space used to train the machine learning model predicting the environmental and economic indicators.
+
+
 ---
 
 ## 3. Machine Learning Model
